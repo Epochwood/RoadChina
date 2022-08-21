@@ -35,8 +35,6 @@ public class BlockWhiteLine extends Block
         this.setCreativeTab(TabRoadChina.TAB_ROAD_CHINA);
     }
 
-    public BlockWhiteLine BlockWhiteLine1 = new BlockWhiteLine();
-
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;

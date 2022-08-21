@@ -11,7 +11,6 @@ public class BlockRegistryHandler
 {
     public static final BlockRoad BLOCK_ROAD = new BlockRoad();
     public static final BlockWhiteLine BLOCK_WHITE_LINE = new BlockWhiteLine();
-    public static final BlockWhiteLine BLOCK_WHITE_LINE_1 = new BlockWhiteLine();
 
     @SubscribeEvent
     public static void onRegistry(Register<Block> event)
@@ -19,7 +18,6 @@ public class BlockRegistryHandler
         IForgeRegistry<Block> registry = event.getRegistry();
         registry.register(BLOCK_ROAD);
         registry.register(BLOCK_WHITE_LINE);
-        registry.register(BLOCK_WHITE_LINE_1);
     }
 }
 
