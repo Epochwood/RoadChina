@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "roadchina:road"
+  },
+  "variants": {
+    "normal":[{}],
+    "inventory": [{ "transform": "forge:default-block" }]
+  }
+}

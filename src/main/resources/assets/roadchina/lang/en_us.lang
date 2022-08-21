@@ -1,0 +1,5 @@
+tile.roadchina,road.name=Asphalt Road
+tile.roadchina.whiteLine.name=White Line
+itemGroup.roadchina=RoadChina
+
+item.roadchina.wrench.name=Wrench

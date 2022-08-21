@@ -1,0 +1,16 @@
+[
+{
+  "modid": "roadchina",
+  "name": "RoadChina",
+  "description": "This is a chinese style road mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["heliecp"],
+  "credits": "heliecp",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
