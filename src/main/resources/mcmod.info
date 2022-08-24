@@ -3,7 +3,7 @@
   "modid": "roadchina",
   "name": "RoadChina",
   "description": "This is a chinese style road mod.",
-  "version": "${version}",
+  "version": "1.0Beta",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

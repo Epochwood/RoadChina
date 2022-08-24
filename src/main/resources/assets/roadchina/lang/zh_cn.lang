@@ -1,5 +1,8 @@
 tile.roadchina.road.name=沥青路
 tile.roadchina.whiteLine.name=白线
+tile.roadchina.whiteLine1.name=斜白线
+tile.roadchina.whiteLine2.name=粗白线
+tile.roadchina.whiteLine3.name=粗白线头
 itemGroup.roadchina=道路中国
 
 item.roadchina.wrench.name=扳手

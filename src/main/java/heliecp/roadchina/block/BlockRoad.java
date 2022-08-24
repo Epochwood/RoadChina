@@ -1,7 +1,7 @@
 package heliecp.roadchina.block;
 
 import heliecp.roadchina.RoadChina;
-import heliecp.roadchina.creativetab.TabRoadChina;
+import heliecp.roadchina.creativetab.TabWhiteRoad;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -18,6 +18,6 @@ public class BlockRoad extends Block
         this.setHardness(1.5F);
         this.setResistance(10.0F);
         this.setSoundType(SoundType.STONE);
-        this.setCreativeTab(TabRoadChina.TAB_ROAD_CHINA);
+        this.setCreativeTab(TabWhiteRoad.TAB_WHITE_ROAD);
     }
 }
