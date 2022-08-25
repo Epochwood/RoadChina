@@ -8,7 +8,6 @@ import net.minecraft.block.material.Material;
 
 public class BlockRoad extends Block
 {
-
     public BlockRoad()
     {
         super(Material.ROCK);

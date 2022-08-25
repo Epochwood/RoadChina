@@ -3,6 +3,11 @@ tile.roadchina.whiteLine.name=白线
 tile.roadchina.whiteLine1.name=斜白线
 tile.roadchina.whiteLine2.name=粗白线
 tile.roadchina.whiteLine3.name=粗白线头
-itemGroup.roadchina=道路中国
+tile.roadchina.whiteLine4.name=白人行横道
+tile.roadchina.whiteLine5.name=双白线
+tile.roadchina.whiteLine6.name=斜双白线
+tile.roadchina.roadSlab.name=沥青路台阶
+tile.roadchina.whiteLineSlab.name=白线台阶
+itemGroup.whiteroad=道路中国 | 白线沥青道路
 
 item.roadchina.wrench.name=扳手

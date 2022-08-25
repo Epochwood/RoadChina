@@ -20,7 +20,6 @@ import net.minecraft.world.World;
 public class BlockLine extends Block
 {
     private static final IProperty<EnumFacing> FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-
     public BlockLine(String nameU, String nameR)
     {
         super(Material.ROCK);

@@ -1,12 +1,12 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "roadchina:white_line_1"
+    "model": "roadchina:white_line_5"
   },
   "variants": {
     "facing": {
-      "west": { "y": 270 },
-      "south": { "y": 180 },
+      "west": { "y": 90 },
+      "south": {},
       "east": { "y": 90 },
       "north": {}
     },

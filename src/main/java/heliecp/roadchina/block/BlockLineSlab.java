@@ -1,9 +1,9 @@
 package heliecp.roadchina.block;
 
 import heliecp.roadchina.creativetab.TabWhiteRoad;
+import heliecp.roadchina.item.ItemRegistryHandler;
 import heliecp.roadchina.item.ItemWrench;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -11,14 +11,17 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public abstract class BlockLineSlab extends BlockSlab
+public class BlockLineSlab extends Block
 {
     private static final IProperty<EnumFacing> FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
@@ -34,6 +37,12 @@ public abstract class BlockLineSlab extends BlockSlab
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING,EnumFacing.NORTH));
         this.setCreativeTab(TabWhiteRoad.TAB_WHITE_ROAD);
     }
+
+    @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        return new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
+    }
+
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {
@@ -82,7 +91,7 @@ public abstract class BlockLineSlab extends BlockSlab
         if (worldIn.isRemote) {
             return true;
         }
-
+        
         if (playerIn.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof ItemWrench) {
             EnumFacing Facing = state.getValue(FACING);
 
@@ -90,8 +99,7 @@ public abstract class BlockLineSlab extends BlockSlab
             return true;
 
         }
-
-        return false;
+            return false;
     }
 
 }
