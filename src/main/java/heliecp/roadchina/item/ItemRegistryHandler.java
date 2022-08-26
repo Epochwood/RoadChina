@@ -17,15 +17,17 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ItemRegistryHandler
 {
     public static final ItemBlock ITEM_BLOCK_ROAD = new ItemBlock(BlockRegistryHandler.BLOCK_ROAD);
-    public static final ItemBlock ITEM_BLOCK_WHITE_LINE = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_1 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_1);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_2 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_2);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_3 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_3);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_4 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_4);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_5 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_5);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_6 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_6);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_7 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_7);
     public static final ItemBlock ITEM_BLOCK_ROAD_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_ROAD_SLAB);
-    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_1_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_1_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_2_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_2_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_ARROW_1 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_ARROW_1);
     public static final ItemWrench WRENCH = new ItemWrench();
 
     private static ItemBlock withRegistryName(ItemBlock item)
@@ -39,15 +41,17 @@ public class ItemRegistryHandler
     {
         IForgeRegistry<Item> registry = event.getRegistry();
         registry.register(withRegistryName(ITEM_BLOCK_ROAD));
-        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_1));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_2));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_3));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_4));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_5));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_6));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_7));
         registry.register(withRegistryName(ITEM_BLOCK_ROAD_SLAB));
-        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_1_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_2_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_ARROW_1));
         registry.register(WRENCH);
     }
 
@@ -62,15 +66,17 @@ public class ItemRegistryHandler
     public static void onModelRegistry(ModelRegistryEvent event)
     {
         registerModel(ITEM_BLOCK_ROAD);
-        registerModel(ITEM_BLOCK_WHITE_LINE);
         registerModel(ITEM_BLOCK_WHITE_LINE_1);
         registerModel(ITEM_BLOCK_WHITE_LINE_2);
         registerModel(ITEM_BLOCK_WHITE_LINE_3);
         registerModel(ITEM_BLOCK_WHITE_LINE_4);
         registerModel(ITEM_BLOCK_WHITE_LINE_5);
         registerModel(ITEM_BLOCK_WHITE_LINE_6);
+        registerModel(ITEM_BLOCK_WHITE_LINE_7);
         registerModel(ITEM_BLOCK_ROAD_SLAB);
-        registerModel(ITEM_BLOCK_WHITE_LINE_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_1_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_2_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_ARROW_1);
         registerModel(WRENCH);
     }
 }

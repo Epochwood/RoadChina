@@ -1,13 +1,20 @@
 tile.roadchina.road.name=Asphalt Road
-tile.roadchina.whiteLine.name=White Line
-tile.roadchina.whiteLine1.name=White Oblique Line
-tile.roadchina.whiteLine2.name=White Thick Line
-tile.roadchina.whiteLine3.name=White Thick Half Line
-tile.roadchina.whiteLine4.name=White Crosswalk
-tile.roadchina.whiteLine5.name=White Double Line
-tile.roadchina.whiteLine6.name=White Double Oblique Line
+tile.roadchina.whiteLine1.name=White Line
+tile.roadchina.whiteLine2.name=White Oblique Line
+tile.roadchina.whiteLine3.name=White Thick Line
+tile.roadchina.whiteLine4.name=White Thick Half Line
+tile.roadchina.whiteLine5.name=White Crosswalk
+tile.roadchina.whiteLine6.name=White Double Line
+tile.roadchina.whiteLine7.name=White Double Oblique Line
+
 tile.roadchina.roadSlab.name=Asphalt Road Slab
-tile.roadchina.whiteLineSlab.name=White Line Slab
-itemGroup.whiteroad=RoadChina | White Line Asphalt Road
+tile.roadchina.whiteLine1Slab.name=White Line Slab
+tile.roadchina.whiteLine2Slab.name=White Oblique Line Slab
+
+tile.roadchina.whiteArrow1.name=White Forward Arrow
 
 item.roadchina.wrench.name=Wrench
+
+itemGroup.whiteroad=RoadChina | White Line Road
+itemGroup.roadmarking=RoadChina | Road Marking
+itemGroup.roadtool=RoadChina | Tool

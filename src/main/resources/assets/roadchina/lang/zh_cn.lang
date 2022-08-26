@@ -1,13 +1,21 @@
 tile.roadchina.road.name=沥青路
-tile.roadchina.whiteLine.name=白线
-tile.roadchina.whiteLine1.name=斜白线
-tile.roadchina.whiteLine2.name=粗白线
-tile.roadchina.whiteLine3.name=粗白线头
-tile.roadchina.whiteLine4.name=白人行横道
-tile.roadchina.whiteLine5.name=双白线
-tile.roadchina.whiteLine6.name=斜双白线
+tile.roadchina.whiteLine1.name=白线
+tile.roadchina.whiteLine2.name=斜白线
+tile.roadchina.whiteLine3.name=粗白线
+tile.roadchina.whiteLine4.name=粗白线头
+tile.roadchina.whiteLine5.name=白人行横道
+tile.roadchina.whiteLine6.name=双白线
+tile.roadchina.whiteLine7.name=斜双白线
+
+
 tile.roadchina.roadSlab.name=沥青路台阶
-tile.roadchina.whiteLineSlab.name=白线台阶
-itemGroup.whiteroad=道路中国 | 白线沥青道路
+tile.roadchina.whiteLine1Slab.name=白线台阶
+tile.roadchina.whiteLine2Slab.name=斜白线台阶
+
+tile.roadchina.whiteArrow1.name=白直向箭头
 
 item.roadchina.wrench.name=扳手
+
+itemGroup.whiteroad=道路中国 | 白线道路
+itemGroup.roadmarking=道路中国 | 道路标线
+itemGroup.roadtool=道路中国 | 工具

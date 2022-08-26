@@ -1,21 +1,22 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "roadchina:blocks/white_line_4",
-		"1": "roadchina:blocks/road",
-		"particle": "roadchina:blocks/white_line_4"
+		"0": "roadchina:blocks/road",
+		"2": "roadchina:blocks/white_line_4",
+		"3": "roadchina:blocks/white_line_3",
+		"particle": "roadchina:blocks/road"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
 			"to": [16, 8, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+				"north": {"uv": [0, 0, 16, 8], "texture": "#2"},
+				"east": {"uv": [0, 0, 8, 16], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"}
 			}
 		}
 	]

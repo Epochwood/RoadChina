@@ -10,10 +10,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockRoadSlab extends Block
-{
-    public BlockRoadSlab()
-    {
+public class BlockRoadSlab extends Block {
+    public BlockRoadSlab() {
         super(Material.ROCK);
         this.setUnlocalizedName(RoadChina.MODID + ".roadSlab");
         this.setRegistryName("road_slab");
@@ -28,4 +26,5 @@ public class BlockRoadSlab extends Block
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
     }
+
 }

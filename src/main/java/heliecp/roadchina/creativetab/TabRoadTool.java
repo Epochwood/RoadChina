@@ -4,18 +4,18 @@ import heliecp.roadchina.item.ItemRegistryHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class TabWhiteRoad extends CreativeTabs
+public class TabRoadTool extends CreativeTabs
 {
-    public static final TabWhiteRoad TAB_WHITE_ROAD = new TabWhiteRoad();
+    public static final TabRoadTool TAB_ROAD_TOOL = new TabRoadTool();
 
-    public TabWhiteRoad()
+    public TabRoadTool()
     {
-        super("whiteroad");
+        super("roadtool");
     }
 
     @Override
     public ItemStack getTabIconItem()
     {
-        return new ItemStack(ItemRegistryHandler.ITEM_BLOCK_WHITE_LINE_1);
+        return new ItemStack(ItemRegistryHandler.WRENCH);
     }
 }
