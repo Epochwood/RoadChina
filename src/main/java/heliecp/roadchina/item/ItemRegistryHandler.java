@@ -27,6 +27,11 @@ public class ItemRegistryHandler
     public static final ItemBlock ITEM_BLOCK_ROAD_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_ROAD_SLAB);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_1_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_1_SLAB);
     public static final ItemBlock ITEM_BLOCK_WHITE_LINE_2_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_2_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_3_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_3_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_4_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_4_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_5_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_5_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_6_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_6_SLAB);
+    public static final ItemBlock ITEM_BLOCK_WHITE_LINE_7_SLAB = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_LINE_7_SLAB);
     public static final ItemBlock ITEM_BLOCK_WHITE_ARROW_1 = new ItemBlock(BlockRegistryHandler.BLOCK_WHITE_ARROW_1);
     public static final ItemWrench WRENCH = new ItemWrench();
 
@@ -51,6 +56,11 @@ public class ItemRegistryHandler
         registry.register(withRegistryName(ITEM_BLOCK_ROAD_SLAB));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_1_SLAB));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_2_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_3_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_4_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_5_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_6_SLAB));
+        registry.register(withRegistryName(ITEM_BLOCK_WHITE_LINE_7_SLAB));
         registry.register(withRegistryName(ITEM_BLOCK_WHITE_ARROW_1));
         registry.register(WRENCH);
     }
@@ -76,6 +86,11 @@ public class ItemRegistryHandler
         registerModel(ITEM_BLOCK_ROAD_SLAB);
         registerModel(ITEM_BLOCK_WHITE_LINE_1_SLAB);
         registerModel(ITEM_BLOCK_WHITE_LINE_2_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_3_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_4_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_5_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_6_SLAB);
+        registerModel(ITEM_BLOCK_WHITE_LINE_7_SLAB);
         registerModel(ITEM_BLOCK_WHITE_ARROW_1);
         registerModel(WRENCH);
     }

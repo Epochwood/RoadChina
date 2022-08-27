@@ -11,6 +11,11 @@ tile.roadchina.whiteLine7.name=斜双白线
 tile.roadchina.roadSlab.name=沥青路台阶
 tile.roadchina.whiteLine1Slab.name=白线台阶
 tile.roadchina.whiteLine2Slab.name=斜白线台阶
+tile.roadchina.whiteLine3Slab.name=粗白线台阶
+tile.roadchina.whiteLine4Slab.name=粗白线头台阶
+tile.roadchina.whiteLine5Slab.name=白人行横道台阶
+tile.roadchina.whiteLine6Slab.name=双白线台阶
+tile.roadchina.whiteLine7Slab.name=斜双白线台阶
 
 tile.roadchina.whiteArrow1.name=白直向箭头
 

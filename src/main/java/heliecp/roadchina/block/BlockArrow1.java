@@ -3,6 +3,7 @@ package heliecp.roadchina.block;
 import heliecp.roadchina.creativetab.TabRoadMarking;
 import heliecp.roadchina.item.ItemWrench;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -10,14 +11,13 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Rotation;
+import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockArrow1 extends Block {
 
@@ -38,7 +38,15 @@ public class BlockArrow1 extends Block {
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return new AxisAlignedBB(-0.5, 0, -0.5, 1.5, 0.1, 1.5);
+        switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)) {
+            case SOUTH:
+            case NORTH:
+            default:
+                return new AxisAlignedBB(0.265, 0, -1, 0.735, 0.01, 2);
+            case EAST:
+            case WEST:
+                return new AxisAlignedBB(-1, 0, 0.265, 2, 0.01, 0.735);
+        }
     }
 
     @Override
@@ -99,5 +107,12 @@ public class BlockArrow1 extends Block {
 
         return false;
     }
+
+    @SideOnly(Side.CLIENT)
+    @Override
+    public BlockRenderLayer getBlockLayer() {
+        return BlockRenderLayer.CUTOUT;
+    }
+
 
 }

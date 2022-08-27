@@ -21,6 +21,11 @@ public class BlockRegistryHandler
     public static final BlockRoadSlab BLOCK_ROAD_SLAB = new BlockRoadSlab();
     public static final BlockLineSlab BLOCK_WHITE_LINE_1_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine1Slab","white_line_1_slab");
     public static final BlockLineSlab BLOCK_WHITE_LINE_2_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine2Slab","white_line_2_slab");
+    public static final BlockLineSlab BLOCK_WHITE_LINE_3_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine3Slab","white_line_3_slab");
+    public static final BlockLineSlab BLOCK_WHITE_LINE_4_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine4Slab","white_line_4_slab");
+    public static final BlockLineSlab BLOCK_WHITE_LINE_5_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine5Slab","white_line_5_slab");
+    public static final BlockLineSlab BLOCK_WHITE_LINE_6_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine6Slab","white_line_6_slab");
+    public static final BlockLineSlab BLOCK_WHITE_LINE_7_SLAB = new BlockLineSlab(RoadChina.MODID + ".whiteLine7Slab","white_line_7_slab");
     public static final BlockArrow1 BLOCK_WHITE_ARROW_1 = new BlockArrow1(RoadChina.MODID + ".whiteArrow1","white_arrow_1");
     @SubscribeEvent
     public static void onRegistry(Register<Block> event)
@@ -37,6 +42,11 @@ public class BlockRegistryHandler
         registry.register(BLOCK_ROAD_SLAB);
         registry.register(BLOCK_WHITE_LINE_1_SLAB);
         registry.register(BLOCK_WHITE_LINE_2_SLAB);
+        registry.register(BLOCK_WHITE_LINE_3_SLAB);
+        registry.register(BLOCK_WHITE_LINE_4_SLAB);
+        registry.register(BLOCK_WHITE_LINE_5_SLAB);
+        registry.register(BLOCK_WHITE_LINE_6_SLAB);
+        registry.register(BLOCK_WHITE_LINE_7_SLAB);
         registry.register(BLOCK_WHITE_ARROW_1);
     }
 }

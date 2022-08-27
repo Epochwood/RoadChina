@@ -18,13 +18,10 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockLineSlab extends Block
 {
     private static final IProperty<EnumFacing> FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
-
     public BlockLineSlab(String nameU, String nameR)
     {
         super(Material.ROCK);
@@ -42,8 +39,6 @@ public class BlockLineSlab extends Block
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return new AxisAlignedBB(0, 0, 0, 1, 0.5, 1);
     }
-
-
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -91,7 +86,7 @@ public class BlockLineSlab extends Block
         if (worldIn.isRemote) {
             return true;
         }
-        
+
         if (playerIn.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof ItemWrench) {
             EnumFacing Facing = state.getValue(FACING);
 
