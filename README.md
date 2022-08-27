@@ -6,4 +6,5 @@ This is a Minecraft ___1.12.2___ mod,this mod is a chinese style road mod.You ca
 本模组目前为开发阶段，由于本人有空时间不定，具体发布时间未清，敬请期待。  
 This mod is currently in the development stage, due to my unpredictable availability, the exact release date is not yet clear, so stay tuned.  
 ![Road China 道路中国](https://s1.ax1x.com/2022/08/27/vRcRE9.png "Road China 道路中国")
-> *本模组参考资料：[国家标准 - 道路交通标志和标线](http://jtst.mot.gov.cn/gb/search/gbDetailed?id=e424d8a7313d0ce7d19c6773ad0cdf51)*
+> *本模组参考资料：[国家标准 - 道路交通标志和标线](http://jtst.mot.gov.cn/gb/search/gbDetailed?id=e424d8a7313d0ce7d19c6773ad0cdf51)*  
+> *制作人员：Heliecp，ALC（暮）*
