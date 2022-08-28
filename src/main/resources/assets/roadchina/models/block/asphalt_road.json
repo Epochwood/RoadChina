@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"particle": "roadchina:blocks/road",
+		"down": "roadchina:blocks/road",
+		"up": "roadchina:blocks/road",
+		"north": "roadchina:blocks/road",
+		"south": "roadchina:blocks/road",
+		"west": "roadchina:blocks/road",
+		"east": "roadchina:blocks/road"
+	}
+}

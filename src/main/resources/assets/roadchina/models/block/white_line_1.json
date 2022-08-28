@@ -1,22 +1,12 @@
 {
-	"credit": "Made with Blockbench",
-	"textures": {
-		"0": "roadchina:blocks/road",
-		"1": "roadchina:blocks/white_line_1",
-		"particle": "roadchina:blocks/road"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
-			}
-		}
-	]
+  "parent": "block/cube",
+  "textures": {
+    "particle": "roadchina:blocks/road",
+    "down": "roadchina:blocks/white_line_1",
+    "up": "roadchina:blocks/white_line_1",
+    "north": "roadchina:blocks/white_line_1",
+    "south": "roadchina:blocks/white_line_1",
+    "west": "roadchina:blocks/road",
+    "east": "roadchina:blocks/road"
+  }
 }

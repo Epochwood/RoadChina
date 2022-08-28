@@ -1,0 +1,15 @@
+{
+  "itemGroup.white_road_group" : "道路中国 | 白线道路",
+
+  "block.roadchina.asphalt_road" : "沥青路",
+
+  "block.roadchina.white_line_1" : "白线",
+  "block.roadchina.white_line_2" : "斜白线",
+  "block.roadchina.white_line_3" : "粗白线",
+  "block.roadchina.white_line_4" : "粗白线头",
+  "block.roadchina.white_line_5" : "白人行横道",
+  "block.roadchina.white_line_6" : "双白线",
+  "block.roadchina.white_line_7" : "斜双白线",
+
+  "item.roadchina.wrench": "扳手"
+}

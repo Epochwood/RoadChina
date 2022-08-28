@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="GNU GPLv3"
+
+[[mods]]
+modId="roadchina"
+version="${file.jarVersion}"
+displayName="Road China"
+logoFile="icon.png"
+credits="heliecp"
+authors="heliecp"
+description='''
+This is a chinese style road mod.
+'''
+
+[[dependencies.roadchina]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.roadchina]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.5,)"
+ordering = "NONE"
+side = "BOTH"

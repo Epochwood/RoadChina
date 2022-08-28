@@ -1,0 +1,15 @@
+{
+  "itemGroup.white_road_group" : "Road China | White Line Road",
+
+  "block.roadchina.asphalt_road" : "Asphalt Road",
+
+  "block.roadchina.white_line_1" : "White Line",
+  "block.roadchina.white_line_2" : "White Oblique Line",
+  "block.roadchina.white_line_3" : "White Thick Line",
+  "block.roadchina.white_line_4" : "White Thick Half Line",
+  "block.roadchina.white_line_5" : "White Crosswalk",
+  "block.roadchina.white_line_6" : "White Double Line",
+  "block.roadchina.white_line_7" : "White Double Oblique Line",
+
+  "item.roadchina.wrench": "Wrench"
+}
