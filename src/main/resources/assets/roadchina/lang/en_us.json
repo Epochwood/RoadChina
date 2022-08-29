@@ -11,5 +11,7 @@
   "block.roadchina.white_line_6" : "White Double Line",
   "block.roadchina.white_line_7" : "White Double Oblique Line",
 
+  "block.roadchina.asphalt_road_slab" : "Asphalt Road Slab",
+
   "item.roadchina.wrench": "Wrench"
 }

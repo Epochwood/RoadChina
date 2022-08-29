@@ -4,7 +4,7 @@ license="GNU GPLv3"
 
 [[mods]]
 modId="roadchina"
-version="${file.jarVersion}"
+version="1.0Beta"
 displayName="Road China"
 logoFile="icon.png"
 credits="heliecp"

@@ -7,6 +7,6 @@ public class Wrench extends Item
 {
     public Wrench ()
     {
-        super(new Properties().tab(ModGroup.WHITE_ROAD_GROUP));
+        super(new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP).stacksTo(1));
     }
 }
