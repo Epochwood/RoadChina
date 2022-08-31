@@ -3,7 +3,7 @@ package heliecp.roadchina.Block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.AbstractFurnaceBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
