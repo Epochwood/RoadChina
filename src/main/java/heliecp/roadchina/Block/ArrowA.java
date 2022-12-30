@@ -14,15 +14,48 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-public class Line extends Block
+public class ArrowA extends Block
 {
-
-    public Line()
+    public static final Block block = null;
+    public ArrowA()
     {
         super(Block.Properties.of(Material.STONE).harvestLevel(10));
     }
+
+
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context)
+    {
+        return Block.box(0.0D,0.0D,0.0D,0.0D,0.0D,0.0D);
+    }
+
+    @Override
+    public VoxelShape getShape(BlockState state, IBlockReader source, BlockPos pos, ISelectionContext iSelectionContext) {
+        switch (state.getValue(BlockStateProperties.FACING)) {
+            case SOUTH:
+            case NORTH:
+            default:
+                return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
+            case EAST:
+            case WEST:
+                return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
+        }
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public void clientLoad(FMLClientSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(block, RenderType.cutout());
+    }
+
 
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext ctx) {
@@ -80,4 +113,5 @@ public class Line extends Block
 
         return ActionResultType.FAIL;
     }
+
 }

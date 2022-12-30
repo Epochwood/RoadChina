@@ -1,13 +1,5 @@
 {
   "variants": {
-    "type=bottom": {
-      "model": "roadchina:block/asphalt_road_slab"
-    },
-    "type=top": {
-      "model": "roadchina:block/asphalt_road_slab_top"
-    },
-    "type=double": {
-      "model": "roadchina:block/asphalt_road"
-    }
+    "": { "model": "roadchina:block/asphalt_road_slab" }
   }
 }

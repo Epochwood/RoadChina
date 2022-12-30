@@ -2,44 +2,42 @@
 	"credit": "Made with Blockbench",
 	"parent": "roadchina:block/asphalt_road",
 	"textures": {
-		"0": "roadchina:blocks/road",
-		"1": "roadchina:blocks/white_line_1",
-		"2": "roadchina:blocks/white_line_2",
-		"particle": "roadchina:blocks/road"
+		"0": "roadchina:blocks/white_arrow_1",
+		"particle": "roadchina:blocks/white_arrow_1"
 	},
 	"elements": [
 		{
-			"from": [0, 0, 0],
-			"to": [16, 8, 16],
+			"from": [4, 0.01, -16],
+			"to": [12, 0.01, 32],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"east": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 8], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
-				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#2"}
+				"north": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
 	],
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [75, -30, 0],
-			"translation": [0, 1.5, -0.5],
+			"translation": [1.5, 1.5, 2.25],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [75, 30, 0],
-			"translation": [0, 1.5, -0.5],
+			"translation": [1.5, 1.5, 2.25],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -45, 0],
-			"translation": [0, 0, 1],
+			"translation": [0, 4.75, 1],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, -45, 0],
-			"translation": [0, 0, 1],
+			"translation": [0, 4.75, 1],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
@@ -47,6 +45,7 @@
 		},
 		"gui": {
 			"rotation": [30, 45, 0],
+			"translation": [0, 4.25, 0],
 			"scale": [0.6, 0.6, 0.6]
 		},
 		"fixed": {

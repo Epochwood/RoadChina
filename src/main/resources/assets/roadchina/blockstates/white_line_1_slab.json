@@ -1,37 +1,18 @@
 {
   "variants": {
     "facing=north,type=bottom": {
-      "model": "roadchina:block/white_line_1"
+      "model": "roadchina:block/white_line_1_slab"
     },
     "facing=south,type=bottom": {
-      "model": "roadchina:block/white_line_1",
-      "y": 180
+      "model": "roadchina:block/white_line_1_slab"
     },
     "facing=west,type=bottom": {
-      "model": "roadchina:block/white_line_1",
-      "y": 270
+      "model": "roadchina:block/white_line_1_slab",
+      "y": 90
     },
     "facing=east,type=bottom": {
-      "model": "roadchina:block/white_line_1",
+      "model": "roadchina:block/white_line_1_slab",
       "y": 90
-    },
-    "facing=north,type=top": {
-      "model": "roadchina:block/white_line_1_top"
-    },
-    "facing=south,type=top": {
-      "model": "roadchina:block/white_line_1_top",
-      "y": 180
-    },
-    "facing=west,type=top": {
-      "model": "roadchina:block/white_line_1_top",
-      "y": 270
-    },
-    "facing=east,type=top": {
-      "model": "roadchina:block/white_line_1_top",
-      "y": 90
-    },
-    "type=double": {
-      "model": "roadchina:block/white_line_1"
     }
   }
 }
