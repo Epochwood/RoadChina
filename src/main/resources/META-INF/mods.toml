@@ -4,11 +4,11 @@ license="GNU GPLv3"
 
 [[mods]]
 modId="roadchina"
-version="1.0Beta"
+version="1.0.1Beta"
 displayName="Road China"
 logoFile="icon.png"
-credits="heliecp"
-authors="heliecp"
+credits="Heliecp"
+authors="Heliecp"
 description='''
 This is a chinese style road mod.
 '''

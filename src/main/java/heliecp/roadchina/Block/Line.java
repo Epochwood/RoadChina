@@ -43,27 +43,6 @@ public class Line extends Block
     }
 
     @Override
-    public boolean canBeReplaced(BlockState blockState, BlockItemUseContext context) {
-        ItemStack itemstack = context.getItemInHand();
-        if (itemstack.getItem() == this.asItem()) {
-            if (context.replacingClickedOnBlock()) {
-                Direction direction = context.getClickedFace();
-                if (blockState.getBlock() == BlockRegistry.whiteLine1.get()) {
-                    return direction == Direction.UP || direction.getAxis().isHorizontal();
-                }
-            }
-            else {
-                return true;
-            }
-        }
-        else {
-            return false;
-        }
-        return false;
-    }
-
-
-    @Override
     public ActionResultType use(BlockState blockState, World worldIn, BlockPos pos, PlayerEntity playerIn, Hand handIn, BlockRayTraceResult blockRayTraceResult)
     {
         if(worldIn.isClientSide)

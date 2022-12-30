@@ -2,6 +2,8 @@ package heliecp.roadchina.Block;
 
 import heliecp.roadchina.Item.Wrench;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.RenderType;
@@ -16,7 +18,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
-import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
@@ -50,12 +51,6 @@ public class ArrowA extends Block
                 return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
         }
     }
-
-    @OnlyIn(Dist.CLIENT)
-    public void clientLoad(FMLClientSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(block, RenderType.cutout());
-    }
-
 
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext ctx) {
@@ -112,6 +107,11 @@ public class ArrowA extends Block
         }
 
         return ActionResultType.FAIL;
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public void ClientLoad(FMLClientSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow1.get(), RenderType.cutout());
     }
 
 }

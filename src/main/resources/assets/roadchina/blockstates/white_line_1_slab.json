@@ -1,18 +1,8 @@
 {
   "variants": {
-    "facing=north,type=bottom": {
-      "model": "roadchina:block/white_line_1_slab"
-    },
-    "facing=south,type=bottom": {
-      "model": "roadchina:block/white_line_1_slab"
-    },
-    "facing=west,type=bottom": {
-      "model": "roadchina:block/white_line_1_slab",
-      "y": 90
-    },
-    "facing=east,type=bottom": {
-      "model": "roadchina:block/white_line_1_slab",
-      "y": 90
-    }
+    "facing=west": { "model": "roadchina:block/white_line_1_slab", "y": 90 },
+    "facing=south": { "model": "roadchina:block/white_line_1_slab"},
+    "facing=east": { "model": "roadchina:block/white_line_1_slab", "y": 90 },
+    "facing=north": { "model": "roadchina:block/white_line_1_slab" }
   }
 }
