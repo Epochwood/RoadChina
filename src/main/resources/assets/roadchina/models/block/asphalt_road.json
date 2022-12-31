@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "roadchina:blocks/road",
-		"particle": "roadchina:blocks/road"
+		"0": "roadchina:blocks/asphalt_road",
+		"particle": "roadchina:blocks/asphalt_road"
 	},
 	"elements": [
 		{
