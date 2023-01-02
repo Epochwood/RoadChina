@@ -1,0 +1,30 @@
+{
+  "block.roadchina.asphalt_road" : "Asphalt Road",
+
+  "block.roadchina.white_line_1" : "White Line",
+  "block.roadchina.white_line_2" : "White Oblique Line",
+  "block.roadchina.white_line_3" : "White Thick Line",
+  "block.roadchina.white_line_4" : "White Thick Half Line",
+  "block.roadchina.white_line_5" : "White Crosswalk",
+  "block.roadchina.white_line_6" : "White Double Line",
+  "block.roadchina.white_line_7" : "White Double Oblique Line",
+
+  "block.roadchina.asphalt_road_slab" : "Asphalt Road Slab",
+
+  "block.roadchina.white_line_1_slab" : "White Line Slab",
+  "block.roadchina.white_line_2_slab" : "White Oblique Line Slab",
+  "block.roadchina.white_line_3_slab" : "White Thick Line",
+  "block.roadchina.white_line_4_slab" : "White Thick Half Line Slab",
+  "block.roadchina.white_line_5_slab" : "White Crosswalk Slab",
+  "block.roadchina.white_line_6_slab" : "White Double Line",
+  "block.roadchina.white_line_7_slab" : "White Double Oblique Line",
+
+  "block.roadchina.white_arrow_1" : "White Straight Arrow",
+  "block.roadchina.white_arrow_1_slab" : "White Straight Arrow(Slab)",
+
+  "item.roadchina.wrench": "Wrench",
+
+  "itemGroup.white_road_group" : "Road China | White Line Road",
+  "itemGroup.road_tool_group" : "Road China | Tool",
+  "itemGroup.arrow_group" : "Road China | Arrow"
+}
