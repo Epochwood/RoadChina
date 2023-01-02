@@ -4,11 +4,8 @@ import heliecp.roadchina.Item.Wrench;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.*;
@@ -53,7 +50,7 @@ public class Line extends Block
         if(playerIn.getMainHandItem().getItem() instanceof Wrench)
         {
             Direction direction = blockState.getValue(BlockStateProperties.FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getClockWise()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getOpposite()));
             return ActionResultType.SUCCESS;
         }
 

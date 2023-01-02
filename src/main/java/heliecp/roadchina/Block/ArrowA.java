@@ -1,12 +1,17 @@
 package heliecp.roadchina.Block;
 
+import heliecp.roadchina.Item.ItemRegistry;
 import heliecp.roadchina.Item.Wrench;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.Item;
+import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.EnumProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.state.properties.SlabType;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
@@ -18,6 +23,9 @@ import net.minecraft.world.World;
 
 public class ArrowA extends Block
 {
+    public static final EnumProperty<SlabType> TYPE = BlockStateProperties.SLAB_TYPE;
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
+
     public ArrowA()
     {
         super(Block.Properties.of(Material.STONE).harvestLevel(10));
@@ -45,7 +53,7 @@ public class ArrowA extends Block
 
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext ctx) {
-        return this.defaultBlockState().setValue(BlockStateProperties.FACING, ctx.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
     }
 
     public BlockState rotate(BlockState p_185499_1_, Rotation p_185499_2_) {
@@ -72,7 +80,7 @@ public class ArrowA extends Block
 
         if(playerIn.getMainHandItem().getItem() instanceof Wrench) {
             Direction direction = blockState.getValue(BlockStateProperties.FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getClockWise()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getOpposite()));
             return ActionResultType.SUCCESS;
         }
 

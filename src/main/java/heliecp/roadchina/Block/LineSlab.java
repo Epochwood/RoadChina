@@ -1,5 +1,6 @@
 package heliecp.roadchina.Block;
 
+import heliecp.roadchina.Item.ItemRegistry;
 import heliecp.roadchina.Item.Wrench;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -7,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.BooleanProperty;
@@ -63,20 +65,20 @@ public class LineSlab extends Block implements IWaterLoggable
         BlockPos blockpos = ctx.getClickedPos();
         BlockState blockstate = ctx.getLevel().getBlockState(blockpos);
 
-        Block whiteLine1Slab = BlockRegistry.whiteLine1Slab.get().getBlock();
-        Block whiteLine2Slab = BlockRegistry.whiteLine2Slab.get().getBlock();
-        Block whiteLine3Slab = BlockRegistry.whiteLine3Slab.get().getBlock();
-        Block whiteLine4Slab = BlockRegistry.whiteLine4Slab.get().getBlock();
-        Block whiteLine5Slab = BlockRegistry.whiteLine5Slab.get().getBlock();
-        Block whiteLine6Slab = BlockRegistry.whiteLine6Slab.get().getBlock();
-        Block whiteLine7Slab = BlockRegistry.whiteLine7Slab.get().getBlock();
+        Block whiteLine1Slab = BlockRegistry.whiteLine1Slab.get();
+        Block whiteLine2Slab = BlockRegistry.whiteLine2Slab.get();
+        Block whiteLine3Slab = BlockRegistry.whiteLine3Slab.get();
+        Block whiteLine4Slab = BlockRegistry.whiteLine4Slab.get();
+        Block whiteLine5Slab = BlockRegistry.whiteLine5Slab.get();
+        Block whiteLine6Slab = BlockRegistry.whiteLine6Slab.get();
+        Block whiteLine7Slab = BlockRegistry.whiteLine7Slab.get();
 
         World worldIn = ctx.getLevel();
 
         if (blockstate.is(whiteLine1Slab))
         {
             if (worldIn.getBlockState(blockpos).getValue(FACING) == Direction.NORTH) {
-                 return BlockRegistry.whiteLine1.get().defaultBlockState().setValue(FACING, Direction.NORTH);
+                return BlockRegistry.whiteLine1.get().defaultBlockState().setValue(FACING, Direction.NORTH);
             }
             else if (worldIn.getBlockState(blockpos).getValue(FACING) == Direction.SOUTH) {
                 return BlockRegistry.whiteLine1.get().defaultBlockState().setValue(FACING, Direction.SOUTH);
@@ -244,7 +246,17 @@ public class LineSlab extends Block implements IWaterLoggable
 
         if (playerIn.getMainHandItem().getItem() instanceof Wrench) {
             Direction direction = blockState.getValue(FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getClockWise()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getOpposite()));
+            return ActionResultType.SUCCESS;
+        }
+
+        Item whiteArrow1 = ItemRegistry.whiteArrow1.get();
+        Block whiteArrow1Slab = BlockRegistry.whiteArrow1Slab.get();
+
+        if (playerIn.getMainHandItem().getItem() == whiteArrow1)
+        {
+            Direction direction = playerIn.getDirection();
+            worldIn.setBlockAndUpdate(pos.above(), whiteArrow1Slab.defaultBlockState().setValue(FACING, direction.getOpposite()));
             return ActionResultType.SUCCESS;
         }
 

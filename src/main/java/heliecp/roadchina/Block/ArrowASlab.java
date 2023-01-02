@@ -74,7 +74,7 @@ public class ArrowASlab extends Block
 
         if(playerIn.getMainHandItem().getItem() instanceof Wrench) {
             Direction direction = blockState.getValue(BlockStateProperties.FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getClockWise()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getOpposite()));
             return ActionResultType.SUCCESS;
         }
 
