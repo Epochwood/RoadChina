@@ -29,4 +29,5 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteLine6Slab = ITEMS.register("white_line_6_slab", () -> new BlockItem(BlockRegistry.whiteLine6Slab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine7Slab = ITEMS.register("white_line_7_slab", () -> new BlockItem(BlockRegistry.whiteLine7Slab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteArrow1 = ITEMS.register("white_arrow_1", () -> new BlockItem(BlockRegistry.whiteArrow1.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
+    public static final RegistryObject<Item> whiteArrow1Slab = ITEMS.register("white_arrow_1_slab", () -> new BlockItem(BlockRegistry.whiteArrow1Slab.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
 }

@@ -28,5 +28,6 @@ public class BlockRegistry {
     public static final RegistryObject<Block> whiteLine6Slab = BLOCKS.register("white_line_6_slab", LineSlab::new);
     public static final RegistryObject<Block> whiteLine7Slab = BLOCKS.register("white_line_7_slab", LineSlab::new);
     public static final RegistryObject<Block> whiteArrow1 = BLOCKS.register("white_arrow_1", ArrowA::new);
+    public static final RegistryObject<Block> whiteArrow1Slab = BLOCKS.register("white_arrow_1_slab", ArrowASlab::new);
 
 }

@@ -1,7 +1,8 @@
 package heliecp.roadchina.Block;
 
 import heliecp.roadchina.Item.Wrench;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
@@ -16,11 +17,12 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
-public class ArrowA extends Block
+public class ArrowASlab extends Block
 {
-    public ArrowA()
+
+    public ArrowASlab()
     {
-        super(Block.Properties.of(Material.STONE).harvestLevel(10));
+        super(Properties.of(Material.STONE).harvestLevel(10));
     }
 
 
@@ -36,10 +38,10 @@ public class ArrowA extends Block
             case SOUTH:
             case NORTH:
             default:
-                return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
+                return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -8.0D, 32.0D);
             case EAST:
             case WEST:
-                return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
+                return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -8.0D, 12.0D);
         }
     }
 
