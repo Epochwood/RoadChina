@@ -31,6 +31,15 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteLine11b = ITEMS.register("white_line_11b", () -> new BlockItem(BlockRegistry.whiteLine11b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine12a = ITEMS.register("white_line_12a", () -> new BlockItem(BlockRegistry.whiteLine12a.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine12b = ITEMS.register("white_line_12b", () -> new BlockItem(BlockRegistry.whiteLine12b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine13 = ITEMS.register("white_line_13", () -> new BlockItem(BlockRegistry.whiteLine13.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine14 = ITEMS.register("white_line_14", () -> new BlockItem(BlockRegistry.whiteLine14.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine15 = ITEMS.register("white_line_15", () -> new BlockItem(BlockRegistry.whiteLine15.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine16a = ITEMS.register("white_line_16a", () -> new BlockItem(BlockRegistry.whiteLine16a.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine16b = ITEMS.register("white_line_16b", () -> new BlockItem(BlockRegistry.whiteLine16b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine17a = ITEMS.register("white_line_17a", () -> new BlockItem(BlockRegistry.whiteLine17a.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine17b = ITEMS.register("white_line_17b", () -> new BlockItem(BlockRegistry.whiteLine17b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine18a = ITEMS.register("white_line_18a", () -> new BlockItem(BlockRegistry.whiteLine18a.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine18b = ITEMS.register("white_line_18b", () -> new BlockItem(BlockRegistry.whiteLine18b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
 
     public static final RegistryObject<Item> asphaltRoadSlab = ITEMS.register("asphalt_road_slab", () -> new BlockItem(BlockRegistry.asphaltRoadSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
 
@@ -50,6 +59,15 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteLine11bSlab = ITEMS.register("white_line_11b_slab", () -> new BlockItem(BlockRegistry.whiteLine11bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine12aSlab = ITEMS.register("white_line_12a_slab", () -> new BlockItem(BlockRegistry.whiteLine12aSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine12bSlab = ITEMS.register("white_line_12b_slab", () -> new BlockItem(BlockRegistry.whiteLine12bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine13Slab = ITEMS.register("white_line_13_slab", () -> new BlockItem(BlockRegistry.whiteLine13Slab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine14Slab = ITEMS.register("white_line_14_slab", () -> new BlockItem(BlockRegistry.whiteLine14Slab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine15Slab = ITEMS.register("white_line_15_slab", () -> new BlockItem(BlockRegistry.whiteLine15Slab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine16aSlab = ITEMS.register("white_line_16a_slab", () -> new BlockItem(BlockRegistry.whiteLine16aSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine16bSlab = ITEMS.register("white_line_16b_slab", () -> new BlockItem(BlockRegistry.whiteLine16bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine17aSlab = ITEMS.register("white_line_17a_slab", () -> new BlockItem(BlockRegistry.whiteLine17aSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine17bSlab = ITEMS.register("white_line_17b_slab", () -> new BlockItem(BlockRegistry.whiteLine17bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine18aSlab = ITEMS.register("white_line_18a_slab", () -> new BlockItem(BlockRegistry.whiteLine18aSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> whiteLine18bSlab = ITEMS.register("white_line_18b_slab", () -> new BlockItem(BlockRegistry.whiteLine18bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
 
     public static final RegistryObject<Item> whiteArrow1 = ITEMS.register("white_arrow_1", () -> new BlockItem(BlockRegistry.whiteArrow1.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
 }

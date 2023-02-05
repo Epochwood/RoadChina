@@ -81,6 +81,15 @@ public class LineSlab extends Block implements IWaterLoggable
         Block whiteLine11bSlab = BlockRegistry.whiteLine11bSlab.get();
         Block whiteLine12aSlab = BlockRegistry.whiteLine12aSlab.get();
         Block whiteLine12bSlab = BlockRegistry.whiteLine12bSlab.get();
+        Block whiteLine13Slab = BlockRegistry.whiteLine13Slab.get();
+        Block whiteLine14Slab = BlockRegistry.whiteLine14Slab.get();
+        Block whiteLine15Slab = BlockRegistry.whiteLine15Slab.get();
+        Block whiteLine16aSlab = BlockRegistry.whiteLine16aSlab.get();
+        Block whiteLine16bSlab = BlockRegistry.whiteLine16bSlab.get();
+        Block whiteLine17aSlab = BlockRegistry.whiteLine17aSlab.get();
+        Block whiteLine17bSlab = BlockRegistry.whiteLine17bSlab.get();
+        Block whiteLine18aSlab = BlockRegistry.whiteLine18aSlab.get();
+        Block whiteLine18bSlab = BlockRegistry.whiteLine18bSlab.get();
 
         BlockState whiteLine1 = BlockRegistry.whiteLine1.get().defaultBlockState();
         BlockState whiteLine2 = BlockRegistry.whiteLine2.get().defaultBlockState();
@@ -98,6 +107,15 @@ public class LineSlab extends Block implements IWaterLoggable
         BlockState whiteLine11b = BlockRegistry.whiteLine11b.get().defaultBlockState();
         BlockState whiteLine12a = BlockRegistry.whiteLine12a.get().defaultBlockState();
         BlockState whiteLine12b = BlockRegistry.whiteLine12b.get().defaultBlockState();
+        BlockState whiteLine13 = BlockRegistry.whiteLine13.get().defaultBlockState();
+        BlockState whiteLine14 = BlockRegistry.whiteLine14.get().defaultBlockState();
+        BlockState whiteLine15 = BlockRegistry.whiteLine15.get().defaultBlockState();
+        BlockState whiteLine16a = BlockRegistry.whiteLine16a.get().defaultBlockState();
+        BlockState whiteLine16b = BlockRegistry.whiteLine16b.get().defaultBlockState();
+        BlockState whiteLine17a = BlockRegistry.whiteLine17a.get().defaultBlockState();
+        BlockState whiteLine17b = BlockRegistry.whiteLine17b.get().defaultBlockState();
+        BlockState whiteLine18a = BlockRegistry.whiteLine18a.get().defaultBlockState();
+        BlockState whiteLine18b = BlockRegistry.whiteLine18b.get().defaultBlockState();
 
         if (blockstate.is(whiteLine1Slab))
         {
@@ -321,6 +339,132 @@ public class LineSlab extends Block implements IWaterLoggable
                     return whiteLine12b.setValue(FACING, Direction.WEST);
                 case EAST:
                     return whiteLine12b.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine13Slab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine13.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine13.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine13.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine13.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine14Slab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine14.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine14.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine14.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine14.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine15Slab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine15.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine15.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine15.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine15.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine16aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine16a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine16a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine16a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine16a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine16bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine16b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine16b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine16b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine16b.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine17aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine17a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine17a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine17a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine17a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine17bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine17b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine17b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine17b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine17b.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine18aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine18a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine18a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine18a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine18a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(whiteLine18bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return whiteLine18b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return whiteLine18b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return whiteLine18b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return whiteLine18b.setValue(FACING, Direction.EAST);
             }
         }
         else
