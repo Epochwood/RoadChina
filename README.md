@@ -1,7 +1,7 @@
 # 道路中国 RoadChina
 ## 描述 Description
-道路中国（Road China）是一个Minecraft ___Forge___ 和 ___Fabric___ 的模组，本模组是一个以中国道路样式的道路模组，在本模组中你可以搭建各种样式的中国式道路。  
-This is a Minecraft ___Forge & Fabric___ mod,this mod is a chinese road style's road mod.You can build a chinese style road from this mod.  
+道路中国（Road China）是一个Minecraft ___Forge___ 和 ___Fabric___ 的开源模组，本模组是一个以中国道路样式的道路模组，在本模组中你可以搭建各种样式的中国式道路。  
+This is a Minecraft ___Forge & Fabric___ open source mod,this mod is a chinese road style's road mod.You can build a chinese style road from this mod.  
 ## 项目情况 Project status
 本模组目前为开发阶段，由于本人有空时间不定，具体发布时间未定，敬请期待。（今后将在2023年中旬继续编写模组）  
 This mod is currently in the development stage, due to my unpredictable availability, the specific release time is not determined, so stay tuned. (The mod will continue to be prepared in the middle of 2023) 
