@@ -8,6 +8,7 @@ This mod is currently in the development stage, due to my unpredictable availabi
 ![Road China 道路中国](https://www.helloimg.com/images/2022/12/30/oCHx7M.png "Road China 道路中国")
 > *本模组参考资料：[国家标准 - 道路交通标志和标线](http://jtst.mot.gov.cn/gb/search/gbDetailed?id=e424d8a7313d0ce7d19c6773ad0cdf51)*  
 > *制作人员：Heliecp（Forge），ALC（暮）（Fabric）*
+> *公测群：706484910*
 ### 快照版本号说明 Snapshot Version Number Description
 > *23m01a*   
 > *23指年份 m指月(Month) 01指月份 a指该月第1次更新(a为第1次更新，b为第2次更新，以此类推)*  
