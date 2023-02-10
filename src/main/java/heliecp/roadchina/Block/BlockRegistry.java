@@ -37,6 +37,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> whiteLine17b = BLOCKS.register("white_line_17b", Line::new);
     public static final RegistryObject<Block> whiteLine18a = BLOCKS.register("white_line_18a", Line::new);
     public static final RegistryObject<Block> whiteLine18b = BLOCKS.register("white_line_18b", Line::new);
+    public static final RegistryObject<Block> roadchina = BLOCKS.register("roadchina", Line::new);
 
     public static final RegistryObject<Block> asphaltRoadSlab = BLOCKS.register("asphalt_road_slab", RoadSlab::new);
 

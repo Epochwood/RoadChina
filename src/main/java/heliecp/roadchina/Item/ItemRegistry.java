@@ -40,6 +40,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteLine17b = ITEMS.register("white_line_17b", () -> new BlockItem(BlockRegistry.whiteLine17b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine18a = ITEMS.register("white_line_18a", () -> new BlockItem(BlockRegistry.whiteLine18a.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
     public static final RegistryObject<Item> whiteLine18b = ITEMS.register("white_line_18b", () -> new BlockItem(BlockRegistry.whiteLine18b.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
+    public static final RegistryObject<Item> roadchina = ITEMS.register("roadchina", () -> new BlockItem(BlockRegistry.roadchina.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> asphaltRoadSlab = ITEMS.register("asphalt_road_slab", () -> new BlockItem(BlockRegistry.asphaltRoadSlab.get(), new Item.Properties().tab(ModGroup.WHITE_ROAD_GROUP)));
 
