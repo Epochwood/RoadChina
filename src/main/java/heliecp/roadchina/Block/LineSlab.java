@@ -65,406 +65,468 @@ public class LineSlab extends Block implements IWaterLoggable
         BlockPos blockpos = ctx.getClickedPos();
         BlockState blockstate = ctx.getLevel().getBlockState(blockpos);
 
-        Block whiteLine1Slab = BlockRegistry.whiteLine1Slab.get();
-        Block whiteLine2Slab = BlockRegistry.whiteLine2Slab.get();
-        Block whiteLine3Slab = BlockRegistry.whiteLine3Slab.get();
-        Block whiteLine4Slab = BlockRegistry.whiteLine4Slab.get();
-        Block whiteLine5Slab = BlockRegistry.whiteLine5Slab.get();
-        Block whiteLine6Slab = BlockRegistry.whiteLine6Slab.get();
-        Block whiteLine7Slab = BlockRegistry.whiteLine7Slab.get();
-        Block whiteLine8Slab = BlockRegistry.whiteLine8Slab.get();
-        Block whiteLine9aSlab = BlockRegistry.whiteLine9aSlab.get();
-        Block whiteLine9bSlab = BlockRegistry.whiteLine9bSlab.get();
-        Block whiteLine10aSlab = BlockRegistry.whiteLine10aSlab.get();
-        Block whiteLine10bSlab = BlockRegistry.whiteLine10bSlab.get();
-        Block whiteLine11aSlab = BlockRegistry.whiteLine11aSlab.get();
-        Block whiteLine11bSlab = BlockRegistry.whiteLine11bSlab.get();
-        Block whiteLine12aSlab = BlockRegistry.whiteLine12aSlab.get();
-        Block whiteLine12bSlab = BlockRegistry.whiteLine12bSlab.get();
-        Block whiteLine13Slab = BlockRegistry.whiteLine13Slab.get();
-        Block whiteLine14Slab = BlockRegistry.whiteLine14Slab.get();
-        Block whiteLine15Slab = BlockRegistry.whiteLine15Slab.get();
-        Block whiteLine16aSlab = BlockRegistry.whiteLine16aSlab.get();
-        Block whiteLine16bSlab = BlockRegistry.whiteLine16bSlab.get();
-        Block whiteLine17aSlab = BlockRegistry.whiteLine17aSlab.get();
-        Block whiteLine17bSlab = BlockRegistry.whiteLine17bSlab.get();
-        Block whiteLine18aSlab = BlockRegistry.whiteLine18aSlab.get();
-        Block whiteLine18bSlab = BlockRegistry.whiteLine18bSlab.get();
+        GetBlock getBlock = new GetBlock();
 
-        BlockState whiteLine1 = BlockRegistry.whiteLine1.get().defaultBlockState();
-        BlockState whiteLine2 = BlockRegistry.whiteLine2.get().defaultBlockState();
-        BlockState whiteLine3 = BlockRegistry.whiteLine3.get().defaultBlockState();
-        BlockState whiteLine4 = BlockRegistry.whiteLine4.get().defaultBlockState();
-        BlockState whiteLine5 = BlockRegistry.whiteLine5.get().defaultBlockState();
-        BlockState whiteLine6 = BlockRegistry.whiteLine6.get().defaultBlockState();
-        BlockState whiteLine7 = BlockRegistry.whiteLine7.get().defaultBlockState();
-        BlockState whiteLine8 = BlockRegistry.whiteLine8.get().defaultBlockState();
-        BlockState whiteLine9a = BlockRegistry.whiteLine9a.get().defaultBlockState();
-        BlockState whiteLine9b = BlockRegistry.whiteLine9b.get().defaultBlockState();
-        BlockState whiteLine10a = BlockRegistry.whiteLine10a.get().defaultBlockState();
-        BlockState whiteLine10b = BlockRegistry.whiteLine10b.get().defaultBlockState();
-        BlockState whiteLine11a = BlockRegistry.whiteLine11a.get().defaultBlockState();
-        BlockState whiteLine11b = BlockRegistry.whiteLine11b.get().defaultBlockState();
-        BlockState whiteLine12a = BlockRegistry.whiteLine12a.get().defaultBlockState();
-        BlockState whiteLine12b = BlockRegistry.whiteLine12b.get().defaultBlockState();
-        BlockState whiteLine13 = BlockRegistry.whiteLine13.get().defaultBlockState();
-        BlockState whiteLine14 = BlockRegistry.whiteLine14.get().defaultBlockState();
-        BlockState whiteLine15 = BlockRegistry.whiteLine15.get().defaultBlockState();
-        BlockState whiteLine16a = BlockRegistry.whiteLine16a.get().defaultBlockState();
-        BlockState whiteLine16b = BlockRegistry.whiteLine16b.get().defaultBlockState();
-        BlockState whiteLine17a = BlockRegistry.whiteLine17a.get().defaultBlockState();
-        BlockState whiteLine17b = BlockRegistry.whiteLine17b.get().defaultBlockState();
-        BlockState whiteLine18a = BlockRegistry.whiteLine18a.get().defaultBlockState();
-        BlockState whiteLine18b = BlockRegistry.whiteLine18b.get().defaultBlockState();
-
-        if (blockstate.is(whiteLine1Slab))
+        if (blockstate.is(getBlock.whiteLine1Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine1.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine1.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine1.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine1.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine1.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine1.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine1.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine1.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine2Slab))
+        if (blockstate.is(getBlock.whiteLine2Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine2.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine2.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine2.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine2.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine2.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine2.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine2.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine2.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine3Slab))
+        if (blockstate.is(getBlock.whiteLine3Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine3.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine3.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine3.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine3.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine3.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine3.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine3.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine3.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine4Slab))
+        if (blockstate.is(getBlock.whiteLine4Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine4.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine4.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine4.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine4.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine4.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine4.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine4.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine4.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine5Slab))
+        if (blockstate.is(getBlock.whiteLine5Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine5.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine5.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine5.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine5.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine5.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine5.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine5.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine5.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine6Slab))
+        if (blockstate.is(getBlock.whiteLine6Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine6.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine6.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine6.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine6.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine6.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine6.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine6.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine6.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine7Slab))
+        if (blockstate.is(getBlock.whiteLine7Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine7.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine7.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine7.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine7.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine7.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine7.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine7.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine7.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine8Slab))
+        if (blockstate.is(getBlock.whiteLine8Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine8.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine8.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine8.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine8.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine8.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine8.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine8.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine8.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine9aSlab))
+        if (blockstate.is(getBlock.whiteLine9aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine9a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine9a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine9a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine9a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine9a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine9a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine9a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine9a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine9bSlab))
+        if (blockstate.is(getBlock.whiteLine9bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine9b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine9b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine9b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine9b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine9b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine9b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine9b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine9b.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine10aSlab))
+        if (blockstate.is(getBlock.whiteLine10aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine10a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine10a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine10a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine10a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine10a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine10a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine10a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine10a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine10bSlab))
+        if (blockstate.is(getBlock.whiteLine10bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine10b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine10b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine10b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine10b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine10b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine10b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine10b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine10b.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine11aSlab))
+        if (blockstate.is(getBlock.whiteLine11aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine11a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine11a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine11a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine11a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine11a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine11a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine11a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine11a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine11bSlab))
+        if (blockstate.is(getBlock.whiteLine11bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine11b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine11b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine11b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine11b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine11b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine11b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine11b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine11b.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine12aSlab))
+        if (blockstate.is(getBlock.whiteLine12aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine12a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine12a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine12a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine12a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine12a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine12a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine12a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine12a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine12bSlab))
+        if (blockstate.is(getBlock.whiteLine12bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine12b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine12b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine12b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine12b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine12b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine12b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine12b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine12b.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine13Slab))
+        if (blockstate.is(getBlock.whiteLine13Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine13.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine13.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine13.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine13.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine13.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine13.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine13.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine13.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine14Slab))
+        if (blockstate.is(getBlock.whiteLine14Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine14.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine14.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine14.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine14.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine14.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine14.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine14.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine14.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine15Slab))
+        if (blockstate.is(getBlock.whiteLine15Slab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine15.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine15.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine15.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine15.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine15.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine15.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine15.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine15.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine16aSlab))
+        if (blockstate.is(getBlock.whiteLine16aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine16a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine16a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine16a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine16a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine16a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine16a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine16a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine16a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine16bSlab))
+        if (blockstate.is(getBlock.whiteLine16bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine16b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine16b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine16b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine16b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine16b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine16b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine16b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine16b.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine17aSlab))
+        if (blockstate.is(getBlock.whiteLine17aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine17a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine17a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine17a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine17a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine17a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine17a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine17a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine17a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine17bSlab))
+        if (blockstate.is(getBlock.whiteLine17bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine17b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine17b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine17b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine17b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine17b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine17b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine17b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine17b.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine18aSlab))
+        if (blockstate.is(getBlock.whiteLine18aSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine18a.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine18a.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine18a.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine18a.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine18a.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine18a.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine18a.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine18a.setValue(FACING, Direction.EAST);
             }
         }
-        if (blockstate.is(whiteLine18bSlab))
+        if (blockstate.is(getBlock.whiteLine18bSlab))
         {
             switch (blockstate.getValue(FACING))
             {
                 case NORTH:
-                    return whiteLine18b.setValue(FACING, Direction.NORTH);
+                    return getBlock.whiteLine18b.setValue(FACING, Direction.NORTH);
                 case SOUTH:
-                    return whiteLine18b.setValue(FACING, Direction.SOUTH);
+                    return getBlock.whiteLine18b.setValue(FACING, Direction.SOUTH);
                 case WEST:
-                    return whiteLine18b.setValue(FACING, Direction.WEST);
+                    return getBlock.whiteLine18b.setValue(FACING, Direction.WEST);
                 case EAST:
-                    return whiteLine18b.setValue(FACING, Direction.EAST);
+                    return getBlock.whiteLine18b.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine19aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine19a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine19a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine19a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine19a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine19bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine19b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine19b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine19b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine19b.setValue(FACING, Direction.EAST);
+              }
+        }
+        if (blockstate.is(getBlock.whiteLine20aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine20a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine20a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine20a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine20a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine20bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine20b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine20b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine20b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine20b.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine21aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine21a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine21a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine21a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine21a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine21bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine21b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine21b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine21b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine21b.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine22aSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine22a.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine22a.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine22a.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine22a.setValue(FACING, Direction.EAST);
+            }
+        }
+        if (blockstate.is(getBlock.whiteLine22bSlab))
+        {
+            switch (blockstate.getValue(FACING))
+            {
+                case NORTH:
+                    return getBlock.whiteLine22b.setValue(FACING, Direction.NORTH);
+                case SOUTH:
+                    return getBlock.whiteLine22b.setValue(FACING, Direction.SOUTH);
+                case WEST:
+                    return getBlock.whiteLine22b.setValue(FACING, Direction.WEST);
+                case EAST:
+                    return getBlock.whiteLine22b.setValue(FACING, Direction.EAST);
             }
         }
         else
@@ -533,7 +595,7 @@ public class LineSlab extends Block implements IWaterLoggable
 
         if (playerIn.getMainHandItem().getItem() instanceof Wrench) {
             Direction direction = blockState.getValue(FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getOpposite()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getClockWise()));
             return ActionResultType.SUCCESS;
         }
 
@@ -543,7 +605,7 @@ public class LineSlab extends Block implements IWaterLoggable
        if (playerIn.getMainHandItem().getItem() == whiteArrow1)
        {
            Direction direction = playerIn.getDirection();
-           worldIn.setBlockAndUpdate(pos.above(), whiteArrow1Slab.defaultBlockState().setValue(FACING, direction.getOpposite()));
+           worldIn.setBlockAndUpdate(pos.above(), whiteArrow1Slab.defaultBlockState().setValue(FACING, direction.getClockWise()));
            return ActionResultType.SUCCESS;
        }
 

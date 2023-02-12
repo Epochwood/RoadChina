@@ -50,7 +50,7 @@ public class Line extends Block
         if(playerIn.getMainHandItem().getItem() instanceof Wrench)
         {
             Direction direction = blockState.getValue(BlockStateProperties.FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getOpposite()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getClockWise()));
             return ActionResultType.SUCCESS;
         }
 
