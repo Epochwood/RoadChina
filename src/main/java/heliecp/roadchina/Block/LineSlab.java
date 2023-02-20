@@ -1,6 +1,9 @@
 package heliecp.roadchina.Block;
 
+import heliecp.roadchina.Item.ItemRegistry;
 import heliecp.roadchina.Item.Wrench;
+import heliecp.roadchina.Properties.BlockProperties;
+import heliecp.roadchina.Properties.BlockType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -16,6 +19,8 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -23,7 +28,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class LineSlab extends Block
 {
-
+    public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
     public LineSlab()
     {
         super(Properties.of(Material.STONE).strength(1.5F));
@@ -48,7 +54,7 @@ public class LineSlab extends Block
         }
         else
         {
-            return this.defaultBlockState().setValue(BlockStateProperties.FACING, ctx.getHorizontalDirection().getOpposite());
+            return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
         }
     }
 
@@ -71,15 +77,15 @@ public class LineSlab extends Block
     }
 
     public BlockState rotate(BlockState p_185499_1_, Rotation p_185499_2_) {
-        return p_185499_1_.setValue(BlockStateProperties.FACING, p_185499_2_.rotate(p_185499_1_.getValue(BlockStateProperties.FACING)));
+        return p_185499_1_.setValue(FACING, p_185499_2_.rotate(p_185499_1_.getValue(FACING)));
     }
 
     public BlockState mirror(BlockState p_185471_1_, Mirror p_185471_2_) {
-        return p_185471_1_.rotate(p_185471_2_.getRotation(p_185471_1_.getValue(BlockStateProperties.FACING)));
+        return p_185471_1_.rotate(p_185471_2_.getRotation(p_185471_1_.getValue(FACING)));
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(BlockStateProperties.FACING);
+        builder.add(FACING);
     }
 
     @Override
@@ -93,7 +99,14 @@ public class LineSlab extends Block
         if (playerIn.getMainHandItem().getItem() instanceof Wrench)
         {
             Direction direction = blockState.getValue(BlockStateProperties.FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getClockWise()));
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getClockWise()));
+        }
+
+        if (playerIn.getMainHandItem().getItem() == ItemRegistry.whiteArrow1.get())
+        {
+            Direction direction = playerIn.getDirection();
+            worldIn.setBlockAndUpdate(pos.above(), BlockRegistry.whiteArrow1.get().defaultBlockState().setValue(FACING, direction.getOpposite()).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK));
+            return InteractionResult.SUCCESS;
         }
 
         return InteractionResult.FAIL;

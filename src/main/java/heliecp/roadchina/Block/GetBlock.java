@@ -18,7 +18,6 @@ public class GetBlock
     Block whiteLine6Slab = BlockRegistry.whiteLine6Slab.get();
     Block whiteLine7Slab = BlockRegistry.whiteLine7Slab.get();
     Block whiteLine8Slab = BlockRegistry.whiteLine8Slab.get();
-    /**
     Block whiteLine9aSlab = BlockRegistry.whiteLine9aSlab.get();
     Block whiteLine9bSlab = BlockRegistry.whiteLine9bSlab.get();
     Block whiteLine10aSlab = BlockRegistry.whiteLine10aSlab.get();
@@ -44,7 +43,6 @@ public class GetBlock
     Block whiteLine21bSlab = BlockRegistry.whiteLine21bSlab.get();
     Block whiteLine22aSlab = BlockRegistry.whiteLine22aSlab.get();
     Block whiteLine22bSlab = BlockRegistry.whiteLine22bSlab.get();
-    **/
     /**
     Block whiteLine2aSlab = BlockRegistry.whiteLine2aSlab.get();
     Block whiteLine2bSlab = BlockRegistry.whiteLine2bSlab.get();
@@ -60,7 +58,6 @@ public class GetBlock
     BlockState whiteLine6 = BlockRegistry.whiteLine6.get().defaultBlockState();
     BlockState whiteLine7 = BlockRegistry.whiteLine7.get().defaultBlockState();
     BlockState whiteLine8 = BlockRegistry.whiteLine8.get().defaultBlockState();
-    /**
     BlockState whiteLine9a = BlockRegistry.whiteLine9a.get().defaultBlockState();
     BlockState whiteLine9b = BlockRegistry.whiteLine9b.get().defaultBlockState();
     BlockState whiteLine10a = BlockRegistry.whiteLine10a.get().defaultBlockState();
@@ -86,7 +83,6 @@ public class GetBlock
     BlockState whiteLine21b = BlockRegistry.whiteLine21b.get().defaultBlockState();
     BlockState whiteLine22a = BlockRegistry.whiteLine22a.get().defaultBlockState();
     BlockState whiteLine22b = BlockRegistry.whiteLine22b.get().defaultBlockState();
-    **/
     /**
     BlockState whiteLine2a = BlockRegistry.whiteLine2a.get().defaultBlockState();
     BlockState whiteLine2b = BlockRegistry.whiteLine2b.get().defaultBlockState();
@@ -112,7 +108,7 @@ public class GetBlock
             return whiteLine7Slab;
         if (blockState.is(whiteLine8Slab))
             return whiteLine8Slab;
-        /**
+
         if (blockState.is(whiteLine9aSlab))
             return whiteLine9aSlab;
         if (blockState.is(whiteLine9bSlab))
@@ -163,7 +159,6 @@ public class GetBlock
             return whiteLine22aSlab;
         if (blockState.is(whiteLine22bSlab))
             return whiteLine22bSlab;
-        **/
         return null;
     }
 
@@ -185,7 +180,7 @@ public class GetBlock
             return whiteLine7;
         if (blockState.is(whiteLine8Slab))
             return whiteLine8;
-        /**
+
         if (blockState.is(whiteLine9aSlab))
             return whiteLine9a;
         if (blockState.is(whiteLine9bSlab))
@@ -236,7 +231,6 @@ public class GetBlock
             return whiteLine22a;
         if (blockState.is(whiteLine22bSlab))
             return whiteLine22b;
-        **/
         return null;
     }
 
