@@ -1,9 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "roadchina:block/asphalt_road",
+	"texture_size": [128, 128],
 	"textures": {
-		"0": "roadchina:blocks/white_arrow_1",
-		"particle": "roadchina:blocks/white_arrow_1"
+		"0": "roadchina:blocks/white_arrow_a",
+		"particle": "roadchina:blocks/white_arrow_a"
 	},
 	"elements": [
 		{
@@ -14,8 +15,8 @@
 				"east": {"uv": [0, 0, 16, 8], "texture": "#missing"},
 				"south": {"uv": [0, 0, 16, 8], "texture": "#missing"},
 				"west": {"uv": [0, 0, 16, 8], "texture": "#missing"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+				"up": {"uv": [0, 0, 2.375, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 2.375, 16], "rotation": 180, "texture": "#0"}
 			}
 		}
 	],
