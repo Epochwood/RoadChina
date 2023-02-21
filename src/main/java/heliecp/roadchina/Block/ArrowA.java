@@ -1,17 +1,17 @@
 package heliecp.roadchina.Block;
 
-import heliecp.roadchina.Item.ItemRegistry;
 import heliecp.roadchina.Item.Wrench;
+import heliecp.roadchina.Properties.BlockProperties;
+import heliecp.roadchina.Properties.BlockType;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.EnumProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
-import net.minecraft.state.properties.SlabType;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
@@ -23,12 +23,13 @@ import net.minecraft.world.World;
 
 public class ArrowA extends Block
 {
-    public static final EnumProperty<SlabType> TYPE = BlockStateProperties.SLAB_TYPE;
+    public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     public ArrowA()
     {
-        super(Block.Properties.of(Material.STONE).harvestLevel(10));
+        super(Block.Properties.of(Material.STONE).strength(1.5F).noOcclusion());
+        this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
     }
 
 
@@ -40,33 +41,78 @@ public class ArrowA extends Block
 
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader source, BlockPos pos, ISelectionContext iSelectionContext) {
-        switch (state.getValue(BlockStateProperties.FACING)) {
-            case SOUTH:
-            case NORTH:
-            default:
-                return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
-            case EAST:
-            case WEST:
-                return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
+        switch (state.getValue(BLOCK_TYPE))
+        {
+            case FULL_BLOCK:
+            switch (state.getValue(FACING)) {
+                case SOUTH:
+                case NORTH:
+                default:
+                    return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
+                case EAST:
+                case WEST:
+                    return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
+            }
+            case SLAB_BLOCK:
+                switch (state.getValue(FACING)) {
+                    case SOUTH:
+                    case NORTH:
+                    default:
+                        return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -8.0D, 32.0D);
+                    case EAST:
+                    case WEST:
+                        return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -8.0D, 12.0D);
+                }
         }
+        return null;
     }
 
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext ctx) {
-        return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
+        BlockPos pos = ctx.getClickedPos();
+        BlockState blockState = ctx.getLevel().getBlockState(pos);
+        if (!blockState.is(this))
+            return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite()).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
+        return null;
+    }
+
+    @Override
+    public boolean canBeReplaced(BlockState blockState, BlockItemUseContext context) {
+        ItemStack itemstack = context.getItemInHand();
+        if (itemstack.getItem() == this.asItem()) {
+            if (context.replacingClickedOnBlock()) {
+                boolean flag = context.getClickLocation().y - (double) context.getClickedPos().getY() > 0.0D;
+                Direction direction = context.getClickedFace();
+                return direction == Direction.UP || flag && direction.getAxis().isHorizontal();
+            }
+            else {
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
     }
 
     public BlockState rotate(BlockState p_185499_1_, Rotation p_185499_2_) {
-        return p_185499_1_.setValue(BlockStateProperties.FACING, p_185499_2_.rotate(p_185499_1_.getValue(BlockStateProperties.FACING)));
+        if (p_185499_1_.getValue(BLOCK_TYPE) == BlockType.SLAB_BLOCK)
+        {
+            return p_185499_1_.setValue(FACING, p_185499_2_.rotate(p_185499_1_.getValue(FACING))).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK);
+        }
+        return p_185499_1_.setValue(FACING, p_185499_2_.rotate(p_185499_1_.getValue(FACING))).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
     }
 
     public BlockState mirror(BlockState p_185471_1_, Mirror p_185471_2_) {
-        return p_185471_1_.rotate(p_185471_2_.getRotation(p_185471_1_.getValue(BlockStateProperties.FACING)));
+        if (p_185471_1_.getValue(BLOCK_TYPE) == BlockType.SLAB_BLOCK)
+        {
+            return p_185471_1_.rotate(p_185471_2_.getRotation(p_185471_1_.getValue(FACING))).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK);
+        }
+        return p_185471_1_.rotate(p_185471_2_.getRotation(p_185471_1_.getValue(FACING))).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
     }
 
     @Override
     protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(BlockStateProperties.FACING);
+        builder.add(FACING, BLOCK_TYPE);
     }
 
 
@@ -78,9 +124,11 @@ public class ArrowA extends Block
             return ActionResultType.SUCCESS;
         }
 
-        if(playerIn.getMainHandItem().getItem() instanceof Wrench) {
-            Direction direction = blockState.getValue(BlockStateProperties.FACING);
-            worldIn.setBlockAndUpdate(pos, blockState.setValue(BlockStateProperties.FACING, direction.getOpposite()));
+        Block arrowA = new ArrowA();
+
+        if (playerIn.getMainHandItem().getItem() instanceof Wrench ) {
+            Direction direction = blockState.getValue(FACING);
+            worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getClockWise()).setValue(BLOCK_TYPE, blockState.getValue(BLOCK_TYPE) == BlockType.FULL_BLOCK ? BlockType.FULL_BLOCK : BlockType.SLAB_BLOCK));
             return ActionResultType.SUCCESS;
         }
 

@@ -18,7 +18,7 @@ public class Line extends Block
 
     public Line()
     {
-        super(Block.Properties.of(Material.STONE).harvestLevel(10));
+        super(Block.Properties.of(Material.STONE).strength(1.5F));
     }
 
     @Override

@@ -7,8 +7,7 @@ public class Road extends Block
 {
     public Road()
     {
-        super(Block.Properties.of(Material.STONE).harvestLevel(10));
+        super(Properties.of(Material.STONE).strength(1.5F));
     }
-
 
 }
