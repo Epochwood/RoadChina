@@ -43,12 +43,13 @@ public class GetBlock
     Block whiteLine21bSlab = BlockRegistry.whiteLine21bSlab.get();
     Block whiteLine22aSlab = BlockRegistry.whiteLine22aSlab.get();
     Block whiteLine22bSlab = BlockRegistry.whiteLine22bSlab.get();
-    /**
-    Block whiteLine2aSlab = BlockRegistry.whiteLine2aSlab.get();
-    Block whiteLine2bSlab = BlockRegistry.whiteLine2bSlab.get();
-    Block whiteLine2aSlab = BlockRegistry.whiteLine2aSlab.get();
-    Block whiteLine2bSlab = BlockRegistry.whiteLine2bSlab.get();
-     */
+    Block whiteLine23aSlab = BlockRegistry.whiteLine23aSlab.get();
+    Block whiteLine23bSlab = BlockRegistry.whiteLine23bSlab.get();
+    Block whiteLine24Slab = BlockRegistry.whiteLine24Slab.get();
+    Block whiteLine25Slab = BlockRegistry.whiteLine25Slab.get();
+    Block whiteLine26aSlab = BlockRegistry.whiteLine26aSlab.get();
+    Block whiteLine26bSlab = BlockRegistry.whiteLine26bSlab.get();
+    Block whiteLine26cSlab = BlockRegistry.whiteLine26cSlab.get();
 
     BlockState whiteLine1 = BlockRegistry.whiteLine1.get().defaultBlockState();
     BlockState whiteLine2 = BlockRegistry.whiteLine2.get().defaultBlockState();
@@ -83,12 +84,13 @@ public class GetBlock
     BlockState whiteLine21b = BlockRegistry.whiteLine21b.get().defaultBlockState();
     BlockState whiteLine22a = BlockRegistry.whiteLine22a.get().defaultBlockState();
     BlockState whiteLine22b = BlockRegistry.whiteLine22b.get().defaultBlockState();
-    /**
-    BlockState whiteLine2a = BlockRegistry.whiteLine2a.get().defaultBlockState();
-    BlockState whiteLine2b = BlockRegistry.whiteLine2b.get().defaultBlockState();
-    BlockState whiteLine2a = BlockRegistry.whiteLine2a.get().defaultBlockState();
-    BlockState whiteLine2b = BlockRegistry.whiteLine2b.get().defaultBlockState();
-     */
+    BlockState whiteLine23a = BlockRegistry.whiteLine23a.get().defaultBlockState();
+    BlockState whiteLine23b = BlockRegistry.whiteLine23b.get().defaultBlockState();
+    BlockState whiteLine24 = BlockRegistry.whiteLine24.get().defaultBlockState();
+    BlockState whiteLine25 = BlockRegistry.whiteLine25.get().defaultBlockState();
+    BlockState whiteLine26a = BlockRegistry.whiteLine26a.get().defaultBlockState();
+    BlockState whiteLine26b = BlockRegistry.whiteLine26b.get().defaultBlockState();
+    BlockState whiteLine26c = BlockRegistry.whiteLine26c.get().defaultBlockState();
 
     public Block getLineSlab(BlockState blockState)
     {
@@ -108,7 +110,6 @@ public class GetBlock
             return whiteLine7Slab;
         if (blockState.is(whiteLine8Slab))
             return whiteLine8Slab;
-
         if (blockState.is(whiteLine9aSlab))
             return whiteLine9aSlab;
         if (blockState.is(whiteLine9bSlab))
@@ -159,6 +160,20 @@ public class GetBlock
             return whiteLine22aSlab;
         if (blockState.is(whiteLine22bSlab))
             return whiteLine22bSlab;
+        if (blockState.is(whiteLine23aSlab))
+            return whiteLine23aSlab;
+        if (blockState.is(whiteLine23bSlab))
+            return whiteLine23bSlab;
+        if (blockState.is(whiteLine24Slab))
+            return whiteLine24Slab;
+        if (blockState.is(whiteLine25Slab))
+            return whiteLine25Slab;
+        if (blockState.is(whiteLine26aSlab))
+            return whiteLine26aSlab;
+        if (blockState.is(whiteLine26bSlab))
+            return whiteLine26bSlab;
+        if (blockState.is(whiteLine26cSlab))
+            return whiteLine26cSlab;
         return null;
     }
 
@@ -180,7 +195,6 @@ public class GetBlock
             return whiteLine7;
         if (blockState.is(whiteLine8Slab))
             return whiteLine8;
-
         if (blockState.is(whiteLine9aSlab))
             return whiteLine9a;
         if (blockState.is(whiteLine9bSlab))
@@ -231,6 +245,20 @@ public class GetBlock
             return whiteLine22a;
         if (blockState.is(whiteLine22bSlab))
             return whiteLine22b;
+        if (blockState.is(whiteLine23aSlab))
+            return whiteLine23a;
+        if (blockState.is(whiteLine23bSlab))
+            return whiteLine23b;
+        if (blockState.is(whiteLine24Slab))
+            return whiteLine24;
+        if (blockState.is(whiteLine25Slab))
+            return whiteLine25;
+        if (blockState.is(whiteLine26aSlab))
+            return whiteLine26a;
+        if (blockState.is(whiteLine26bSlab))
+            return whiteLine26b;
+        if (blockState.is(whiteLine26cSlab))
+            return whiteLine26c;
         return null;
     }
 
