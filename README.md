@@ -1,4 +1,7 @@
 # 道路中国
+语言 Language 
+>   
+> - *[English(EN)](https://github.com/Heliecp/RoadChina/blob/1.16.5/README_EN.md)*
 ## 模组介绍
 道路中国（Road China）是一个Minecraft ___Forge___ 和 ___Fabric___ 的开源的装饰模组，本模组以中国道路样式添加了各式各样的道路标线，玩家可以通过本模组在 Minecraft 里搭建出庞大的带有中国式道路的道路交通网络。    
 ## 模组内容
