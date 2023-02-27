@@ -27,8 +27,6 @@ import javax.annotation.Nullable;
 
 public class RoadSlab extends Block
 {
-    public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
-    public static final DirectionProperty FACING = BlockStateProperties.FACING;
     public RoadSlab()
     {
         super(Properties.of(Material.STONE).strength(1.5F));
@@ -78,14 +76,9 @@ public class RoadSlab extends Block
             return InteractionResult.SUCCESS;
         }
 
-        if (playerIn.getMainHandItem().getItem() == ItemRegistry.whiteArrow1.get())
-        {
-            Direction direction = playerIn.getDirection();
-            worldIn.setBlockAndUpdate(pos.above(), BlockRegistry.whiteArrow1.get().defaultBlockState().setValue(FACING, direction.getOpposite()).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK));
-            return InteractionResult.SUCCESS;
-        }
+        GetBlock getBlock = new GetBlock();
 
-        return InteractionResult.FAIL;
+        return getBlock.getItemToBlock(worldIn, pos, playerIn);
     }
 
 }

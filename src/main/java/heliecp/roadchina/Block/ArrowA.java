@@ -44,28 +44,55 @@ public class ArrowA extends Block
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter p_56391_, BlockPos p_56392_, CollisionContext p_56393_) {
-        switch (state.getValue(BLOCK_TYPE))
+        if (state.is(BlockRegistry.whiteArrow1.get()))
         {
-            case FULL_BLOCK:
-                switch (state.getValue(FACING)) {
-                    case SOUTH:
-                    case NORTH:
-                    default:
-                        return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 1.0D, 32.0D);
-                    case EAST:
-                    case WEST:
-                        return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 1.0D, 12.0D);
-                }
-            case SLAB_BLOCK:
-                switch (state.getValue(FACING)) {
-                    case SOUTH:
-                    case NORTH:
-                    default:
-                        return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -7.0D, 32.0D);
-                    case EAST:
-                    case WEST:
-                        return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -7.0D, 12.0D);
-                }
+            switch (state.getValue(BLOCK_TYPE)) {
+                case FULL_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.1D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.1D, 12.0D);
+                    }
+                case SLAB_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -7.9D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -7.9D, 12.0D);
+                    }
+            }
+        }
+        if (state.is(BlockRegistry.whiteArrow2a.get()) || state.is(BlockRegistry.whiteArrow2b.get()))
+        {
+            switch (state.getValue(BLOCK_TYPE)) {
+                case FULL_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(2.0D, 0.0D, -16.0D, 14.0D, 0.1D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, 0.0D, 2.0D, 32.0D, 0.1D, 14.0D);
+                    }
+                case SLAB_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(2.0D, -8.0D, -16.0D, 14.0D, -7.9D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, -8.0D, 2.0D, 32.0D, -7.9D, 14.0D);
+                    }
+            }
         }
         return null;
     }
@@ -75,7 +102,7 @@ public class ArrowA extends Block
     {
         BlockPos pos = ctx.getClickedPos();
         BlockState blockState = ctx.getLevel().getBlockState(pos);
-        if (!blockState.is(this))
+        if (!(blockState.getBlock() == this))
             return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite()).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
         return null;
     }
@@ -85,7 +112,7 @@ public class ArrowA extends Block
         ItemStack itemstack = context.getItemInHand();
         if (itemstack.getItem() == this.asItem()) {
             if (context.replacingClickedOnBlock()) {
-                boolean flag = context.getClickLocation().y - (double) context.getClickedPos().getY() > 0.0D;
+                boolean flag = context.getClickLocation().y - (double) context.getClickedPos().getY() > 0.5D;
                 Direction direction = context.getClickedFace();
                 return direction == Direction.UP || flag && direction.getAxis().isHorizontal();
             }

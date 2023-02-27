@@ -16,6 +16,8 @@ public class RenderTypeRegistry
         event.enqueueWork(() -> {
             RenderType cutout = RenderType.cutout();
             ItemBlockRenderTypes.setRenderLayer(BlockRegistry.whiteArrow1.get(), cutout);
+            ItemBlockRenderTypes.setRenderLayer(BlockRegistry.whiteArrow2a.get(), cutout);
+            ItemBlockRenderTypes.setRenderLayer(BlockRegistry.whiteArrow2b.get(), cutout);
         });
     }
 }
