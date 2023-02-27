@@ -58,17 +58,18 @@
   "block.roadchina.white_line_33a" : "White Right-angle Thick Line",
   "block.roadchina.white_line_33b" : "White T-shaped Thick Line",
   "block.roadchina.white_line_34" : "White Line(Side Dotted Line)",
+  "block.roadchina.white_line_35" : "White Diagonal Line(Side Dotted Line)",
 
   "block.roadchina.asphalt_road_slab" : "Asphalt Road Slab",
 
   "block.roadchina.white_line_1_slab" : "White Line Slab",
-  "block.roadchina.white_line_2_slab" : "White Oblique Line Slab",
+  "block.roadchina.white_line_2_slab" : "White Diagonal Line Slab",
   "block.roadchina.white_line_3_slab" : "White Side Thick Line Slab",
   "block.roadchina.white_line_4_slab" : "White Side Thick Half Line Slab",
   "block.roadchina.white_line_5_slab" : "White Thick Line Slab",
   "block.roadchina.white_line_6_slab" : "White Thick Half Line Slab",
   "block.roadchina.white_line_7_slab" : "White Double Line Slab",
-  "block.roadchina.white_line_8_slab" : "White Double Oblique Line Slab",
+  "block.roadchina.white_line_8_slab" : "White Double Diagonal Line Slab",
   "block.roadchina.white_line_9a_slab" : "White Split Line Slab",
   "block.roadchina.white_line_9b_slab" : "White Merge Line Slab",
   "block.roadchina.white_line_10a_slab" : "White Split Line Slab(Lower Side Thick Line(Unfilled Corner))",
@@ -77,9 +78,9 @@
   "block.roadchina.white_line_11b_slab" : "White Merge Line Slab(Upper Side Thick Line)",
   "block.roadchina.white_line_12a_slab" : "White Split Line Slab(Thick Line(Unfilled Corner))",
   "block.roadchina.white_line_12b_slab" : "White Merge Line Slab(Thick Line(Unfilled Corner))",
-  "block.roadchina.white_line_13_slab" : "White Side Thick Oblique Line Slab(Inner)",
-  "block.roadchina.white_line_14_slab" : "White Side Thick Oblique Line Slab(Outer)",
-  "block.roadchina.white_line_15_slab" : "White Thick Oblique Line Slab",
+  "block.roadchina.white_line_13_slab" : "White Side Thick Diagonal Line Slab(Inner)",
+  "block.roadchina.white_line_14_slab" : "White Side Thick Diagonal Line Slab(Outer)",
+  "block.roadchina.white_line_15_slab" : "White Thick Diagonal Line Slab",
   "block.roadchina.white_line_16a_slab" : "White Inner Side Thick Split Line Slab(Side Thick Line)",
   "block.roadchina.white_line_16b_slab" : "White Inner Side Thick Merge Line Slab(Side Thick Line)",
   "block.roadchina.white_line_17a_slab" : "White Outer Side Thick Split Line Slab(Side Thick Line)",
@@ -118,12 +119,18 @@
   "block.roadchina.white_line_33a_slab" : "White Right-angle Thick Line Slab",
   "block.roadchina.white_line_33b_slab" : "White T-shaped Thick Line Slab",
   "block.roadchina.white_line_34_slab" : "White Line Slab(Side Dotted Line)",
+  "block.roadchina.white_line_35_slab" : "White Diagonal Line Slab(Side Dotted Line)",
 
   "block.roadchina.white_arrow_1" : "White Straight Arrow",
+  "block.roadchina.white_arrow_2a" : "White Left Confluence Arrow",
+  "block.roadchina.white_arrow_2b" : "White Right Confluence Arrow",
+
+  "block.roadchina.thin_post_gray" : "Gray Thin Post",
 
   "item.roadchina.wrench": "Wrench",
 
   "itemGroup.white_road_group" : "Road China | White Line Road",
   "itemGroup.road_tool_group" : "Road China | Tool",
-  "itemGroup.arrow_group" : "Road China | Arrow"
+  "itemGroup.arrow_group" : "Road China | Arrow",
+  "itemGroup.road_sign_group" : "Road China | Road Sign"
 }

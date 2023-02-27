@@ -58,6 +58,7 @@
   "block.roadchina.white_line_33a" : "折粗白线",
   "block.roadchina.white_line_33b" : "T型粗白线",
   "block.roadchina.white_line_34" : "白线(侧虚线)",
+  "block.roadchina.white_line_35" : "斜白线(侧虚线)",
 
   "block.roadchina.asphalt_road_slab" : "沥青路台阶",
 
@@ -118,12 +119,18 @@
   "block.roadchina.white_line_33a_slab" : "折粗白线台阶",
   "block.roadchina.white_line_33b_slab" : "T型粗白线台阶",
   "block.roadchina.white_line_34_slab" : "白线台阶(侧虚线)",
+  "block.roadchina.white_line_35_slab" : "斜白线台阶(侧虚线)",
 
   "block.roadchina.white_arrow_1" : "白直行箭头",
+  "block.roadchina.white_arrow_2a" : "白左合流箭头",
+  "block.roadchina.white_arrow_2b" : "白右合流箭头",
+
+  "block.roadchina.thin_post_gray" : "灰色细柱",
 
   "item.roadchina.wrench": "扳手",
 
   "itemGroup.white_road_group" : "道路中国 | 白线道路",
   "itemGroup.road_tool_group" : "道路中国 | 工具",
-  "itemGroup.arrow_group" : "道路中国 | 箭头"
+  "itemGroup.arrow_group" : "道路中国 | 箭头",
+  "itemGroup.road_sign_group" : "道路中国 | 交通标志"
 }
