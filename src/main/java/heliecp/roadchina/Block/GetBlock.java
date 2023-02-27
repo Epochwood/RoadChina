@@ -1,14 +1,25 @@
 package heliecp.roadchina.Block;
 
+import heliecp.roadchina.Item.ItemRegistry;
+import heliecp.roadchina.Properties.BlockProperties;
+import heliecp.roadchina.Properties.BlockType;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.EnumProperty;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class GetBlock
 {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
+    public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
 
     Block whiteLine1Slab = BlockRegistry.whiteLine1Slab.get();
     Block whiteLine2Slab = BlockRegistry.whiteLine2Slab.get();
@@ -57,6 +68,17 @@ public class GetBlock
     Block whiteLine29aSlab = BlockRegistry.whiteLine29aSlab.get();
     Block whiteLine29bSlab = BlockRegistry.whiteLine29bSlab.get();
     Block whiteLine29cSlab = BlockRegistry.whiteLine29cSlab.get();
+    Block whiteLine30aSlab = BlockRegistry.whiteLine30aSlab.get();
+    Block whiteLine30bSlab = BlockRegistry.whiteLine30bSlab.get();
+    Block whiteLine30cSlab = BlockRegistry.whiteLine30cSlab.get();
+    Block whiteLine31aSlab = BlockRegistry.whiteLine31aSlab.get();
+    Block whiteLine31bSlab = BlockRegistry.whiteLine31bSlab.get();
+    Block whiteLine31cSlab = BlockRegistry.whiteLine31cSlab.get();
+    Block whiteLine32Slab = BlockRegistry.whiteLine32Slab.get();
+    Block whiteLine33aSlab = BlockRegistry.whiteLine33aSlab.get();
+    Block whiteLine33bSlab = BlockRegistry.whiteLine33bSlab.get();
+    Block whiteLine34Slab = BlockRegistry.whiteLine34Slab.get();
+    Block whiteLine35Slab = BlockRegistry.whiteLine35Slab.get();
 
     BlockState whiteLine1 = BlockRegistry.whiteLine1.get().defaultBlockState();
     BlockState whiteLine2 = BlockRegistry.whiteLine2.get().defaultBlockState();
@@ -105,6 +127,17 @@ public class GetBlock
     BlockState whiteLine29a = BlockRegistry.whiteLine29a.get().defaultBlockState();
     BlockState whiteLine29b = BlockRegistry.whiteLine29b.get().defaultBlockState();
     BlockState whiteLine29c = BlockRegistry.whiteLine29c.get().defaultBlockState();
+    BlockState whiteLine30a = BlockRegistry.whiteLine30a.get().defaultBlockState();
+    BlockState whiteLine30b = BlockRegistry.whiteLine30b.get().defaultBlockState();
+    BlockState whiteLine30c = BlockRegistry.whiteLine30c.get().defaultBlockState();
+    BlockState whiteLine31a = BlockRegistry.whiteLine31a.get().defaultBlockState();
+    BlockState whiteLine31b = BlockRegistry.whiteLine31b.get().defaultBlockState();
+    BlockState whiteLine31c = BlockRegistry.whiteLine31c.get().defaultBlockState();
+    BlockState whiteLine32 = BlockRegistry.whiteLine32.get().defaultBlockState();
+    BlockState whiteLine33a = BlockRegistry.whiteLine33a.get().defaultBlockState();
+    BlockState whiteLine33b = BlockRegistry.whiteLine33b.get().defaultBlockState();
+    BlockState whiteLine34 = BlockRegistry.whiteLine34.get().defaultBlockState();
+    BlockState whiteLine35 = BlockRegistry.whiteLine35.get().defaultBlockState();
 
     public Block getLineSlab(BlockState blockState)
     {
@@ -202,6 +235,28 @@ public class GetBlock
             return whiteLine29bSlab;
         if (blockState.is(whiteLine29cSlab))
             return whiteLine29cSlab;
+        if (blockState.is(whiteLine30aSlab))
+            return whiteLine30aSlab;
+        if (blockState.is(whiteLine30bSlab))
+            return whiteLine30bSlab;
+        if (blockState.is(whiteLine30cSlab))
+            return whiteLine30cSlab;
+        if (blockState.is(whiteLine31aSlab))
+            return whiteLine31aSlab;
+        if (blockState.is(whiteLine31bSlab))
+            return whiteLine31bSlab;
+        if (blockState.is(whiteLine31cSlab))
+            return whiteLine31cSlab;
+        if (blockState.is(whiteLine32Slab))
+            return whiteLine32Slab;
+        if (blockState.is(whiteLine33aSlab))
+            return whiteLine33aSlab;
+        if (blockState.is(whiteLine33bSlab))
+            return whiteLine33bSlab;
+        if (blockState.is(whiteLine34Slab))
+            return whiteLine34Slab;
+        if (blockState.is(whiteLine35Slab))
+            return whiteLine35Slab;
         return null;
     }
 
@@ -301,6 +356,28 @@ public class GetBlock
             return whiteLine29b;
         if (blockState.is(whiteLine29cSlab))
             return whiteLine29c;
+        if (blockState.is(whiteLine30aSlab))
+            return whiteLine30a;
+        if (blockState.is(whiteLine30bSlab))
+            return whiteLine30b;
+        if (blockState.is(whiteLine30cSlab))
+            return whiteLine30c;
+        if (blockState.is(whiteLine31aSlab))
+            return whiteLine31a;
+        if (blockState.is(whiteLine31bSlab))
+            return whiteLine31b;
+        if (blockState.is(whiteLine31cSlab))
+            return whiteLine31c;
+        if (blockState.is(whiteLine32Slab))
+            return whiteLine32;
+        if (blockState.is(whiteLine33aSlab))
+            return whiteLine33a;
+        if (blockState.is(whiteLine33bSlab))
+            return whiteLine33b;
+        if (blockState.is(whiteLine34Slab))
+            return whiteLine34;
+        if (blockState.is(whiteLine35Slab))
+            return whiteLine35;
         return null;
     }
 
@@ -321,5 +398,45 @@ public class GetBlock
             }
         }
         return null;
+    }
+
+    Item whiteArrow1Item = ItemRegistry.whiteArrow1.get();
+    Item whiteArrow2aItem = ItemRegistry.whiteArrow2a.get();
+    Item whiteArrow2bItem = ItemRegistry.whiteArrow2b.get();
+
+    BlockState whiteArrow1Block = BlockRegistry.whiteArrow1.get().defaultBlockState();
+    BlockState whiteArrow2aBlock = BlockRegistry.whiteArrow2a.get().defaultBlockState();
+    BlockState whiteArrow2bBlock = BlockRegistry.whiteArrow2b.get().defaultBlockState();
+
+    public Item getArrowItem(PlayerEntity playerIn)
+    {
+        if (playerIn.getMainHandItem().getItem() == whiteArrow1Item)
+            return whiteArrow1Item;
+        if (playerIn.getMainHandItem().getItem() == whiteArrow2aItem)
+            return whiteArrow2aItem;
+        if (playerIn.getMainHandItem().getItem() == whiteArrow2bItem)
+            return whiteArrow2bItem;
+        return null;
+    }
+
+    public BlockState getArrowBlock(PlayerEntity playerIn)
+    {
+        if (playerIn.getMainHandItem().getItem() == whiteArrow1Item)
+            return whiteArrow1Block;
+        if (playerIn.getMainHandItem().getItem() == whiteArrow2aItem)
+            return whiteArrow2aBlock;
+        if (playerIn.getMainHandItem().getItem() == whiteArrow2bItem)
+            return whiteArrow2bBlock;
+        return null;
+    }
+
+    public ActionResultType getItemToBlock(World worldIn, BlockPos pos, PlayerEntity playerIn)
+    {
+    if (playerIn.getMainHandItem().getItem() == getArrowItem(playerIn) && worldIn.getBlockState(pos.above()) == Blocks.AIR.defaultBlockState()) {
+            Direction direction = playerIn.getDirection();
+            worldIn.setBlockAndUpdate(pos.above(), getArrowBlock(playerIn).setValue(FACING, direction.getOpposite()).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK));
+            return ActionResultType.SUCCESS;
+        }
+        return ActionResultType.FAIL;
     }
 }

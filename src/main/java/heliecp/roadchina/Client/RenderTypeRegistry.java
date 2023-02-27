@@ -16,6 +16,8 @@ public class RenderTypeRegistry
         event.enqueueWork(() -> {
             RenderType cutout = RenderType.cutout();
             RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow1.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow2a.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow2b.get(), cutout);
         });
     }
 }

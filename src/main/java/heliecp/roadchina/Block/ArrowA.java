@@ -28,7 +28,7 @@ public class ArrowA extends Block
 
     public ArrowA()
     {
-        super(Block.Properties.of(Material.STONE).strength(1.5F).noOcclusion());
+        super(Block.Properties.of(Material.STONE).strength(1.5F));
         this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
     }
 
@@ -41,28 +41,55 @@ public class ArrowA extends Block
 
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader source, BlockPos pos, ISelectionContext iSelectionContext) {
-        switch (state.getValue(BLOCK_TYPE))
+        if (state.is(BlockRegistry.whiteArrow1.get()))
         {
-            case FULL_BLOCK:
-            switch (state.getValue(FACING)) {
-                case SOUTH:
-                case NORTH:
-                default:
-                    return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
-                case EAST:
-                case WEST:
-                    return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
+            switch (state.getValue(BLOCK_TYPE)) {
+                case FULL_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
+                    }
+                case SLAB_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -8.0D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -8.0D, 12.0D);
+                    }
             }
-            case SLAB_BLOCK:
-                switch (state.getValue(FACING)) {
-                    case SOUTH:
-                    case NORTH:
-                    default:
-                        return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -8.0D, 32.0D);
-                    case EAST:
-                    case WEST:
-                        return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -8.0D, 12.0D);
-                }
+        }
+        if (state.is(BlockRegistry.whiteArrow2a.get()) || state.is(BlockRegistry.whiteArrow2b.get()))
+        {
+            switch (state.getValue(BLOCK_TYPE)) {
+                case FULL_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(2.0D, 0.0D, -16.0D, 14.0D, 0.0D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, 0.0D, 2.0D, 32.0D, 0.0D, 14.0D);
+                    }
+                case SLAB_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(2.0D, -8.0D, -16.0D, 14.0D, -8.0D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, -8.0D, 2.0D, 32.0D, -8.0D, 14.0D);
+                    }
+            }
         }
         return null;
     }
@@ -71,7 +98,7 @@ public class ArrowA extends Block
     public BlockState getStateForPlacement(BlockItemUseContext ctx) {
         BlockPos pos = ctx.getClickedPos();
         BlockState blockState = ctx.getLevel().getBlockState(pos);
-        if (!blockState.is(this))
+        if (!(blockState.getBlock() == this))
             return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite()).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
         return null;
     }
@@ -81,7 +108,7 @@ public class ArrowA extends Block
         ItemStack itemstack = context.getItemInHand();
         if (itemstack.getItem() == this.asItem()) {
             if (context.replacingClickedOnBlock()) {
-                boolean flag = context.getClickLocation().y - (double) context.getClickedPos().getY() > 0.0D;
+                boolean flag = context.getClickLocation().y - (double) context.getClickedPos().getY() > 0.5D;
                 Direction direction = context.getClickedFace();
                 return direction == Direction.UP || flag && direction.getAxis().isHorizontal();
             }
@@ -124,9 +151,8 @@ public class ArrowA extends Block
             return ActionResultType.SUCCESS;
         }
 
-        Block arrowA = new ArrowA();
 
-        if (playerIn.getMainHandItem().getItem() instanceof Wrench ) {
+        if (playerIn.getMainHandItem().getItem() instanceof Wrench) {
             Direction direction = blockState.getValue(FACING);
             worldIn.setBlockAndUpdate(pos, blockState.setValue(FACING, direction.getClockWise()).setValue(BLOCK_TYPE, blockState.getValue(BLOCK_TYPE) == BlockType.FULL_BLOCK ? BlockType.FULL_BLOCK : BlockType.SLAB_BLOCK));
             return ActionResultType.SUCCESS;
