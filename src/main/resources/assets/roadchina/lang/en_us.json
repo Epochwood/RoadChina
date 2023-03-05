@@ -59,6 +59,20 @@
   "block.roadchina.white_line_33b" : "White T-shaped Thick Line",
   "block.roadchina.white_line_34" : "White Line(Side Dotted Line)",
   "block.roadchina.white_line_35" : "White Diagonal Line(Side Dotted Line)",
+  "block.roadchina.white_line_36" : "White Double Line Merge Line",
+  "block.roadchina.white_line_37a" : "White Left Longitudinal Deceleration Line(minimum)",
+  "block.roadchina.white_line_37b" : "White Left Longitudinal Deceleration Line(small)",
+  "block.roadchina.white_line_37c" : "White Left Longitudinal Deceleration Line(less)",
+  "block.roadchina.white_line_37d" : "White Left Longitudinal Deceleration Line",
+  "block.roadchina.white_line_38a" : "White Right Longitudinal Deceleration Line(minimum)",
+  "block.roadchina.white_line_38b" : "White Right Longitudinal Deceleration Line(small)",
+  "block.roadchina.white_line_38c" : "White Right Longitudinal Deceleration Line(less)",
+  "block.roadchina.white_line_38d" : "White Right Longitudinal Deceleration Line",
+
+  "block.roadchina.yellow_line_1" : "Yellow Line",
+  "block.roadchina.yellow_line_2" : "Yellow Diagonal Line",
+  "block.roadchina.yellow_line_3" : "Yellow Double Line",
+  "block.roadchina.yellow_line_4" : "Yellow Double Diagonal Line",
 
   "block.roadchina.asphalt_road_slab" : "Asphalt Road Slab",
 
@@ -120,6 +134,20 @@
   "block.roadchina.white_line_33b_slab" : "White T-shaped Thick Line Slab",
   "block.roadchina.white_line_34_slab" : "White Line Slab(Side Dotted Line)",
   "block.roadchina.white_line_35_slab" : "White Diagonal Line Slab(Side Dotted Line)",
+  "block.roadchina.white_line_36_slab" : "White Double Line Merge Line Slab",
+  "block.roadchina.white_line_37a_slab" : "White Left Longitudinal Deceleration Line Slab(minimum)",
+  "block.roadchina.white_line_37b_slab" : "White Left Longitudinal Deceleration Line Slab(small)",
+  "block.roadchina.white_line_37c_slab" : "White Left Longitudinal Deceleration Line Slab(less)",
+  "block.roadchina.white_line_37d_slab" : "White Left Longitudinal Deceleration Line Slab",
+  "block.roadchina.white_line_38a_slab" : "White Right Longitudinal Deceleration Line Slab(minimum)",
+  "block.roadchina.white_line_38b_slab" : "White Right Longitudinal Deceleration Line Slab(small)",
+  "block.roadchina.white_line_38c_slab" : "White Right Longitudinal Deceleration Line Slab(less)",
+  "block.roadchina.white_line_38d_slab" : "White Right Longitudinal Deceleration Line Slab",
+
+  "block.roadchina.yellow_line_1_slab" : "Yellow Line Slab",
+  "block.roadchina.yellow_line_2_slab" : "Yellow Diagonal Line Slab",
+  "block.roadchina.yellow_line_3_slab" : "Yellow Double Line Slab",
+  "block.roadchina.yellow_line_4_slab" : "Yellow Double Diagonal Line Slab",
 
   "block.roadchina.white_arrow_1" : "White Straight Arrow",
   "block.roadchina.white_arrow_2a" : "White Left Confluence Arrow",
@@ -129,7 +157,8 @@
 
   "item.roadchina.wrench": "Wrench",
 
-  "itemGroup.white_road_group" : "Road China | White Line Road",
+  "itemGroup.white_line_group" : "Road China | White Line Road",
+  "itemGroup.yellow_line_group" : "Road China | Yellow Line Road",
   "itemGroup.road_tool_group" : "Road China | Tool",
   "itemGroup.arrow_group" : "Road China | Arrow",
   "itemGroup.road_sign_group" : "Road China | Road Sign"

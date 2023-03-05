@@ -59,6 +59,20 @@
   "block.roadchina.white_line_33b" : "T型粗白线",
   "block.roadchina.white_line_34" : "白线(侧虚线)",
   "block.roadchina.white_line_35" : "斜白线(侧虚线)",
+  "block.roadchina.white_line_36" : "双白集合线",
+  "block.roadchina.white_line_37a" : "左白纵向减速线(最小)",
+  "block.roadchina.white_line_37b" : "左白纵向减速线(小)",
+  "block.roadchina.white_line_37c" : "左白纵向减速线(较小)",
+  "block.roadchina.white_line_37d" : "左白纵向减速线",
+  "block.roadchina.white_line_38a" : "右白纵向减速线(最小)",
+  "block.roadchina.white_line_38b" : "右白纵向减速线(小)",
+  "block.roadchina.white_line_38c" : "右白纵向减速线(较小)",
+  "block.roadchina.white_line_38d" : "右白纵向减速线",
+
+  "block.roadchina.yellow_line_1" : "黄线",
+  "block.roadchina.yellow_line_2" : "斜黄线",
+  "block.roadchina.yellow_line_3" : "双黄线",
+  "block.roadchina.yellow_line_4" : "斜双黄线",
 
   "block.roadchina.asphalt_road_slab" : "沥青路台阶",
 
@@ -120,6 +134,20 @@
   "block.roadchina.white_line_33b_slab" : "T型粗白线台阶",
   "block.roadchina.white_line_34_slab" : "白线台阶(侧虚线)",
   "block.roadchina.white_line_35_slab" : "斜白线台阶(侧虚线)",
+  "block.roadchina.white_line_36_slab" : "双白集合线台阶",
+  "block.roadchina.white_line_37a_slab" : "左白纵向减速线台阶(最小)",
+  "block.roadchina.white_line_37b_slab" : "左白纵向减速线台阶(小)",
+  "block.roadchina.white_line_37c_slab" : "左白纵向减速线台阶(较小)",
+  "block.roadchina.white_line_37d_slab" : "左白纵向减速线台阶",
+  "block.roadchina.white_line_38a_slab" : "右白纵向减速线台阶(最小)",
+  "block.roadchina.white_line_38b_slab" : "右白纵向减速线台阶(小)",
+  "block.roadchina.white_line_38c_slab" : "右白纵向减速线台阶(较小)",
+  "block.roadchina.white_line_38d_slab" : "右白纵向减速线台阶",
+
+  "block.roadchina.yellow_line_1_slab" : "黄线台阶",
+  "block.roadchina.yellow_line_2_slab" : "斜黄线台阶",
+  "block.roadchina.yellow_line_3_slab" : "双黄线台阶",
+  "block.roadchina.yellow_line_4_slab" : "斜双黄线台阶",
 
   "block.roadchina.white_arrow_1" : "白直行箭头",
   "block.roadchina.white_arrow_2a" : "白左合流箭头",
@@ -129,7 +157,8 @@
 
   "item.roadchina.wrench": "扳手",
 
-  "itemGroup.white_road_group" : "道路中国 | 白线道路",
+  "itemGroup.white_line_group" : "道路中国 | 白线道路",
+  "itemGroup.yellow_line_group" : "道路中国 | 黄线道路",
   "itemGroup.road_tool_group" : "道路中国 | 工具",
   "itemGroup.arrow_group" : "道路中国 | 箭头",
   "itemGroup.road_sign_group" : "道路中国 | 交通标志"
