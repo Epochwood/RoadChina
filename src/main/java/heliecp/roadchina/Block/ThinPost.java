@@ -22,8 +22,7 @@ import net.minecraft.block.FenceBlock;
 import java.util.Collections;
 import java.util.Map;
 
-public class ThinPost extends Block
-{
+public class ThinPost extends Block {
     public static final BooleanProperty UP = BlockStateProperties.UP;
     public static final BooleanProperty DOWN = BlockStateProperties.DOWN;
     public static final BooleanProperty NORTH = BlockStateProperties.NORTH;
@@ -33,8 +32,7 @@ public class ThinPost extends Block
 
     public static final Map<Direction, BooleanProperty> PROPERTY_MAP;
 
-    static
-    {
+    static {
         Map<Direction, BooleanProperty> map = Maps.newEnumMap(Direction.class);
         map.put(Direction.UP, BlockStateProperties.UP);
         map.put(Direction.DOWN, BlockStateProperties.DOWN);
@@ -45,24 +43,20 @@ public class ThinPost extends Block
         PROPERTY_MAP = Collections.unmodifiableMap(map);
     }
 
-    public ThinPost()
-    {
+    public ThinPost() {
         super(Block.Properties.of(Material.STONE).strength(1.5F));
     }
 
     @Override
-    protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder)
-    {
+    protected void createBlockStateDefinition(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(PROPERTY_MAP.values().toArray(new Property<?>[0]));
         super.createBlockStateDefinition(builder);
     }
 
     @Override
-    public BlockState getStateForPlacement(BlockItemUseContext context)
-    {
+    public BlockState getStateForPlacement(BlockItemUseContext context) {
         BlockState state = this.defaultBlockState();
-        for (Direction facing : Direction.values())
-        {
+        for (Direction facing : Direction.values()) {
             World world = context.getLevel();
             BlockPos facingPos = context.getClickedPos();
             BlockState facingState = world.getBlockState(facingPos);
@@ -72,13 +66,11 @@ public class ThinPost extends Block
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, IWorld world, BlockPos pos, BlockPos facingPos)
-    {
+    public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, IWorld world, BlockPos pos, BlockPos facingPos) {
         return state.setValue(PROPERTY_MAP.get(facing), this.canConnect(world, facing.getOpposite(), facingPos, facingState));
     }
 
-    private boolean canConnect(IWorld worldIn, Direction facing, BlockPos pos, BlockState state)
-    {
+    private boolean canConnect(IWorld worldIn, Direction facing, BlockPos pos, BlockState state) {
         BlockState blockState = worldIn.getBlockState(pos);
         Block block = blockState.getBlock();
         return block == this;
@@ -87,98 +79,78 @@ public class ThinPost extends Block
     @Override
     public VoxelShape getShape(BlockState blockState, IBlockReader blockReader, BlockPos pos, ISelectionContext context) {
         /**
-        for (BooleanProperty facing : PROPERTY_MAP.values()) {
-            switch (blockState.getValue())
-            {
-                case UP:
-                    return Block.box(6, 6, 6, 10, 16, 10);
-                case DOWN:
-                    return Block.box(6, 10, 6, 10, 0, 10);
-                case NORTH:
-                    return Block.box(6, 6, 0, 10, 10, 10);
-                case SOUTH:
-                    return Block.box(6, 6, 6, 10, 10, 16);
-                case WEST:
-                    return Block.box(0, 6, 6, 10, 10, 10);
-                case EAST:
-                    return Block.box(6, 6, 6, 16, 10, 10);
-                default:
-                    return Block.box(6, 6, 6, 10, 10, 10);
-            }
-        }
-        **/
-        if (blockState.getValue(UP))
-        {
-            if (blockState.getValue(DOWN))
-            {
-                if (blockState.getValue(NORTH))
-                {
-                    if (blockState.getValue(SOUTH))
-                    {
-                        if (blockState.getValue(WEST))
-                        {
-                            if (blockState.getValue(EAST))
-                            {
+         for (BooleanProperty facing : PROPERTY_MAP.values()) {
+         switch (blockState.getValue())
+         {
+         case UP:
+         return Block.box(6, 6, 6, 10, 16, 10);
+         case DOWN:
+         return Block.box(6, 10, 6, 10, 0, 10);
+         case NORTH:
+         return Block.box(6, 6, 0, 10, 10, 10);
+         case SOUTH:
+         return Block.box(6, 6, 6, 10, 10, 16);
+         case WEST:
+         return Block.box(0, 6, 6, 10, 10, 10);
+         case EAST:
+         return Block.box(6, 6, 6, 16, 10, 10);
+         default:
+         return Block.box(6, 6, 6, 10, 10, 10);
+         }
+         }
+         **/
+        if (blockState.getValue(UP)) {
+            if (blockState.getValue(DOWN)) {
+                if (blockState.getValue(NORTH)) {
+                    if (blockState.getValue(SOUTH)) {
+                        if (blockState.getValue(WEST)) {
+                            if (blockState.getValue(EAST)) {
                                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(6, 6, 6, 16, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
                             }
                             return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                         }
-                        if (blockState.getValue(EAST))
-                        {
+                        if (blockState.getValue(EAST)) {
                             return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(6, 6, 6, 16, 10, 10));
                         }
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16));
                     }
-                    if (blockState.getValue(WEST))
-                    {
-                        if (blockState.getValue(EAST))
-                        {
+                    if (blockState.getValue(WEST)) {
+                        if (blockState.getValue(EAST)) {
                             return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
                         }
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(0, 6, 6, 10, 10, 10));
                     }
-                    if (blockState.getValue(EAST))
-                    {
+                    if (blockState.getValue(EAST)) {
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10));
                     }
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10));
                 }
-                if (blockState.getValue(SOUTH))
-                {
-                    if (blockState.getValue(WEST))
-                    {
-                        if (blockState.getValue(EAST))
-                        {
+                if (blockState.getValue(SOUTH)) {
+                    if (blockState.getValue(WEST)) {
+                        if (blockState.getValue(EAST)) {
                             return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                         }
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16));
                     }
-                    if (blockState.getValue(EAST))
-                    {
+                    if (blockState.getValue(EAST)) {
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16));
                     }
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(6, 10, 6, 10, 0, 10));
                 }
-                if (blockState.getValue(WEST))
-                {
-                    if (blockState.getValue(EAST))
-                    {
+                if (blockState.getValue(WEST)) {
+                    if (blockState.getValue(EAST)) {
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 10, 6, 10, 0, 10), Block.box(0, 6, 6, 10, 10, 10));
                     }
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 10, 6, 10, 0, 10));
                 }
-                if (blockState.getValue(EAST))
-                {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 10, 6, 10, 0, 10));
                 }
                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 10, 6, 10, 0, 10));
             }
-            if (blockState.getValue(NORTH))
-            {
-                if (blockState.getValue(SOUTH))
-                {
-                    if (blockState.getValue(WEST))
-                    {
+            if (blockState.getValue(NORTH)) {
+                if (blockState.getValue(SOUTH)) {
+                    if (blockState.getValue(WEST)) {
                         if (blockState.getValue(EAST))
                             return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
@@ -187,8 +159,7 @@ public class ThinPost extends Block
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(6, 6, 0, 10, 10, 10));
                 }
-                if (blockState.getValue(WEST))
-                {
+                if (blockState.getValue(WEST)) {
                     if (blockState.getValue(EAST))
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 0, 10, 10, 10));
@@ -197,10 +168,8 @@ public class ThinPost extends Block
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10));
                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 0, 10, 10, 10));
             }
-            if (blockState.getValue(SOUTH))
-            {
-                if (blockState.getValue(WEST))
-                {
+            if (blockState.getValue(SOUTH)) {
+                if (blockState.getValue(WEST)) {
                     if (blockState.getValue(EAST))
                         return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
@@ -209,8 +178,7 @@ public class ThinPost extends Block
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 10, 10, 16));
             }
-            if (blockState.getValue(WEST))
-            {
+            if (blockState.getValue(WEST)) {
                 if (blockState.getValue(EAST))
                     return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(0, 6, 6, 10, 10, 10));
@@ -218,129 +186,97 @@ public class ThinPost extends Block
             if (blockState.getValue(EAST))
                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 16, 10), Block.box(6, 6, 6, 16, 10, 10));
             return Block.box(6, 6, 6, 10, 16, 10);
-        }
-        else if (blockState.getValue(DOWN))
-        {
-            if (blockState.getValue(NORTH))
-            {
-                if (blockState.getValue(SOUTH))
-                {
-                    if (blockState.getValue(WEST))
-                    {
-                        if (blockState.getValue(EAST))
-                        {
+        } else if (blockState.getValue(DOWN)) {
+            if (blockState.getValue(NORTH)) {
+                if (blockState.getValue(SOUTH)) {
+                    if (blockState.getValue(WEST)) {
+                        if (blockState.getValue(EAST)) {
                             return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                         }
                         return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                     }
-                    if (blockState.getValue(EAST))
-                    {
+                    if (blockState.getValue(EAST)) {
                         return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                     }
                     return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(6, 6, 0, 10, 10, 10));
                 }
-                if (blockState.getValue(WEST))
-                {
+                if (blockState.getValue(WEST)) {
                     return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 0, 10, 10, 10));
                 }
-                if (blockState.getValue(EAST))
-                {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10));
                 }
                 return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 0, 10, 10, 10));
             }
-            if (blockState.getValue(SOUTH))
-            {
-                if (blockState.getValue(WEST))
-                {
-                    if (blockState.getValue(EAST))
-                    {
+            if (blockState.getValue(SOUTH)) {
+                if (blockState.getValue(WEST)) {
+                    if (blockState.getValue(EAST)) {
                         return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                     }
                     return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                 }
-                if (blockState.getValue(EAST))
-                {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                 }
                 return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 10, 10, 16));
             }
-            if (blockState.getValue(WEST))
-            {
-                if (blockState.getValue(EAST))
-                {
+            if (blockState.getValue(WEST)) {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
                 }
                 return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(0, 6, 6, 10, 10, 10));
             }
-            if (blockState.getValue(EAST))
-            {
+            if (blockState.getValue(EAST)) {
                 return VoxelShapes.or(Block.box(6, 10, 6, 10, 0, 10), Block.box(6, 6, 6, 16, 10, 10));
             }
             return Block.box(6, 10, 6, 10, 0, 10);
         }
-        if (blockState.getValue(NORTH))
-        {
-            if (blockState.getValue(SOUTH))
-            {
-                if (blockState.getValue(WEST))
-                {
-                    if (blockState.getValue(EAST))
-                    {
+        if (blockState.getValue(NORTH)) {
+            if (blockState.getValue(SOUTH)) {
+                if (blockState.getValue(WEST)) {
+                    if (blockState.getValue(EAST)) {
                         return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                     }
                     return VoxelShapes.or(Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                 }
-                if (blockState.getValue(EAST))
-                {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
                 }
                 return VoxelShapes.or(Block.box(6, 6, 6, 10, 10, 16), Block.box(6, 6, 0, 10, 10, 10));
             }
-            if (blockState.getValue(WEST))
-            {
-                if (blockState.getValue(EAST))
-                {
+            if (blockState.getValue(WEST)) {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
                 }
                 return VoxelShapes.or(Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 0, 10, 10, 10));
             }
-            if (blockState.getValue(EAST))
-            {
+            if (blockState.getValue(EAST)) {
                 return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 0, 10, 10, 10));
             }
             return Block.box(6, 6, 0, 10, 10, 10);
         }
-        if (blockState.getValue(SOUTH))
-        {
-            if (blockState.getValue(WEST))
-            {
-                if (blockState.getValue(EAST))
-                {
+        if (blockState.getValue(SOUTH)) {
+            if (blockState.getValue(WEST)) {
+                if (blockState.getValue(EAST)) {
                     return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 6, 10, 10, 16), Block.box(0, 6, 6, 10, 10, 10));
                 }
                 return VoxelShapes.or(Block.box(0, 6, 6, 10, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
             }
-            if (blockState.getValue(EAST))
-            {
+            if (blockState.getValue(EAST)) {
                 return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(6, 6, 6, 10, 10, 16));
             }
             return Block.box(6, 6, 6, 10, 10, 16);
         }
-        if (blockState.getValue(WEST))
-        {
-            if (blockState.getValue(EAST))
-            {
+        if (blockState.getValue(WEST)) {
+            if (blockState.getValue(EAST)) {
                 return VoxelShapes.or(Block.box(6, 6, 6, 16, 10, 10), Block.box(0, 6, 6, 10, 10, 10));
             }
             return Block.box(0, 6, 6, 10, 10, 10);
         }
-        if (blockState.getValue(EAST))
-        {
+        if (blockState.getValue(EAST)) {
             return Block.box(6, 6, 6, 16, 10, 10);
         }
-        return Block.box(6,6,6,10,10,10);
+        return Block.box(6, 6, 6, 10, 10, 10);
 
     }
-
 }
