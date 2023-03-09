@@ -1,5 +1,8 @@
 {
   "block.roadchina.asphalt_road": "瀝青路",
+  "block.roadchina.white_asphalt_road" : "白瀝青路",
+  "block.roadchina.yellow_asphalt_road" : "黃瀝青路",
+
   "block.roadchina.white_line_1": "白線",
   "block.roadchina.white_line_2": "斜白線",
   "block.roadchina.white_line_3": "粗側白線",
@@ -67,11 +70,26 @@
   "block.roadchina.white_line_38b": "右白縱向減速線(小)",
   "block.roadchina.white_line_38c": "右白縱向減速線(較小)",
   "block.roadchina.white_line_38d": "右白縱向減速線",
+  "block.roadchina.white_line_39a" : "左白導向車道線",
+  "block.roadchina.white_line_39b" : "右白導向車道線",
+  "block.roadchina.white_line_40" : "白半圓車距確認線",
+  "block.roadchina.white_line_41" : "白虛線",
+  "block.roadchina.white_line_42" : "白減速線",
+
   "block.roadchina.yellow_line_1": "黃線",
   "block.roadchina.yellow_line_2": "斜黃線",
   "block.roadchina.yellow_line_3": "雙黃線",
   "block.roadchina.yellow_line_4": "斜雙黃線",
+  "block.roadchina.yellow_line_5" : "黃線(雙黃線)",
+  "block.roadchina.yellow_line_6" : "斜黃線(雙黃線)",
+  "block.roadchina.yellow_line_7" : "黃線(側虛線)",
+  "block.roadchina.yellow_line_8" : "斜黃線(側虛線)",
+  "block.roadchina.yellow_line_9" : "雙黃集合線",
+
   "block.roadchina.asphalt_road_slab": "瀝青路半磚",
+  "block.roadchina.white_asphalt_road_slab" : "白瀝青路半磚",
+  "block.roadchina.yellow_asphalt_road_slab" : "黃瀝青路半磚",
+
   "block.roadchina.white_line_1_slab": "白線半磚",
   "block.roadchina.white_line_2_slab": "斜白線半磚",
   "block.roadchina.white_line_3_slab": "粗側白線半磚",
@@ -139,15 +157,30 @@
   "block.roadchina.white_line_38b_slab": "右白縱向減速線半磚(小)",
   "block.roadchina.white_line_38c_slab": "右白縱向減速線半磚(較小)",
   "block.roadchina.white_line_38d_slab": "右白縱向減速線半磚",
+  "block.roadchina.white_line_39a_slab" : "左白導向車道線半磚",
+  "block.roadchina.white_line_39b_slab" : "右白導向車道線半磚",
+  "block.roadchina.white_line_40_slab" : "白半圓車距確認線半磚",
+  "block.roadchina.white_line_41_slab" : "白虛線半磚",
+  "block.roadchina.white_line_42_slab" : "白減速線半磚",
+
   "block.roadchina.yellow_line_1_slab": "黃線半磚",
   "block.roadchina.yellow_line_2_slab": "斜黃線半磚",
   "block.roadchina.yellow_line_3_slab": "雙黃線半磚",
   "block.roadchina.yellow_line_4_slab": "斜雙黃線半磚",
+  "block.roadchina.yellow_line_5_slab" : "黃線半磚(雙黃線)",
+  "block.roadchina.yellow_line_6_slab" : "斜黃線半磚(雙黃線)",
+  "block.roadchina.yellow_line_7_slab" : "黃線半磚(側虛線)",
+  "block.roadchina.yellow_line_8_slab" : "斜黃線半磚(側虛線)",
+  "block.roadchina.yellow_line_9_slab" : "雙黃集合線半磚",
+
   "block.roadchina.white_arrow_1": "白直行箭頭",
   "block.roadchina.white_arrow_2a": "白左合流箭頭",
   "block.roadchina.white_arrow_2b": "白右合流箭頭",
+
   "block.roadchina.thin_post_gray": "灰色細柱",
+
   "item.roadchina.wrench": "扳手",
+
   "itemGroup.white_line_group": "道路中國 | 白線道路",
   "itemGroup.yellow_line_group": "道路中國 | 黃線道路",
   "itemGroup.road_tool_group": "道路中國 | 工具",

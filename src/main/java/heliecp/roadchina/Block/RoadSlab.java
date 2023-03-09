@@ -39,8 +39,10 @@ public class RoadSlab extends Block
     public BlockState getStateForPlacement(BlockItemUseContext p_196258_1_) {
         BlockPos blockpos = p_196258_1_.getClickedPos();
         BlockState blockstate = p_196258_1_.getLevel().getBlockState(blockpos);
-        if (blockstate.is(this)) {
-            return BlockRegistry.asphaltRoad.get().defaultBlockState();
+        GetBlock getBlock = new GetBlock();
+        if (blockstate.is(this))
+        {
+            return getBlock.getSlabToBlockForRoad(blockstate);
         }
         else
         {

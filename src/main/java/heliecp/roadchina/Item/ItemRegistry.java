@@ -15,6 +15,9 @@ public class ItemRegistry {
     public static final RegistryObject<Item> wrench = ITEMS.register("wrench", Wrench::new);
 
     public static final RegistryObject<Item> asphaltRoad = ITEMS.register("asphalt_road", () -> new BlockItem(BlockRegistry.asphaltRoad.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteAsphaltRoad = ITEMS.register("white_asphalt_road", () -> new BlockItem(BlockRegistry.whiteAsphaltRoad.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowAsphaltRoad = ITEMS.register("yellow_asphalt_road", () -> new BlockItem(BlockRegistry.yellowAsphaltRoad.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+
     public static final RegistryObject<Item> whiteLine1 = ITEMS.register("white_line_1", () -> new BlockItem(BlockRegistry.whiteLine1.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine2 = ITEMS.register("white_line_2", () -> new BlockItem(BlockRegistry.whiteLine2.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine3 = ITEMS.register("white_line_3", () -> new BlockItem(BlockRegistry.whiteLine3.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
@@ -82,15 +85,27 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteLine38b = ITEMS.register("white_line_38b", () -> new BlockItem(BlockRegistry.whiteLine38b.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine38c = ITEMS.register("white_line_38c", () -> new BlockItem(BlockRegistry.whiteLine38c.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine38d = ITEMS.register("white_line_38d", () -> new BlockItem(BlockRegistry.whiteLine38d.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine39a = ITEMS.register("white_line_39a", () -> new BlockItem(BlockRegistry.whiteLine39a.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine39b = ITEMS.register("white_line_39b", () -> new BlockItem(BlockRegistry.whiteLine39b.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine40 = ITEMS.register("white_line_40", () -> new BlockItem(BlockRegistry.whiteLine40.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine41 = ITEMS.register("white_line_41", () -> new BlockItem(BlockRegistry.whiteLine41.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine42 = ITEMS.register("white_line_42", () -> new BlockItem(BlockRegistry.whiteLine42.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
 
     public static final RegistryObject<Item> yellowLine1 = ITEMS.register("yellow_line_1", () -> new BlockItem(BlockRegistry.yellowLine1.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> yellowLine2 = ITEMS.register("yellow_line_2", () -> new BlockItem(BlockRegistry.yellowLine2.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> yellowLine3 = ITEMS.register("yellow_line_3", () -> new BlockItem(BlockRegistry.yellowLine3.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> yellowLine4 = ITEMS.register("yellow_line_4", () -> new BlockItem(BlockRegistry.yellowLine4.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine5 = ITEMS.register("yellow_line_5", () -> new BlockItem(BlockRegistry.yellowLine5.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine6 = ITEMS.register("yellow_line_6", () -> new BlockItem(BlockRegistry.yellowLine6.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine7 = ITEMS.register("yellow_line_7", () -> new BlockItem(BlockRegistry.yellowLine7.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine8 = ITEMS.register("yellow_line_8", () -> new BlockItem(BlockRegistry.yellowLine8.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine9 = ITEMS.register("yellow_line_9", () -> new BlockItem(BlockRegistry.yellowLine9.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
 
     public static final RegistryObject<Item> roadchina = ITEMS.register("roadchina", () -> new BlockItem(BlockRegistry.roadchina.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> asphaltRoadSlab = ITEMS.register("asphalt_road_slab", () -> new BlockItem(BlockRegistry.asphaltRoadSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteAsphaltRoadSlab = ITEMS.register("white_asphalt_road_slab", () -> new BlockItem(BlockRegistry.whiteAsphaltRoadSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowAsphaltRoadSlab = ITEMS.register("yellow_asphalt_road_slab", () -> new BlockItem(BlockRegistry.yellowAsphaltRoadSlab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
 
     public static final RegistryObject<Item> whiteLine1Slab = ITEMS.register("white_line_1_slab", () -> new BlockItem(BlockRegistry.whiteLine1Slab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine2Slab = ITEMS.register("white_line_2_slab", () -> new BlockItem(BlockRegistry.whiteLine2Slab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
@@ -159,11 +174,21 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteLine38bSlab = ITEMS.register("white_line_38b_slab", () -> new BlockItem(BlockRegistry.whiteLine38bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine38cSlab = ITEMS.register("white_line_38c_slab", () -> new BlockItem(BlockRegistry.whiteLine38cSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
     public static final RegistryObject<Item> whiteLine38dSlab = ITEMS.register("white_line_38d_slab", () -> new BlockItem(BlockRegistry.whiteLine38dSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine39aSlab = ITEMS.register("white_line_39a_slab", () -> new BlockItem(BlockRegistry.whiteLine39aSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine39bSlab = ITEMS.register("white_line_39b_slab", () -> new BlockItem(BlockRegistry.whiteLine39bSlab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine40Slab = ITEMS.register("white_line_40_slab", () -> new BlockItem(BlockRegistry.whiteLine40Slab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine41Slab = ITEMS.register("white_line_41_slab", () -> new BlockItem(BlockRegistry.whiteLine41Slab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
+    public static final RegistryObject<Item> whiteLine42Slab = ITEMS.register("white_line_42_slab", () -> new BlockItem(BlockRegistry.whiteLine42Slab.get(), new Item.Properties().tab(ModGroup.WHITE_LINE_GROUP)));
 
     public static final RegistryObject<Item> yellowLine1Slab = ITEMS.register("yellow_line_1_slab", () -> new BlockItem(BlockRegistry.yellowLine1Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> yellowLine2Slab = ITEMS.register("yellow_line_2_slab", () -> new BlockItem(BlockRegistry.yellowLine2Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> yellowLine3Slab = ITEMS.register("yellow_line_3_slab", () -> new BlockItem(BlockRegistry.yellowLine3Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> yellowLine4Slab = ITEMS.register("yellow_line_4_slab", () -> new BlockItem(BlockRegistry.yellowLine4Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine5Slab = ITEMS.register("yellow_line_5_slab", () -> new BlockItem(BlockRegistry.yellowLine5Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine6Slab = ITEMS.register("yellow_line_6_slab", () -> new BlockItem(BlockRegistry.yellowLine6Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine7Slab = ITEMS.register("yellow_line_7_slab", () -> new BlockItem(BlockRegistry.yellowLine7Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine8Slab = ITEMS.register("yellow_line_8_slab", () -> new BlockItem(BlockRegistry.yellowLine8Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
+    public static final RegistryObject<Item> yellowLine9Slab = ITEMS.register("yellow_line_9_slab", () -> new BlockItem(BlockRegistry.yellowLine9Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
 
     public static final RegistryObject<Item> whiteArrow1 = ITEMS.register("white_arrow_1", () -> new BlockItem(BlockRegistry.whiteArrow1.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
     public static final RegistryObject<Item> whiteArrow2a = ITEMS.register("white_arrow_2a", () -> new BlockItem(BlockRegistry.whiteArrow2a.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
