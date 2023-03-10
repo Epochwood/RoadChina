@@ -83,9 +83,13 @@ public class BlockRegistry
     public static final RegistryObject<Block> whiteLine38d = BLOCKS.register("white_line_38d", () -> new Line());
     public static final RegistryObject<Block> whiteLine39a = BLOCKS.register("white_line_39a", () -> new Line());
     public static final RegistryObject<Block> whiteLine39b = BLOCKS.register("white_line_39b", () -> new Line());
-    public static final RegistryObject<Block> whiteLine40 = BLOCKS.register("white_line_40", () -> new Line());
+    public static final RegistryObject<Block> whiteLine39c = BLOCKS.register("white_line_39c", () -> new Line());
+    public static final RegistryObject<Block> whiteLine39d = BLOCKS.register("white_line_39d", () -> new Line());
+    public static final RegistryObject<Block> whiteLine40a = BLOCKS.register("white_line_40a", () -> new Line());
+    public static final RegistryObject<Block> whiteLine40b = BLOCKS.register("white_line_40b", () -> new Line());
     public static final RegistryObject<Block> whiteLine41 = BLOCKS.register("white_line_41", () -> new Line());
     public static final RegistryObject<Block> whiteLine42 = BLOCKS.register("white_line_42", () -> new Line());
+    public static final RegistryObject<Block> whiteLine43 = BLOCKS.register("white_line_43", () -> new Line());
 
     public static final RegistryObject<Block> yellowLine1 = BLOCKS.register("yellow_line_1", () -> new Line());
     public static final RegistryObject<Block> yellowLine2 = BLOCKS.register("yellow_line_2", () -> new Line());
@@ -172,9 +176,13 @@ public class BlockRegistry
     public static final RegistryObject<Block> whiteLine38dSlab = BLOCKS.register("white_line_38d_slab", () -> new LineSlab());
     public static final RegistryObject<Block> whiteLine39aSlab = BLOCKS.register("white_line_39a_slab", () -> new LineSlab());
     public static final RegistryObject<Block> whiteLine39bSlab = BLOCKS.register("white_line_39b_slab", () -> new LineSlab());
-    public static final RegistryObject<Block> whiteLine40Slab = BLOCKS.register("white_line_40_slab", () -> new LineSlab());
+    public static final RegistryObject<Block> whiteLine39cSlab = BLOCKS.register("white_line_39c_slab", () -> new LineSlab());
+    public static final RegistryObject<Block> whiteLine39dSlab = BLOCKS.register("white_line_39d_slab", () -> new LineSlab());
+    public static final RegistryObject<Block> whiteLine40aSlab = BLOCKS.register("white_line_40a_slab", () -> new LineSlab());
+    public static final RegistryObject<Block> whiteLine40bSlab = BLOCKS.register("white_line_40b_slab", () -> new LineSlab());
     public static final RegistryObject<Block> whiteLine41Slab = BLOCKS.register("white_line_41_slab", () -> new LineSlab());
     public static final RegistryObject<Block> whiteLine42Slab = BLOCKS.register("white_line_42_slab", () -> new LineSlab());
+    public static final RegistryObject<Block> whiteLine43Slab = BLOCKS.register("white_line_43_slab", () -> new LineSlab());
 
     public static final RegistryObject<Block> yellowLine1Slab = BLOCKS.register("yellow_line_1_slab", () -> new LineSlab());
     public static final RegistryObject<Block> yellowLine2Slab = BLOCKS.register("yellow_line_2_slab", () -> new LineSlab());

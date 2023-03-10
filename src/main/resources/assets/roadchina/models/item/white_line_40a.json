@@ -4,7 +4,8 @@
 	"textures": {
 		"0": "roadchina:blocks/asphalt_road",
 		"1": "roadchina:blocks/white_line_1",
-		"2": "roadchina:blocks/white_line_40",
+		"2": "roadchina:blocks/white_line_40a",
+		"3": "roadchina:blocks/white_line_40b",
 		"particle": "roadchina:blocks/asphalt_road"
 	},
 	"elements": [
@@ -17,7 +18,7 @@
 				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+				"down": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#3"}
 			}
 		}
 	],
