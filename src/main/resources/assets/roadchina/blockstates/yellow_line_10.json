@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=west": { "model": "roadchina:block/yellow_line_10", "y": 270 },
+    "facing=south": { "model": "roadchina:block/yellow_line_10", "y": 180 },
+    "facing=east": { "model": "roadchina:block/yellow_line_10", "y": 90 },
+    "facing=north": { "model": "roadchina:block/yellow_line_10"}
+  }
+}
