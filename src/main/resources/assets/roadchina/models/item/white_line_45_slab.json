@@ -3,8 +3,9 @@
 	"parent": "roadchina:block/asphalt_road",
 	"textures": {
 		"0": "roadchina:blocks/asphalt_road",
-		"2": "roadchina:blocks/white_line_1",
-		"3": "roadchina:blocks/white_line_23b",
+		"1": "roadchina:blocks/white_line_1",
+		"2": "roadchina:blocks/white_line_45",
+		"3": "roadchina:blocks/white_line_7",
 		"particle": "roadchina:blocks/asphalt_road"
 	},
 	"elements": [
@@ -12,12 +13,12 @@
 			"from": [0, 0, 0],
 			"to": [16, 8, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"east": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#2"},
+				"north": {"uv": [0, 0, 16, 8], "texture": "#3"},
+				"east": {"uv": [0, 0, 16, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#1"},
 				"west": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
-				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#3"}
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#2"}
 			}
 		}
 	],

@@ -4,18 +4,18 @@
 	"textures": {
 		"0": "roadchina:blocks/asphalt_road",
 		"2": "roadchina:blocks/white_line_1",
-		"3": "roadchina:blocks/white_line_23b",
+		"3": "roadchina:blocks/white_line_23c",
 		"particle": "roadchina:blocks/asphalt_road"
 	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
-			"to": [16, 8, 16],
+			"to": [16, 16, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"east": {"uv": [0, 0, 16, 8], "texture": "#0"},
-				"south": {"uv": [0, 0, 16, 8], "texture": "#2"},
-				"west": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
 				"down": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#3"}
 			}
@@ -23,27 +23,27 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [75, -30, 0],
-			"translation": [0, 1.5, -0.5],
+			"rotation": [68, -45, 0],
+			"translation": [0.25, 1.5, 0.5],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [75, 30, 0],
-			"translation": [0, 1.5, -0.5],
+			"rotation": [68, 45, 0],
+			"translation": [0.25, 1.5, -0.5],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -45, 0],
-			"translation": [0, 0, 1],
+			"translation": [0, 0.25, 1],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, -45, 0],
-			"translation": [0, 0, 1],
+			"translation": [0, 0.25, 1],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"ground": {
-			"scale": [0.4, 0.4, 0.4]
+			"scale": [0.3, 0.3, 0.3]
 		},
 		"gui": {
 			"rotation": [30, 45, 0],
