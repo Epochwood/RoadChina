@@ -82,7 +82,8 @@
   "block.roadchina.white_line_43" : "白減速線",
   "block.roadchina.white_line_44a" : "雙白線(路緣)",
   "block.roadchina.white_line_44b" : "雙白線(路肩)",
-  "block.roadchina.white_line_45" : "雙白分離線",
+  "block.roadchina.white_line_45a" : "雙白分離線",
+  "block.roadchina.white_line_45b" : "雙白集合線",
 
   "block.roadchina.yellow_line_1": "黃線",
   "block.roadchina.yellow_line_2": "斜黃線",
@@ -93,7 +94,8 @@
   "block.roadchina.yellow_line_7" : "黃線(側虛線)",
   "block.roadchina.yellow_line_8" : "斜黃線(側虛線)",
   "block.roadchina.yellow_line_9" : "雙黃集合線",
-  "block.roadchina.yellow_line_10" : "雙黃分離線",
+  "block.roadchina.yellow_line_10a" : "雙黃分離線",
+  "block.roadchina.yellow_line_10b" : "雙黃集合線",
   "block.roadchina.yellow_line_11a" : "黃分離線",
   "block.roadchina.yellow_line_11b" : "黃集合線",
 
@@ -197,7 +199,8 @@
   "block.roadchina.white_line_43_slab" : "白減速線半磚",
   "block.roadchina.white_line_44a_slab" : "雙白線半磚(路緣)",
   "block.roadchina.white_line_44b_slab" : "雙白線半磚(路肩)",
-  "block.roadchina.white_line_45_slab" : "雙白分離線半磚",
+  "block.roadchina.white_line_45a_slab" : "雙白分離線半磚",
+  "block.roadchina.white_line_45b_slab" : "雙白集合線半磚",
 
   "block.roadchina.yellow_line_1_slab": "黃線半磚",
   "block.roadchina.yellow_line_2_slab": "斜黃線半磚",
@@ -208,7 +211,8 @@
   "block.roadchina.yellow_line_7_slab" : "黃線半磚(側虛線)",
   "block.roadchina.yellow_line_8_slab" : "斜黃線半磚(側虛線)",
   "block.roadchina.yellow_line_9_slab" : "雙黃集合線半磚",
-  "block.roadchina.yellow_line_10_slab" : "雙黃分離線半磚",
+  "block.roadchina.yellow_line_10a_slab" : "雙黃分離線半磚",
+  "block.roadchina.yellow_line_10b_slab" : "雙黃集合線半磚",
   "block.roadchina.yellow_line_11a_slab" : "黃分離線半磚",
   "block.roadchina.yellow_line_11b_slab" : "黃集合線半磚",
 

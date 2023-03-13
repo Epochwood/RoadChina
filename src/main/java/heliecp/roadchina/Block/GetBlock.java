@@ -138,7 +138,8 @@ public class GetBlock
     Block whiteLine43Slab = BlockRegistry.whiteLine43Slab.get();
     Block whiteLine44aSlab = BlockRegistry.whiteLine44aSlab.get();
     Block whiteLine44bSlab = BlockRegistry.whiteLine44bSlab.get();
-    Block whiteLine45Slab = BlockRegistry.whiteLine45Slab.get();
+    Block whiteLine45aSlab = BlockRegistry.whiteLine45aSlab.get();
+    Block whiteLine45bSlab = BlockRegistry.whiteLine45bSlab.get();
 
     Block yellowLine1Slab = BlockRegistry.yellowLine1Slab.get();
     Block yellowLine2Slab = BlockRegistry.yellowLine2Slab.get();
@@ -149,7 +150,8 @@ public class GetBlock
     Block yellowLine7Slab = BlockRegistry.yellowLine7Slab.get();
     Block yellowLine8Slab = BlockRegistry.yellowLine8Slab.get();
     Block yellowLine9Slab = BlockRegistry.yellowLine9Slab.get();
-    Block yellowLine10Slab = BlockRegistry.yellowLine10Slab.get();
+    Block yellowLine10aSlab = BlockRegistry.yellowLine10aSlab.get();
+    Block yellowLine10bSlab = BlockRegistry.yellowLine10bSlab.get();
     Block yellowLine11aSlab = BlockRegistry.yellowLine11aSlab.get();
     Block yellowLine11bSlab = BlockRegistry.yellowLine11bSlab.get();
 
@@ -232,7 +234,8 @@ public class GetBlock
     BlockState whiteLine43 = BlockRegistry.whiteLine43.get().defaultBlockState();
     BlockState whiteLine44a = BlockRegistry.whiteLine44a.get().defaultBlockState();
     BlockState whiteLine44b = BlockRegistry.whiteLine44b.get().defaultBlockState();
-    BlockState whiteLine45 = BlockRegistry.whiteLine45.get().defaultBlockState();
+    BlockState whiteLine45a = BlockRegistry.whiteLine45a.get().defaultBlockState();
+    BlockState whiteLine45b = BlockRegistry.whiteLine45b.get().defaultBlockState();
 
     BlockState yellowLine1 = BlockRegistry.yellowLine1.get().defaultBlockState();
     BlockState yellowLine2 = BlockRegistry.yellowLine2.get().defaultBlockState();
@@ -243,7 +246,8 @@ public class GetBlock
     BlockState yellowLine7 = BlockRegistry.yellowLine7.get().defaultBlockState();
     BlockState yellowLine8 = BlockRegistry.yellowLine8.get().defaultBlockState();
     BlockState yellowLine9 = BlockRegistry.yellowLine9.get().defaultBlockState();
-    BlockState yellowLine10 = BlockRegistry.yellowLine10.get().defaultBlockState();
+    BlockState yellowLine10a = BlockRegistry.yellowLine10a.get().defaultBlockState();
+    BlockState yellowLine10b = BlockRegistry.yellowLine10b.get().defaultBlockState();
     BlockState yellowLine11a = BlockRegistry.yellowLine11a.get().defaultBlockState();
     BlockState yellowLine11b = BlockRegistry.yellowLine11b.get().defaultBlockState();
 
@@ -407,8 +411,10 @@ public class GetBlock
             return whiteLine44aSlab;
         if (blockState.is(whiteLine44bSlab))
             return whiteLine44bSlab;
-        if (blockState.is(whiteLine45Slab))
-            return whiteLine45Slab;
+        if (blockState.is(whiteLine45aSlab))
+            return whiteLine45aSlab;
+        if (blockState.is(whiteLine45bSlab))
+            return whiteLine45bSlab;
 
         if (blockState.is(yellowLine1Slab))
             return yellowLine1Slab;
@@ -428,8 +434,10 @@ public class GetBlock
             return yellowLine8Slab;
         if (blockState.is(yellowLine9Slab))
             return yellowLine9Slab;
-        if (blockState.is(yellowLine10Slab))
-            return yellowLine10Slab;
+        if (blockState.is(yellowLine10aSlab))
+            return yellowLine10aSlab;
+        if (blockState.is(yellowLine10bSlab))
+            return yellowLine10bSlab;
         if (blockState.is(yellowLine11aSlab))
             return yellowLine11aSlab;
         if (blockState.is(yellowLine11bSlab))
@@ -597,8 +605,10 @@ public class GetBlock
             return whiteLine44a;
         if (blockState.is(whiteLine44bSlab))
             return whiteLine44b;
-        if (blockState.is(whiteLine45Slab))
-            return whiteLine45;
+        if (blockState.is(whiteLine45aSlab))
+            return whiteLine45a;
+        if (blockState.is(whiteLine45bSlab))
+            return whiteLine45b;
 
         if (blockState.is(yellowLine1Slab))
             return yellowLine1;
@@ -618,8 +628,10 @@ public class GetBlock
             return yellowLine8;
         if (blockState.is(yellowLine9Slab))
             return yellowLine9;
-        if (blockState.is(yellowLine10Slab))
-            return yellowLine10;
+        if (blockState.is(yellowLine10aSlab))
+            return yellowLine10a;
+        if (blockState.is(yellowLine10bSlab))
+            return yellowLine10b;
         if (blockState.is(yellowLine11aSlab))
             return yellowLine11a;
         if (blockState.is(yellowLine11bSlab))
