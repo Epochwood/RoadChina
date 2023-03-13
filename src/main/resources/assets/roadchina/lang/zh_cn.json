@@ -82,7 +82,8 @@
   "block.roadchina.white_line_43" : "白减速线",
   "block.roadchina.white_line_44a" : "双白线(路缘)",
   "block.roadchina.white_line_44b" : "双白线(路肩)",
-  "block.roadchina.white_line_45" : "双白分离线",
+  "block.roadchina.white_line_45a" : "双白分离线",
+  "block.roadchina.white_line_45b" : "双白集合线",
 
   "block.roadchina.yellow_line_1" : "黄线",
   "block.roadchina.yellow_line_2" : "斜黄线",
@@ -93,7 +94,8 @@
   "block.roadchina.yellow_line_7" : "黄线(侧虚线)",
   "block.roadchina.yellow_line_8" : "斜黄线(侧虚线)",
   "block.roadchina.yellow_line_9" : "双黄集合线",
-  "block.roadchina.yellow_line_10" : "双黄分离线",
+  "block.roadchina.yellow_line_10a" : "双黄分离线",
+  "block.roadchina.yellow_line_10b" : "双黄集合线",
   "block.roadchina.yellow_line_11a" : "黄分离线",
   "block.roadchina.yellow_line_11b" : "黄集合线",
 
@@ -197,7 +199,8 @@
   "block.roadchina.white_line_43_slab" : "白减速标线台阶",
   "block.roadchina.white_line_44a_slab" : "双白线台阶(路缘)",
   "block.roadchina.white_line_44b_slab" : "双白线台阶(路肩)",
-  "block.roadchina.white_line_45_slab" : "双白分离线台阶",
+  "block.roadchina.white_line_45a_slab" : "双白分离线台阶",
+  "block.roadchina.white_line_45b_slab" : "双白集合线台阶",
 
   "block.roadchina.yellow_line_1_slab" : "黄线台阶",
   "block.roadchina.yellow_line_2_slab" : "斜黄线台阶",
@@ -208,7 +211,8 @@
   "block.roadchina.yellow_line_7_slab" : "黄线台阶(侧虚线)",
   "block.roadchina.yellow_line_8_slab" : "斜黄线台阶(侧虚线)",
   "block.roadchina.yellow_line_9_slab" : "双黄集合线台阶",
-  "block.roadchina.yellow_line_10_slab" : "双黄分离线台阶",
+  "block.roadchina.yellow_line_10a_slab" : "双黄分离线台阶",
+  "block.roadchina.yellow_line_10b_slab" : "双黄集合线台阶",
   "block.roadchina.yellow_line_11a_slab" : "黄分离线台阶",
   "block.roadchina.yellow_line_11b_slab" : "黄集合线台阶",
 
