@@ -106,8 +106,9 @@
   "block.roadchina.white_yellow_line_3a" : "白黄分离线(粗线)",
   "block.roadchina.white_yellow_line_3b" : "白黄集合线(粗线)",
   "block.roadchina.white_yellow_line_4" : "双白黄虚线(路缘)",
-  "block.roadchina.white_yellow_line_5a" : "折白黄线",
-  "block.roadchina.white_yellow_line_5b" : "T型白黄线",
+  "block.roadchina.white_yellow_line_5a" : "左折白黄线",
+  "block.roadchina.white_yellow_line_5b" : "右折白黄线",
+  "block.roadchina.white_yellow_line_5c" : "T型白黄线",
   "block.roadchina.white_yellow_line_6a" : "左折侧粗白线(黄线)",
   "block.roadchina.white_yellow_line_6b" : "右折侧粗白线(黄线)",
   "block.roadchina.white_yellow_line_6c" : "T型侧粗白线(黄线)",
@@ -223,8 +224,9 @@
   "block.roadchina.white_yellow_line_3a_slab" : "白黄分离线台阶(粗线)",
   "block.roadchina.white_yellow_line_3b_slab" : "白黄集合线台阶(粗线)",
   "block.roadchina.white_yellow_line_4_slab" : "双白黄虚线台阶(路缘)",
-  "block.roadchina.white_yellow_line_5a_slab" : "折白黄线台阶",
-  "block.roadchina.white_yellow_line_5b_slab" : "T型白黄线台阶",
+  "block.roadchina.white_yellow_line_5a_slab" : "左折白黄线台阶",
+  "block.roadchina.white_yellow_line_5b_slab" : "右折白黄线台阶",
+  "block.roadchina.white_yellow_line_5c_slab" : "T型白黄线台阶",
   "block.roadchina.white_yellow_line_6a_slab" : "左折侧粗白线台阶(黄线)",
   "block.roadchina.white_yellow_line_6b_slab" : "右折侧粗白线台阶(黄线)",
   "block.roadchina.white_yellow_line_6c_slab" : "T型侧粗白线台阶(黄线)",
@@ -236,6 +238,14 @@
   "block.roadchina.white_arrow_1" : "白直行箭头",
   "block.roadchina.white_arrow_2a" : "白左合流箭头",
   "block.roadchina.white_arrow_2b" : "白右合流箭头",
+  "block.roadchina.white_arrow_3a" : "白左行箭头",
+  "block.roadchina.white_arrow_3b" : "白右行箭头",
+  "block.roadchina.white_arrow_4" : "白掉头箭头",
+  "block.roadchina.white_arrow_5a" : "白直行左行箭头",
+  "block.roadchina.white_arrow_5b" : "白直行右行箭头",
+  "block.roadchina.white_arrow_6" : "白左右行箭头",
+  "block.roadchina.white_arrow_7" : "白直行掉头箭头",
+  "block.roadchina.white_arrow_8" : "白左行掉头箭头",
 
   "block.roadchina.thin_post_gray" : "灰色细柱",
 
@@ -245,5 +255,8 @@
   "itemGroup.yellow_line_group" : "道路中国 | 黄线道路",
   "itemGroup.road_tool_group" : "道路中国 | 工具",
   "itemGroup.arrow_group" : "道路中国 | 箭头",
-  "itemGroup.road_sign_group" : "道路中国 | 交通标志"
+  "itemGroup.road_sign_group" : "道路中国 | 交通标志",
+
+  "tooltip.wrench" : "§7该物品可转换§f白线、§e黄线§7道路方块面的朝向",
+  "tooltip.view" : "§9按Shift键以查看"
 }
