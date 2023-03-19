@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "roadchina:blocks/white_arrow_a",
-		"particle": "roadchina:blocks/white_arrow_a"
+		"0": "roadchina:blocks/white_arrow_1",
+		"particle": "roadchina:blocks/white_arrow_1"
 	},
 	"elements": [
 		{
@@ -14,8 +14,8 @@
 				"east": {"uv": [0, 0, 16, 0], "texture": "#missing"},
 				"south": {"uv": [0, 0, 8, 0], "texture": "#missing"},
 				"west": {"uv": [0, 0, 16, 0], "texture": "#missing"},
-				"up": {"uv": [0, 0, 2.375, 16], "rotation": 180, "texture": "#0"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+				"up": {"uv": [6.75, 0, 9.25, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [6.75, 0, 9.25, 16], "texture": "#0"}
 			}
 		}
 	],

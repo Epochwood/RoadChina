@@ -106,8 +106,9 @@
   "block.roadchina.white_yellow_line_3a" : "White Yellow Split Line(Thick Line)",
   "block.roadchina.white_yellow_line_3b" : "White Yellow Merge Line(Thick Line)",
   "block.roadchina.white_yellow_line_4" : "White Yellow Dotted Double Line(Curb)",
-  "block.roadchina.white_yellow_line_5a" : "White Yellow Right-angle Line",
-  "block.roadchina.white_yellow_line_5b" : "White Yellow T-shaped Line",
+  "block.roadchina.white_yellow_line_5a" : "White Yellow Left Right-angle Line",
+  "block.roadchina.white_yellow_line_5b" : "White Yellow Right Right-angle Line",
+  "block.roadchina.white_yellow_line_5c" : "White Yellow T-shaped Line",
   "block.roadchina.white_yellow_line_6a" : "White Left Right-angle Side Thick Line(Yellow Line)",
   "block.roadchina.white_yellow_line_6b" : "White Right Right-angle Side Thick Line(Yellow Line)",
   "block.roadchina.white_yellow_line_6c" : "White T-shaped Side Thick Line(Yellow Line)",
@@ -223,8 +224,9 @@
   "block.roadchina.white_yellow_line_3a_slab" : "White Yellow Split Line Slab(Thick Line)",
   "block.roadchina.white_yellow_line_3b_slab" : "White Yellow Merge Line Slab(Thick Line)",
   "block.roadchina.white_yellow_line_4_slab" : "White Yellow Dotted Double Line Slab(Curb)",
-  "block.roadchina.white_yellow_line_5a_slab" : "White Yellow Right-angle Line Slab",
-  "block.roadchina.white_yellow_line_5b_slab" : "White Yellow T-shaped Line Slab",
+  "block.roadchina.white_yellow_line_5a_slab" : "White Yellow Left Right-angle Line Slab",
+  "block.roadchina.white_yellow_line_5b_slab" : "White Yellow Right Right-angle Line Slab",
+  "block.roadchina.white_yellow_line_5c_slab" : "White Yellow T-shaped Line Slab",
   "block.roadchina.white_yellow_line_6a_slab" : "White Left Right-angle Side Thick Line Slab(Yellow Line)",
   "block.roadchina.white_yellow_line_6b_slab" : "White Right Right-angle Side Thick Line Slab(Yellow Line)",
   "block.roadchina.white_yellow_line_6c_slab" : "White T-shaped Side Thick Line Slab(Yellow Line)",
@@ -234,8 +236,16 @@
   "block.roadchina.white_yellow_line_8_slab" : "White Yellow Double Line Slab(Curb)",
 
   "block.roadchina.white_arrow_1" : "White Straight Arrow",
-  "block.roadchina.white_arrow_2a" : "White Left Confluence Arrow",
-  "block.roadchina.white_arrow_2b" : "White Right Confluence Arrow",
+  "block.roadchina.white_arrow_3a" : "White Left Confluence Arrow",
+  "block.roadchina.white_arrow_3b" : "White Right Confluence Arrow",
+  "block.roadchina.white_arrow_2a" : "White Left Arrow",
+  "block.roadchina.white_arrow_2b" : "White Right Arrow",
+  "block.roadchina.white_arrow_4" : "White U-turn Arrow",
+  "block.roadchina.white_arrow_5a" : "White Straight-left Arrow",
+  "block.roadchina.white_arrow_5b" : "White Straight-right Arrow",
+  "block.roadchina.white_arrow_6" : "White Left-right Arrow",
+  "block.roadchina.white_arrow_7" : "White Straight U-turn Arrow",
+  "block.roadchina.white_arrow_8" : "White Left U-turn Arrow",
 
   "block.roadchina.thin_post_gray" : "Gray Thin Post",
 
@@ -245,5 +255,8 @@
   "itemGroup.yellow_line_group" : "Road China | Yellow Line Road",
   "itemGroup.road_tool_group" : "Road China | Tool",
   "itemGroup.arrow_group" : "Road China | Arrow",
-  "itemGroup.road_sign_group" : "Road China | Road Sign"
+  "itemGroup.road_sign_group" : "Road China | Road Sign",
+
+  "tooltip.wrench" : "§7This item can change the §fWhite Lines and §eYellow Lines §7Road Block's Facing",
+  "tooltip.view" : "§9Press Shift to view"
 }
