@@ -14,7 +14,7 @@
  - 添加了可用于调节白线沥青道路方块和箭头的面的朝向的扳手。
 ## 项目情况
 本模组目前还处在测试版本阶段，目前仅支持Forge1.12.2，1.16.5，1.17.1和 Fabric1.18.2（Fabric处在1.0Beta版本），未来将会逐步添加物品和方块完善本模组。  
-![Road China 道路中国](https://www.helloimg.com/images/2022/12/30/oCHx7M.png "Road China 道路中国")
+![Road China 道路中国](https://s1.ax1x.com/2023/03/02/ppFyilD.png "Road China 道路中国")
 > *本模组参考资料：[国家标准 - 《道路交通标志和标线》](http://jtst.mot.gov.cn/gb/search/gbDetailed?id=e424d8a7313d0ce7d19c6773ad0cdf51)*  
 > *制作人员：Heliecp（Forge），onecvly（暮）（Fabric）*  
 > *公测群：706484910*
