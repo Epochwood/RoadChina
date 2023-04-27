@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "roadchina:white_line_16a"
+  },
+  "variants": {
+    "facing": {
+      "west": { "y": 270 },
+      "south": { "y": 180 },
+      "east": { "y": 90 },
+      "north": {}
+    },
+    "inventory": [{ "transform": "forge:default-block" }]
+  }
+}

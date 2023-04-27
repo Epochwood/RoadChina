@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+
+  "variants": {
+    "block_type=full_block,facing=west": { "model": "roadchina:white_arrow_3b", "y": 270 },
+    "block_type=full_block,facing=south": { "model": "roadchina:white_arrow_3b", "y": 180  },
+    "block_type=full_block,facing=east": { "model": "roadchina:white_arrow_3b", "y": 90 },
+    "block_type=full_block,facing=north": { "model": "roadchina:white_arrow_3b" },
+    "block_type=slab_block,facing=west": { "model": "roadchina:white_arrow_3b_slab", "y": 270 },
+    "block_type=slab_block,facing=south": { "model": "roadchina:white_arrow_3b_slab", "y": 180  },
+    "block_type=slab_block,facing=east": { "model": "roadchina:white_arrow_3b_slab", "y": 90 },
+    "block_type=slab_block,facing=north": { "model": "roadchina:white_arrow_3b_slab" }
+  }
+}
