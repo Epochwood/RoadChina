@@ -96,13 +96,25 @@ public class ItemRegistry
     public static final ItemBlock whiteLine39d = withRegistryName(new ItemBlock(BlockRegistry.whiteLine39d));
     public static final ItemBlock whiteLine40a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40a));
     public static final ItemBlock whiteLine40b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40b));
-    public static final ItemBlock whiteLine41 = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41));
-    public static final ItemBlock whiteLine42 = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42));
-    public static final ItemBlock whiteLine43 = withRegistryName(new ItemBlock(BlockRegistry.whiteLine43));
-    public static final ItemBlock whiteLine44a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine44a));
-    public static final ItemBlock whiteLine44b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine44b));
-    public static final ItemBlock whiteLine45a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine45a));
-    public static final ItemBlock whiteLine45b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine45b));
+    public static final ItemBlock whiteLine40c = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40c));
+    public static final ItemBlock whiteLine40d = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40d));
+    public static final ItemBlock whiteLine41a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41a));
+    public static final ItemBlock whiteLine41b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41b));
+    public static final ItemBlock whiteLine41c = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41c));
+    public static final ItemBlock whiteLine41d = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41d));
+    public static final ItemBlock whiteLine42a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42a));
+    public static final ItemBlock whiteLine42b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42b));
+    public static final ItemBlock whiteLine42c = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42c));
+    public static final ItemBlock whiteLine42d = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42d));
+    public static final ItemBlock whiteLine43a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine43a));
+    public static final ItemBlock whiteLine43b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine43b));
+    public static final ItemBlock whiteLine44 = withRegistryName(new ItemBlock(BlockRegistry.whiteLine44));
+    public static final ItemBlock whiteLine45 = withRegistryName(new ItemBlock(BlockRegistry.whiteLine45));
+    public static final ItemBlock whiteLine46 = withRegistryName(new ItemBlock(BlockRegistry.whiteLine46));
+    public static final ItemBlock whiteLine47a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine47a));
+    public static final ItemBlock whiteLine47b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine47b));
+    public static final ItemBlock whiteLine48a = withRegistryName(new ItemBlock(BlockRegistry.whiteLine48a));
+    public static final ItemBlock whiteLine48b = withRegistryName(new ItemBlock(BlockRegistry.whiteLine48b));
 
     public static final ItemBlock yellowLine1 = withRegistryName(new ItemBlock(BlockRegistry.yellowLine1));
     public static final ItemBlock yellowLine2 = withRegistryName(new ItemBlock(BlockRegistry.yellowLine2));
@@ -117,6 +129,8 @@ public class ItemRegistry
     public static final ItemBlock yellowLine10b = withRegistryName(new ItemBlock(BlockRegistry.yellowLine10b));
     public static final ItemBlock yellowLine11a = withRegistryName(new ItemBlock(BlockRegistry.yellowLine11a));
     public static final ItemBlock yellowLine11b = withRegistryName(new ItemBlock(BlockRegistry.yellowLine11b));
+    public static final ItemBlock yellowLine12a = withRegistryName(new ItemBlock(BlockRegistry.yellowLine12a));
+    public static final ItemBlock yellowLine12b = withRegistryName(new ItemBlock(BlockRegistry.yellowLine12b));
 
     public static final ItemBlock whiteYellowLine1a = withRegistryName(new ItemBlock(BlockRegistry.whiteYellowLine1a));
     public static final ItemBlock whiteYellowLine1b = withRegistryName(new ItemBlock(BlockRegistry.whiteYellowLine1b));
@@ -216,13 +230,25 @@ public class ItemRegistry
     public static final ItemBlock whiteLine39dSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine39dSlab));
     public static final ItemBlock whiteLine40aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40aSlab));
     public static final ItemBlock whiteLine40bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40bSlab));
-    public static final ItemBlock whiteLine41Slab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41Slab));
-    public static final ItemBlock whiteLine42Slab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42Slab));
-    public static final ItemBlock whiteLine43Slab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine43Slab));
-    public static final ItemBlock whiteLine44aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine44aSlab));
-    public static final ItemBlock whiteLine44bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine44bSlab));
-    public static final ItemBlock whiteLine45aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine45aSlab));
-    public static final ItemBlock whiteLine45bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine45bSlab));
+    public static final ItemBlock whiteLine40cSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40cSlab));
+    public static final ItemBlock whiteLine40dSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine40dSlab));
+    public static final ItemBlock whiteLine41aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41aSlab));
+    public static final ItemBlock whiteLine41bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41bSlab));
+    public static final ItemBlock whiteLine41cSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41cSlab));
+    public static final ItemBlock whiteLine41dSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine41dSlab));
+    public static final ItemBlock whiteLine42aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42aSlab));
+    public static final ItemBlock whiteLine42bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42bSlab));
+    public static final ItemBlock whiteLine42cSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42cSlab));
+    public static final ItemBlock whiteLine42dSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine42dSlab));
+    public static final ItemBlock whiteLine43aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine43aSlab));
+    public static final ItemBlock whiteLine43bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine43bSlab));
+    public static final ItemBlock whiteLine44Slab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine44Slab));
+    public static final ItemBlock whiteLine45Slab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine45Slab));
+    public static final ItemBlock whiteLine46Slab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine46Slab));
+    public static final ItemBlock whiteLine47aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine47aSlab));
+    public static final ItemBlock whiteLine47bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine47bSlab));
+    public static final ItemBlock whiteLine48aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine48aSlab));
+    public static final ItemBlock whiteLine48bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteLine48bSlab));
 
     public static final ItemBlock yellowLine1Slab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine1Slab));
     public static final ItemBlock yellowLine2Slab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine2Slab));
@@ -237,6 +263,8 @@ public class ItemRegistry
     public static final ItemBlock yellowLine10bSlab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine10bSlab));
     public static final ItemBlock yellowLine11aSlab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine11aSlab));
     public static final ItemBlock yellowLine11bSlab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine11bSlab));
+    public static final ItemBlock yellowLine12aSlab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine12aSlab));
+    public static final ItemBlock yellowLine12bSlab = withRegistryName(new ItemBlock(BlockRegistry.yellowLine12bSlab));
 
     public static final ItemBlock whiteYellowLine1aSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteYellowLine1aSlab));
     public static final ItemBlock whiteYellowLine1bSlab = withRegistryName(new ItemBlock(BlockRegistry.whiteYellowLine1bSlab));
@@ -267,8 +295,6 @@ public class ItemRegistry
     public static final ItemBlock whiteArrow6 = withRegistryName(new ItemBlock(BlockRegistry.whiteArrow6));
     public static final ItemBlock whiteArrow7 = withRegistryName(new ItemBlock(BlockRegistry.whiteArrow7));
     public static final ItemBlock whiteArrow8 = withRegistryName(new ItemBlock(BlockRegistry.whiteArrow8));
-
-    public static final ItemBlock thinPostGary = withRegistryName(new ItemBlock(BlockRegistry.thinPostGray));
 
     private static ItemBlock withRegistryName(ItemBlock item)
     {
@@ -361,13 +387,25 @@ public class ItemRegistry
         registry.register(whiteLine39d);
         registry.register(whiteLine40a);
         registry.register(whiteLine40b);
-        registry.register(whiteLine41);
-        registry.register(whiteLine42);
-        registry.register(whiteLine43);
-        registry.register(whiteLine44a);
-        registry.register(whiteLine44b);
-        registry.register(whiteLine45a);
-        registry.register(whiteLine45b);
+        registry.register(whiteLine40c);
+        registry.register(whiteLine40d);
+        registry.register(whiteLine41a);
+        registry.register(whiteLine41b);
+        registry.register(whiteLine41c);
+        registry.register(whiteLine41d);
+        registry.register(whiteLine42a);
+        registry.register(whiteLine42b);
+        registry.register(whiteLine42c);
+        registry.register(whiteLine42d);
+        registry.register(whiteLine43a);
+        registry.register(whiteLine43b);
+        registry.register(whiteLine44);
+        registry.register(whiteLine45);
+        registry.register(whiteLine46);
+        registry.register(whiteLine47a);
+        registry.register(whiteLine47b);
+        registry.register(whiteLine48a);
+        registry.register(whiteLine48b);
 
         registry.register(yellowLine1);
         registry.register(yellowLine2);
@@ -382,6 +420,8 @@ public class ItemRegistry
         registry.register(yellowLine10b);
         registry.register(yellowLine11a);
         registry.register(yellowLine11b);
+        registry.register(yellowLine12a);
+        registry.register(yellowLine12b);
 
         registry.register(whiteYellowLine1a);
         registry.register(whiteYellowLine1b);
@@ -481,13 +521,25 @@ public class ItemRegistry
         registry.register(whiteLine39dSlab);
         registry.register(whiteLine40aSlab);
         registry.register(whiteLine40bSlab);
-        registry.register(whiteLine41Slab);
-        registry.register(whiteLine42Slab);
-        registry.register(whiteLine43Slab);
-        registry.register(whiteLine44aSlab);
-        registry.register(whiteLine44bSlab);
-        registry.register(whiteLine45aSlab);
-        registry.register(whiteLine45bSlab);
+        registry.register(whiteLine40cSlab);
+        registry.register(whiteLine40dSlab);
+        registry.register(whiteLine41aSlab);
+        registry.register(whiteLine41bSlab);
+        registry.register(whiteLine41cSlab);
+        registry.register(whiteLine41dSlab);
+        registry.register(whiteLine42aSlab);
+        registry.register(whiteLine42bSlab);
+        registry.register(whiteLine42cSlab);
+        registry.register(whiteLine42dSlab);
+        registry.register(whiteLine43aSlab);
+        registry.register(whiteLine43bSlab);
+        registry.register(whiteLine44Slab);
+        registry.register(whiteLine45Slab);
+        registry.register(whiteLine46Slab);
+        registry.register(whiteLine47aSlab);
+        registry.register(whiteLine47bSlab);
+        registry.register(whiteLine48aSlab);
+        registry.register(whiteLine48bSlab);
 
         registry.register(yellowLine1Slab);
         registry.register(yellowLine2Slab);
@@ -502,6 +554,8 @@ public class ItemRegistry
         registry.register(yellowLine10bSlab);
         registry.register(yellowLine11aSlab);
         registry.register(yellowLine11bSlab);
+        registry.register(yellowLine12aSlab);
+        registry.register(yellowLine12bSlab);
 
         registry.register(whiteYellowLine1aSlab);
         registry.register(whiteYellowLine1bSlab);
@@ -532,8 +586,6 @@ public class ItemRegistry
         registry.register(whiteArrow6);
         registry.register(whiteArrow7);
         registry.register(whiteArrow8);
-
-        registry.register(thinPostGary);
     }
 
     @SideOnly(Side.CLIENT)
@@ -627,13 +679,25 @@ public class ItemRegistry
         registerModel(whiteLine39d);
         registerModel(whiteLine40a);
         registerModel(whiteLine40b);
-        registerModel(whiteLine41);
-        registerModel(whiteLine42);
-        registerModel(whiteLine43);
-        registerModel(whiteLine44a);
-        registerModel(whiteLine44b);
-        registerModel(whiteLine45a);
-        registerModel(whiteLine45b);
+        registerModel(whiteLine40c);
+        registerModel(whiteLine40d);
+        registerModel(whiteLine41a);
+        registerModel(whiteLine41b);
+        registerModel(whiteLine41c);
+        registerModel(whiteLine41d);
+        registerModel(whiteLine42a);
+        registerModel(whiteLine42b);
+        registerModel(whiteLine42c);
+        registerModel(whiteLine42d);
+        registerModel(whiteLine43a);
+        registerModel(whiteLine43b);
+        registerModel(whiteLine44);
+        registerModel(whiteLine45);
+        registerModel(whiteLine46);
+        registerModel(whiteLine47a);
+        registerModel(whiteLine47b);
+        registerModel(whiteLine48a);
+        registerModel(whiteLine48b);
 
         registerModel(yellowLine1);
         registerModel(yellowLine2);
@@ -648,6 +712,8 @@ public class ItemRegistry
         registerModel(yellowLine10b);
         registerModel(yellowLine11a);
         registerModel(yellowLine11b);
+        registerModel(yellowLine12a);
+        registerModel(yellowLine12b);
 
         registerModel(whiteYellowLine1a);
         registerModel(whiteYellowLine1b);
@@ -747,13 +813,25 @@ public class ItemRegistry
         registerModel(whiteLine39dSlab);
         registerModel(whiteLine40aSlab);
         registerModel(whiteLine40bSlab);
-        registerModel(whiteLine41Slab);
-        registerModel(whiteLine42Slab);
-        registerModel(whiteLine43Slab);
-        registerModel(whiteLine44aSlab);
-        registerModel(whiteLine44bSlab);
-        registerModel(whiteLine45aSlab);
-        registerModel(whiteLine45bSlab);
+        registerModel(whiteLine40cSlab);
+        registerModel(whiteLine40dSlab);
+        registerModel(whiteLine41aSlab);
+        registerModel(whiteLine41bSlab);
+        registerModel(whiteLine41cSlab);
+        registerModel(whiteLine41dSlab);
+        registerModel(whiteLine42aSlab);
+        registerModel(whiteLine42bSlab);
+        registerModel(whiteLine42cSlab);
+        registerModel(whiteLine42dSlab);
+        registerModel(whiteLine43aSlab);
+        registerModel(whiteLine43bSlab);
+        registerModel(whiteLine44Slab);
+        registerModel(whiteLine45Slab);
+        registerModel(whiteLine46Slab);
+        registerModel(whiteLine47aSlab);
+        registerModel(whiteLine47bSlab);
+        registerModel(whiteLine48aSlab);
+        registerModel(whiteLine48bSlab);
 
         registerModel(yellowLine1Slab);
         registerModel(yellowLine2Slab);
@@ -768,6 +846,8 @@ public class ItemRegistry
         registerModel(yellowLine10bSlab);
         registerModel(yellowLine11aSlab);
         registerModel(yellowLine11bSlab);
+        registerModel(yellowLine12aSlab);
+        registerModel(yellowLine12bSlab);
 
         registerModel(whiteYellowLine1aSlab);
         registerModel(whiteYellowLine1bSlab);
@@ -798,7 +878,5 @@ public class ItemRegistry
         registerModel(whiteArrow6);
         registerModel(whiteArrow7);
         registerModel(whiteArrow8);
-
-        registerModel(thinPostGary);
     }
 }

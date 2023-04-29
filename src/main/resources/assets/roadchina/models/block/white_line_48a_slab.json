@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "roadchina:blocks/asphalt_road",
 		"1": "roadchina:blocks/white_line_1",
-		"2": "roadchina:blocks/white_line_45a",
+		"2": "roadchina:blocks/white_line_48a",
 		"3": "roadchina:blocks/white_line_7",
 		"particle": "roadchina:blocks/asphalt_road"
 	},

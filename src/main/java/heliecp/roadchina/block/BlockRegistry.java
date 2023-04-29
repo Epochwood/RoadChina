@@ -4,7 +4,6 @@ import heliecp.roadchina.block.arrow.ArrowA;
 import heliecp.roadchina.block.arrow.ArrowB;
 import heliecp.roadchina.block.arrow.ArrowC;
 import heliecp.roadchina.block.arrow.ArrowD;
-import heliecp.roadchina.block.post.ThinPost;
 import heliecp.roadchina.creativetab.ModTab;
 import net.minecraft.block.Block;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -93,13 +92,25 @@ public class BlockRegistry
     public static final Line whiteLine39d = new Line("white_line_39d", ModTab.TAB_WHITE_LINE);
     public static final Line whiteLine40a = new Line("white_line_40a", ModTab.TAB_WHITE_LINE);
     public static final Line whiteLine40b = new Line("white_line_40b", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine41 = new Line("white_line_41", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine42 = new Line("white_line_42", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine43 = new Line("white_line_43", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine44a = new Line("white_line_44a", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine44b = new Line("white_line_44b", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine45a = new Line("white_line_45a", ModTab.TAB_WHITE_LINE);
-    public static final Line whiteLine45b = new Line("white_line_45b", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine40c = new Line("white_line_40c", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine40d = new Line("white_line_40d", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine41a = new Line("white_line_41a", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine41b = new Line("white_line_41b", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine41c = new Line("white_line_41c", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine41d = new Line("white_line_41d", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine42a = new Line("white_line_42a", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine42b = new Line("white_line_42b", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine42c = new Line("white_line_42c", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine42d = new Line("white_line_42d", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine43a = new Line("white_line_43a", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine43b = new Line("white_line_43b", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine44 = new Line("white_line_44", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine45 = new Line("white_line_45", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine46 = new Line("white_line_46", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine47a = new Line("white_line_47a", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine47b = new Line("white_line_47b", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine48a = new Line("white_line_48a", ModTab.TAB_WHITE_LINE);
+    public static final Line whiteLine48b = new Line("white_line_48b", ModTab.TAB_WHITE_LINE);
 
     public static final Line yellowLine1 = new Line("yellow_line_1", ModTab.TAB_YELLOW_LINE);
     public static final Line yellowLine2 = new Line("yellow_line_2", ModTab.TAB_YELLOW_LINE);
@@ -114,6 +125,8 @@ public class BlockRegistry
     public static final Line yellowLine10b = new Line("yellow_line_10b", ModTab.TAB_YELLOW_LINE);
     public static final Line yellowLine11a = new Line("yellow_line_11a", ModTab.TAB_YELLOW_LINE);
     public static final Line yellowLine11b = new Line("yellow_line_11b", ModTab.TAB_YELLOW_LINE);
+    public static final Line yellowLine12a = new Line("yellow_line_12a", ModTab.TAB_YELLOW_LINE);
+    public static final Line yellowLine12b = new Line("yellow_line_12b", ModTab.TAB_YELLOW_LINE);
 
     public static final Line whiteYellowLine1a = new Line("white_yellow_line_1a", ModTab.TAB_YELLOW_LINE);
     public static final Line whiteYellowLine1b = new Line("white_yellow_line_1b", ModTab.TAB_YELLOW_LINE);
@@ -213,13 +226,25 @@ public class BlockRegistry
     public static final LineSlab whiteLine39dSlab = new LineSlab("white_line_39d_slab", ModTab.TAB_WHITE_LINE);
     public static final LineSlab whiteLine40aSlab = new LineSlab("white_line_40a_slab", ModTab.TAB_WHITE_LINE);
     public static final LineSlab whiteLine40bSlab = new LineSlab("white_line_40b_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine41Slab = new LineSlab("white_line_41_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine42Slab = new LineSlab("white_line_42_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine43Slab = new LineSlab("white_line_43_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine44aSlab = new LineSlab("white_line_44a_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine44bSlab = new LineSlab("white_line_44b_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine45aSlab = new LineSlab("white_line_45a_slab", ModTab.TAB_WHITE_LINE);
-    public static final LineSlab whiteLine45bSlab = new LineSlab("white_line_45b_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine40cSlab = new LineSlab("white_line_40c_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine40dSlab = new LineSlab("white_line_40d_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine41aSlab = new LineSlab("white_line_41a_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine41bSlab = new LineSlab("white_line_41b_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine41cSlab = new LineSlab("white_line_41c_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine41dSlab = new LineSlab("white_line_41d_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine42aSlab = new LineSlab("white_line_42a_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine42bSlab = new LineSlab("white_line_42b_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine42cSlab = new LineSlab("white_line_42c_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine42dSlab = new LineSlab("white_line_42d_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine43aSlab = new LineSlab("white_line_43a_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine43bSlab = new LineSlab("white_line_43b_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine44Slab = new LineSlab("white_line_44_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine45Slab = new LineSlab("white_line_45_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine46Slab = new LineSlab("white_line_46_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine47aSlab = new LineSlab("white_line_47a_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine47bSlab = new LineSlab("white_line_47b_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine48aSlab = new LineSlab("white_line_48a_slab", ModTab.TAB_WHITE_LINE);
+    public static final LineSlab whiteLine48bSlab = new LineSlab("white_line_48b_slab", ModTab.TAB_WHITE_LINE);
 
     public static final LineSlab yellowLine1Slab = new LineSlab("yellow_line_1_slab", ModTab.TAB_YELLOW_LINE);
     public static final LineSlab yellowLine2Slab = new LineSlab("yellow_line_2_slab", ModTab.TAB_YELLOW_LINE);
@@ -234,6 +259,8 @@ public class BlockRegistry
     public static final LineSlab yellowLine10bSlab = new LineSlab("yellow_line_10b_slab", ModTab.TAB_YELLOW_LINE);
     public static final LineSlab yellowLine11aSlab = new LineSlab("yellow_line_11a_slab", ModTab.TAB_YELLOW_LINE);
     public static final LineSlab yellowLine11bSlab = new LineSlab("yellow_line_11b_slab", ModTab.TAB_YELLOW_LINE);
+    public static final LineSlab yellowLine12aSlab = new LineSlab("yellow_line_12a_slab", ModTab.TAB_YELLOW_LINE);
+    public static final LineSlab yellowLine12bSlab = new LineSlab("yellow_line_12b_slab", ModTab.TAB_YELLOW_LINE);
 
     public static final LineSlab whiteYellowLine1aSlab = new LineSlab("white_yellow_line_1a_slab", ModTab.TAB_YELLOW_LINE);
     public static final LineSlab whiteYellowLine1bSlab = new LineSlab("white_yellow_line_1b_slab", ModTab.TAB_YELLOW_LINE);
@@ -264,8 +291,6 @@ public class BlockRegistry
     public static final ArrowD whiteArrow6 = new ArrowD("white_arrow_6");
     public static final ArrowC whiteArrow7 = new ArrowC("white_arrow_7");
     public static final ArrowC whiteArrow8 = new ArrowC("white_arrow_8");
-
-    public static final ThinPost thinPostGray = new ThinPost("thin_post_gray");
 
     @SubscribeEvent
     public static void onRegistry(Register<Block> event)
@@ -350,13 +375,25 @@ public class BlockRegistry
         registry.register(whiteLine39d);
         registry.register(whiteLine40a);
         registry.register(whiteLine40b);
-        registry.register(whiteLine41);
-        registry.register(whiteLine42);
-        registry.register(whiteLine43);
-        registry.register(whiteLine44a);
-        registry.register(whiteLine44b);
-        registry.register(whiteLine45a);
-        registry.register(whiteLine45b);
+        registry.register(whiteLine40c);
+        registry.register(whiteLine40d);
+        registry.register(whiteLine41a);
+        registry.register(whiteLine41b);
+        registry.register(whiteLine41c);
+        registry.register(whiteLine41d);
+        registry.register(whiteLine42a);
+        registry.register(whiteLine42b);
+        registry.register(whiteLine42c);
+        registry.register(whiteLine42d);
+        registry.register(whiteLine43a);
+        registry.register(whiteLine43b);
+        registry.register(whiteLine44);
+        registry.register(whiteLine45);
+        registry.register(whiteLine46);
+        registry.register(whiteLine47a);
+        registry.register(whiteLine47b);
+        registry.register(whiteLine48a);
+        registry.register(whiteLine48b);
 
         registry.register(yellowLine1);
         registry.register(yellowLine2);
@@ -371,6 +408,8 @@ public class BlockRegistry
         registry.register(yellowLine10b);
         registry.register(yellowLine11a);
         registry.register(yellowLine11b);
+        registry.register(yellowLine12a);
+        registry.register(yellowLine12b);
 
         registry.register(whiteYellowLine1a);
         registry.register(whiteYellowLine1b);
@@ -470,13 +509,25 @@ public class BlockRegistry
         registry.register(whiteLine39dSlab);
         registry.register(whiteLine40aSlab);
         registry.register(whiteLine40bSlab);
-        registry.register(whiteLine41Slab);
-        registry.register(whiteLine42Slab);
-        registry.register(whiteLine43Slab);
-        registry.register(whiteLine44aSlab);
-        registry.register(whiteLine44bSlab);
-        registry.register(whiteLine45aSlab);
-        registry.register(whiteLine45bSlab);
+        registry.register(whiteLine40cSlab);
+        registry.register(whiteLine40dSlab);
+        registry.register(whiteLine41aSlab);
+        registry.register(whiteLine41bSlab);
+        registry.register(whiteLine41cSlab);
+        registry.register(whiteLine41dSlab);
+        registry.register(whiteLine42aSlab);
+        registry.register(whiteLine42bSlab);
+        registry.register(whiteLine42cSlab);
+        registry.register(whiteLine42dSlab);
+        registry.register(whiteLine43aSlab);
+        registry.register(whiteLine43bSlab);
+        registry.register(whiteLine44Slab);
+        registry.register(whiteLine45Slab);
+        registry.register(whiteLine46Slab);
+        registry.register(whiteLine47aSlab);
+        registry.register(whiteLine47bSlab);
+        registry.register(whiteLine48aSlab);
+        registry.register(whiteLine48bSlab);
 
         registry.register(yellowLine1Slab);
         registry.register(yellowLine2Slab);
@@ -491,6 +542,8 @@ public class BlockRegistry
         registry.register(yellowLine10bSlab);
         registry.register(yellowLine11aSlab);
         registry.register(yellowLine11bSlab);
+        registry.register(yellowLine12aSlab);
+        registry.register(yellowLine12bSlab);
 
         registry.register(whiteYellowLine1aSlab);
         registry.register(whiteYellowLine1bSlab);
@@ -521,7 +574,5 @@ public class BlockRegistry
         registry.register(whiteArrow6);
         registry.register(whiteArrow7);
         registry.register(whiteArrow8);
-
-        registry.register(thinPostGray);
     }
 }

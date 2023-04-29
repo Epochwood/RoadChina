@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "roadchina:blocks/asphalt_road",
-		"1": "roadchina:blocks/white_line_42",
+		"1": "roadchina:blocks/white_line_45",
 		"particle": "roadchina:blocks/asphalt_road"
 	},
 	"elements": [

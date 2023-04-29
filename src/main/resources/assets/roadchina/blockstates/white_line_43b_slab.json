@@ -1,7 +1,7 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "roadchina:white_line_40b_slab"
+    "model": "roadchina:white_line_43b_slab"
   },
   "variants": {
     "facing": {

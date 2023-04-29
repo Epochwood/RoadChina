@@ -146,13 +146,25 @@ public class GetBlock
     Block whiteLine39dSlab = BlockRegistry.whiteLine39dSlab;
     Block whiteLine40aSlab = BlockRegistry.whiteLine40aSlab;
     Block whiteLine40bSlab = BlockRegistry.whiteLine40bSlab;
-    Block whiteLine41Slab = BlockRegistry.whiteLine41Slab;
-    Block whiteLine42Slab = BlockRegistry.whiteLine42Slab;
-    Block whiteLine43Slab = BlockRegistry.whiteLine43Slab;
-    Block whiteLine44aSlab = BlockRegistry.whiteLine44aSlab;
-    Block whiteLine44bSlab = BlockRegistry.whiteLine44bSlab;
-    Block whiteLine45aSlab = BlockRegistry.whiteLine45aSlab;
-    Block whiteLine45bSlab = BlockRegistry.whiteLine45bSlab;
+    Block whiteLine40cSlab = BlockRegistry.whiteLine40cSlab;
+    Block whiteLine40dSlab = BlockRegistry.whiteLine40dSlab;
+    Block whiteLine41aSlab = BlockRegistry.whiteLine41aSlab;
+    Block whiteLine41bSlab = BlockRegistry.whiteLine41bSlab;
+    Block whiteLine41cSlab = BlockRegistry.whiteLine41cSlab;
+    Block whiteLine41dSlab = BlockRegistry.whiteLine41dSlab;
+    Block whiteLine42aSlab = BlockRegistry.whiteLine42aSlab;
+    Block whiteLine42bSlab = BlockRegistry.whiteLine42bSlab;
+    Block whiteLine42cSlab = BlockRegistry.whiteLine42cSlab;
+    Block whiteLine42dSlab = BlockRegistry.whiteLine42dSlab;
+    Block whiteLine43aSlab = BlockRegistry.whiteLine43aSlab;
+    Block whiteLine43bSlab = BlockRegistry.whiteLine43bSlab;
+    Block whiteLine44Slab = BlockRegistry.whiteLine44Slab;
+    Block whiteLine45Slab = BlockRegistry.whiteLine45Slab;
+    Block whiteLine46Slab = BlockRegistry.whiteLine46Slab;
+    Block whiteLine47aSlab = BlockRegistry.whiteLine47aSlab;
+    Block whiteLine47bSlab = BlockRegistry.whiteLine47bSlab;
+    Block whiteLine48aSlab = BlockRegistry.whiteLine48aSlab;
+    Block whiteLine48bSlab = BlockRegistry.whiteLine48bSlab;
 
     Block yellowLine1Slab = BlockRegistry.yellowLine1Slab;
     Block yellowLine2Slab = BlockRegistry.yellowLine2Slab;
@@ -167,6 +179,8 @@ public class GetBlock
     Block yellowLine10bSlab = BlockRegistry.yellowLine10bSlab;
     Block yellowLine11aSlab = BlockRegistry.yellowLine11aSlab;
     Block yellowLine11bSlab = BlockRegistry.yellowLine11bSlab;
+    Block yellowLine12aSlab = BlockRegistry.yellowLine12aSlab;
+    Block yellowLine12bSlab = BlockRegistry.yellowLine12bSlab;
 
     Block whiteYellowLine1aSlab = BlockRegistry.whiteYellowLine1aSlab;
     Block whiteYellowLine1bSlab = BlockRegistry.whiteYellowLine1bSlab;
@@ -260,13 +274,25 @@ public class GetBlock
     IBlockState whiteLine39d = BlockRegistry.whiteLine39d.getDefaultState();
     IBlockState whiteLine40a = BlockRegistry.whiteLine40a.getDefaultState();
     IBlockState whiteLine40b = BlockRegistry.whiteLine40b.getDefaultState();
-    IBlockState whiteLine41 = BlockRegistry.whiteLine41.getDefaultState();
-    IBlockState whiteLine42 = BlockRegistry.whiteLine42.getDefaultState();
-    IBlockState whiteLine43 = BlockRegistry.whiteLine43.getDefaultState();
-    IBlockState whiteLine44a = BlockRegistry.whiteLine44a.getDefaultState();
-    IBlockState whiteLine44b = BlockRegistry.whiteLine44b.getDefaultState();
-    IBlockState whiteLine45a = BlockRegistry.whiteLine45a.getDefaultState();
-    IBlockState whiteLine45b = BlockRegistry.whiteLine45b.getDefaultState();
+    IBlockState whiteLine40c = BlockRegistry.whiteLine40c.getDefaultState();
+    IBlockState whiteLine40d = BlockRegistry.whiteLine40d.getDefaultState();
+    IBlockState whiteLine41a = BlockRegistry.whiteLine41a.getDefaultState();
+    IBlockState whiteLine41b = BlockRegistry.whiteLine41b.getDefaultState();
+    IBlockState whiteLine41c = BlockRegistry.whiteLine41c.getDefaultState();
+    IBlockState whiteLine41d = BlockRegistry.whiteLine41d.getDefaultState();
+    IBlockState whiteLine42a = BlockRegistry.whiteLine42a.getDefaultState();
+    IBlockState whiteLine42b = BlockRegistry.whiteLine42b.getDefaultState();
+    IBlockState whiteLine42c = BlockRegistry.whiteLine42c.getDefaultState();
+    IBlockState whiteLine42d = BlockRegistry.whiteLine42d.getDefaultState();
+    IBlockState whiteLine43a = BlockRegistry.whiteLine43a.getDefaultState();
+    IBlockState whiteLine43b = BlockRegistry.whiteLine43b.getDefaultState();
+    IBlockState whiteLine44 = BlockRegistry.whiteLine44.getDefaultState();
+    IBlockState whiteLine45 = BlockRegistry.whiteLine45.getDefaultState();
+    IBlockState whiteLine46 = BlockRegistry.whiteLine46.getDefaultState();
+    IBlockState whiteLine47a = BlockRegistry.whiteLine47a.getDefaultState();
+    IBlockState whiteLine47b = BlockRegistry.whiteLine47b.getDefaultState();
+    IBlockState whiteLine48a = BlockRegistry.whiteLine48a.getDefaultState();
+    IBlockState whiteLine48b = BlockRegistry.whiteLine48b.getDefaultState();
 
     IBlockState yellowLine1 = BlockRegistry.yellowLine1.getDefaultState();
     IBlockState yellowLine2 = BlockRegistry.yellowLine2.getDefaultState();
@@ -281,6 +307,8 @@ public class GetBlock
     IBlockState yellowLine10b = BlockRegistry.yellowLine10b.getDefaultState();
     IBlockState yellowLine11a = BlockRegistry.yellowLine11a.getDefaultState();
     IBlockState yellowLine11b = BlockRegistry.yellowLine11b.getDefaultState();
+    IBlockState yellowLine12a = BlockRegistry.yellowLine12a.getDefaultState();
+    IBlockState yellowLine12b = BlockRegistry.yellowLine12b.getDefaultState();
 
     IBlockState whiteYellowLine1a = BlockRegistry.whiteYellowLine1a.getDefaultState();
     IBlockState whiteYellowLine1b = BlockRegistry.whiteYellowLine1b.getDefaultState();
@@ -450,20 +478,44 @@ public class GetBlock
             return whiteLine40aSlab;
         if (blockState.getBlock().equals(whiteLine40bSlab))
             return whiteLine40bSlab;
-        if (blockState.getBlock().equals(whiteLine41Slab))
-            return whiteLine41Slab;
-        if (blockState.getBlock().equals(whiteLine42Slab))
-            return whiteLine42Slab;
-        if (blockState.getBlock().equals(whiteLine43Slab))
-            return whiteLine43Slab;
-        if (blockState.getBlock().equals(whiteLine44aSlab))
-            return whiteLine44aSlab;
-        if (blockState.getBlock().equals(whiteLine44bSlab))
-            return whiteLine44bSlab;
-        if (blockState.getBlock().equals(whiteLine45aSlab))
-            return whiteLine45aSlab;
-        if (blockState.getBlock().equals(whiteLine45bSlab))
-            return whiteLine45bSlab;
+        if (blockState.getBlock().equals(whiteLine40cSlab))
+            return whiteLine40cSlab;
+        if (blockState.getBlock().equals(whiteLine40dSlab))
+            return whiteLine40dSlab;
+        if (blockState.getBlock().equals(whiteLine41aSlab))
+            return whiteLine41aSlab;
+        if (blockState.getBlock().equals(whiteLine41bSlab))
+            return whiteLine41bSlab;
+        if (blockState.getBlock().equals(whiteLine41cSlab))
+            return whiteLine41cSlab;
+        if (blockState.getBlock().equals(whiteLine41dSlab))
+            return whiteLine41dSlab;
+        if (blockState.getBlock().equals(whiteLine42aSlab))
+            return whiteLine42aSlab;
+        if (blockState.getBlock().equals(whiteLine42bSlab))
+            return whiteLine42bSlab;
+        if (blockState.getBlock().equals(whiteLine42cSlab))
+            return whiteLine42cSlab;
+        if (blockState.getBlock().equals(whiteLine42dSlab))
+            return whiteLine42dSlab;
+        if (blockState.getBlock().equals(whiteLine43aSlab))
+            return whiteLine43aSlab;
+        if (blockState.getBlock().equals(whiteLine43bSlab))
+            return whiteLine43bSlab;
+        if (blockState.getBlock().equals(whiteLine44Slab))
+            return whiteLine44Slab;
+        if (blockState.getBlock().equals(whiteLine45Slab))
+            return whiteLine45Slab;
+        if (blockState.getBlock().equals(whiteLine46Slab))
+            return whiteLine46Slab;
+        if (blockState.getBlock().equals(whiteLine47aSlab))
+            return whiteLine47aSlab;
+        if (blockState.getBlock().equals(whiteLine47bSlab))
+            return whiteLine47bSlab;
+        if (blockState.getBlock().equals(whiteLine48aSlab))
+            return whiteLine48aSlab;
+        if (blockState.getBlock().equals(whiteLine48bSlab))
+            return whiteLine48bSlab;
 
         if (blockState.getBlock().equals(yellowLine1Slab))
             return yellowLine1Slab;
@@ -491,6 +543,10 @@ public class GetBlock
             return yellowLine11aSlab;
         if (blockState.getBlock().equals(yellowLine11bSlab))
             return yellowLine11bSlab;
+        if (blockState.getBlock().equals(yellowLine12aSlab))
+            return yellowLine12aSlab;
+        if (blockState.getBlock().equals(yellowLine12bSlab))
+            return yellowLine12bSlab;
 
         if (blockState.getBlock().equals(whiteYellowLine1aSlab))
             return whiteYellowLine1aSlab;
@@ -679,20 +735,44 @@ public class GetBlock
             return whiteLine40a;
         if (blockState.getBlock().equals(whiteLine40bSlab))
             return whiteLine40b;
-        if (blockState.getBlock().equals(whiteLine41Slab))
-            return whiteLine41;
-        if (blockState.getBlock().equals(whiteLine42Slab))
-            return whiteLine42;
-        if (blockState.getBlock().equals(whiteLine43Slab))
-            return whiteLine43;
-        if (blockState.getBlock().equals(whiteLine44aSlab))
-            return whiteLine44a;
-        if (blockState.getBlock().equals(whiteLine44bSlab))
-            return whiteLine44b;
-        if (blockState.getBlock().equals(whiteLine45aSlab))
-            return whiteLine45a;
-        if (blockState.getBlock().equals(whiteLine45bSlab))
-            return whiteLine45b;
+        if (blockState.getBlock().equals(whiteLine40cSlab))
+            return whiteLine40c;
+        if (blockState.getBlock().equals(whiteLine40dSlab))
+            return whiteLine40d;
+        if (blockState.getBlock().equals(whiteLine41aSlab))
+            return whiteLine41a;
+        if (blockState.getBlock().equals(whiteLine41bSlab))
+            return whiteLine41b;
+        if (blockState.getBlock().equals(whiteLine41cSlab))
+            return whiteLine41c;
+        if (blockState.getBlock().equals(whiteLine41dSlab))
+            return whiteLine41d;
+        if (blockState.getBlock().equals(whiteLine42aSlab))
+            return whiteLine42a;
+        if (blockState.getBlock().equals(whiteLine42bSlab))
+            return whiteLine42b;
+        if (blockState.getBlock().equals(whiteLine42cSlab))
+            return whiteLine42c;
+        if (blockState.getBlock().equals(whiteLine42dSlab))
+            return whiteLine42d;
+        if (blockState.getBlock().equals(whiteLine43aSlab))
+            return whiteLine43a;
+        if (blockState.getBlock().equals(whiteLine43bSlab))
+            return whiteLine43b;
+        if (blockState.getBlock().equals(whiteLine44Slab))
+            return whiteLine44;
+        if (blockState.getBlock().equals(whiteLine45Slab))
+            return whiteLine45;
+        if (blockState.getBlock().equals(whiteLine46Slab))
+            return whiteLine46;
+        if (blockState.getBlock().equals(whiteLine47aSlab))
+            return whiteLine47a;
+        if (blockState.getBlock().equals(whiteLine47bSlab))
+            return whiteLine47b;
+        if (blockState.getBlock().equals(whiteLine48aSlab))
+            return whiteLine48a;
+        if (blockState.getBlock().equals(whiteLine48bSlab))
+            return whiteLine48b;
 
         if (blockState.getBlock().equals(yellowLine1Slab))
             return yellowLine1;
@@ -720,6 +800,10 @@ public class GetBlock
             return yellowLine11a;
         if (blockState.getBlock().equals(yellowLine11bSlab))
             return yellowLine11b;
+        if (blockState.getBlock().equals(yellowLine12aSlab))
+            return yellowLine12a;
+        if (blockState.getBlock().equals(yellowLine12bSlab))
+            return yellowLine12b;
 
         if (blockState.getBlock().equals(whiteYellowLine1aSlab))
             return whiteYellowLine1a;
