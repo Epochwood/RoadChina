@@ -1,4 +1,6 @@
 # 道路中国
+**1.12.2现已停更！若需游玩最新版请选择高版本（1.16.5以上）！**   
+**1.12.2 the update has now stopped! Please choose high game version(above 1.16.5) if you want to play the last version!**
 ## 语言 Language 
  - [English(EN)](https://github.com/Heliecp/RoadChina/blob/1.16.5/README_EN.md)
 ## 模组介绍
