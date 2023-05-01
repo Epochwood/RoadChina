@@ -9,10 +9,11 @@ Road China is a Minecraft ___Forge___ and ___Fabric___ 's open source decoration
  - Added Diagonal Line, Double Line, Split line, Merge Line blocks and slab forms with Yellow Line Asphalt Road as the style. (Except for the Fabric version)
  - Added special blocks and slab forms with White-yellow Line Asphalt Road as the style. (Except for the Fabric version)
  - Added different directions of White Arrow.
+ - Added different colour post. (can auto connect)
 ### Item
  - Added a wrench that can be used to adjust the face orientation of White Line Asphalt Road blocks and arrows.
 ## Project Situation
-This mod is only supported Forge 1.12.2, 1.16.5, 1.17.1 and Fabric 1.18.2.(Fabric is in 1.0 Beta and we are sorry about Fabric version is temporarily unsupported English)In the future will gradually add items and blocks to improve this mod.
+This mod is only supported Forge 1.12.2(The update has now stopped), 1.16.5, 1.17.1 and Fabric 1.18.2.(Fabric is in 1.0 Beta and we are sorry about Fabric version is temporarily unsupported English)In the future will gradually add items and blocks to improve this mod.
 ![Road China](https://s1.ax1x.com/2023/03/27/ppyFOdx.png "Road China")
 > *Credits：Heliecp（Forge），onecvly（暮）（Fabric）*
 ### Snapshot Version Description
