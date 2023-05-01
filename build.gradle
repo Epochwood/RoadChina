@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0.1'
+version = '23m05a'
 group = 'heliecp.roadchina' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'RoadChina'
 
@@ -175,4 +175,8 @@ publishing {
             url "file://${project.projectDir}/mcmodsrepo"
         }
     }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }
