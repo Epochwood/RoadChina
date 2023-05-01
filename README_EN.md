@@ -9,7 +9,7 @@ Road China is a Minecraft ___Forge___ and ___Fabric___ 's open source decoration
  - Added Diagonal Line, Double Line, Split line, Merge Line blocks and slab forms with Yellow Line Asphalt Road as the style. (Except for the Fabric version)
  - Added special blocks and slab forms with White-yellow Line Asphalt Road as the style. (Except for the Fabric version)
  - Added different directions of White Arrow.
- - Added different colour post. (can auto connect)
+ - Added different colour post. (can auto connect, only 1.16.5 and above versions)
 ### Item
  - Added a wrench that can be used to adjust the face orientation of White Line Asphalt Road blocks and arrows.
 ## Project Situation
