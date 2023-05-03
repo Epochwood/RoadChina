@@ -4,7 +4,7 @@ license="GNU GPLv3"
 
 [[mods]]
 modId="roadchina"
-version="23m05a"
+version="23m05b"
 displayName="Road China"
 logoFile="icon.png"
 credits="Heliecp"
@@ -13,14 +13,14 @@ description='''
 This is a chinese style road mod.
 '''
 
-[[dependencies.examplemod]]
+[[dependencies.roadchina]]
     modId="forge"
     mandatory=true
     versionRange="[38,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.roadchina]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18,1.19)"
