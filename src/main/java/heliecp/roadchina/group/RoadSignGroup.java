@@ -11,6 +11,6 @@ public class RoadSignGroup extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ItemRegistry.postGrayNC.get());
+        return new ItemStack(ItemRegistry.postGrayNC1.get());
     }
 }
