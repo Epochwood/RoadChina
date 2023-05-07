@@ -5,9 +5,7 @@ import heliecp.roadchina.block.arrow.ArrowA;
 import heliecp.roadchina.block.arrow.ArrowB;
 import heliecp.roadchina.block.arrow.ArrowC;
 import heliecp.roadchina.block.arrow.ArrowD;
-import heliecp.roadchina.block.post.Post;
-import heliecp.roadchina.block.post.PostBase;
-import heliecp.roadchina.block.post.PostNC;
+import heliecp.roadchina.block.post.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -295,17 +293,26 @@ public class BlockRegistry
     public static final RegistryObject<Block> whiteArrow7 = BLOCKS.register("white_arrow_7", ArrowC::new);
     public static final RegistryObject<Block> whiteArrow8 = BLOCKS.register("white_arrow_8", ArrowC::new);
 
+    public static final RegistryObject<Block> thinPostGray = BLOCKS.register("thin_post_gray", ThinPost::new);
+    public static final RegistryObject<Block> thinPostSilver = BLOCKS.register("thin_post_silver", ThinPost::new);
+
+    public static final RegistryObject<Block> thinPostGrayNC1 = BLOCKS.register("thin_post_gray_nc1", ThinPostNC::new);
+    public static final RegistryObject<Block> thinPostSilverNC1 = BLOCKS.register("thin_post_silver_nc1", ThinPostNC::new);
+
+    public static final RegistryObject<Block> thinPostGrayBase = BLOCKS.register("thin_post_gray_base", ThinPostBase::new);
+    public static final RegistryObject<Block> thinPostSilverBase = BLOCKS.register("thin_post_silver_base", ThinPostBase::new);
+
     public static final RegistryObject<Block> postBlack = BLOCKS.register("post_black", Post::new);
     public static final RegistryObject<Block> postGray = BLOCKS.register("post_gray", Post::new);
     public static final RegistryObject<Block> postSilver = BLOCKS.register("post_silver", Post::new);
     public static final RegistryObject<Block> postBlue = BLOCKS.register("post_blue", Post::new);
     public static final RegistryObject<Block> postWhite = BLOCKS.register("post_white", Post::new);
 
-    public static final RegistryObject<Block> postBlackNC = BLOCKS.register("post_black_nc", PostNC::new);
-    public static final RegistryObject<Block> postGrayNC = BLOCKS.register("post_gray_nc", PostNC::new);
-    public static final RegistryObject<Block> postSilverNC = BLOCKS.register("post_silver_nc", PostNC::new);
-    public static final RegistryObject<Block> postBlueNC = BLOCKS.register("post_blue_nc", PostNC::new);
-    public static final RegistryObject<Block> postWhiteNC = BLOCKS.register("post_white_nc", PostNC::new);
+    public static final RegistryObject<Block> postBlackNC1 = BLOCKS.register("post_black_nc1", PostNC::new);
+    public static final RegistryObject<Block> postGrayNC1 = BLOCKS.register("post_gray_nc1", PostNC::new);
+    public static final RegistryObject<Block> postSilverNC1 = BLOCKS.register("post_silver_nc1", PostNC::new);
+    public static final RegistryObject<Block> postBlueNC1 = BLOCKS.register("post_blue_nc1", PostNC::new);
+    public static final RegistryObject<Block> postWhiteNC1 = BLOCKS.register("post_white_nc1", PostNC::new);
 
     public static final RegistryObject<Block> postGrayBase = BLOCKS.register("post_gray_base", PostBase::new);
     public static final RegistryObject<Block> postSilverBase = BLOCKS.register("post_silver_base", PostBase::new);

@@ -1,5 +1,6 @@
 package heliecp.roadchina.event;
 
+import heliecp.roadchina.Utils;
 import net.minecraft.Util;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.entity.player.Player;
@@ -18,7 +19,7 @@ public class EventHandler {
         Entity entity = event.getEntity();
         if (!entity.level.isClientSide && entity instanceof Player)
         {
-            String Tip = "---------------------------------------\n" + "§4道路中国 | Road China      版本 | Version " + "23m05a" + "\n§f" + "---------------------------------------\n" + "作者 | Author | Credits: Heliecp\n" + "---------------------------------------\n" + "(c) 2023 Heliecp. All Rights Reserved\n" + "---------------------------------------";
+            String Tip = "---------------------------------------\n" + "§4道路中国 | Road China      版本 | Version " + Utils.MOD_VERSION + "\n§f" + "---------------------------------------\n" + "作者 | Author | Credits: Heliecp\n" + "---------------------------------------\n" + "(c) 2023 Heliecp. All Rights Reserved\n" + "---------------------------------------";
             Component TipText = new TextComponent(Tip);
             entity.sendMessage(TipText, Util.NIL_UUID);
 

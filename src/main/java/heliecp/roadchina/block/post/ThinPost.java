@@ -19,7 +19,7 @@ import net.minecraft.world.level.material.Material;
 import java.util.Collections;
 import java.util.Map;
 
-public class Post extends PipeBlock
+public class ThinPost extends PipeBlock
 {
     protected static final BooleanProperty UP = BlockStateProperties.UP;
     protected static final BooleanProperty DOWN = BlockStateProperties.DOWN;
@@ -41,9 +41,9 @@ public class Post extends PipeBlock
         PROPERTY_MAP = Collections.unmodifiableMap(map);
     }
 
-    public Post()
+    public ThinPost()
     {
-        super(0.125f,Properties.of(Material.STONE).strength(1.5F));
+        super(0.0625f,Properties.of(Material.STONE).strength(1.5F));
         this.defaultBlockState().setValue(UP, false).setValue(DOWN, false)
                 .setValue(NORTH, false).setValue(SOUTH, false)
                 .setValue(WEST, false).setValue(EAST, false);
