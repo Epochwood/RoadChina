@@ -275,17 +275,26 @@
   "block.roadchina.white_arrow_7" : "White Straight U-turn Arrow",
   "block.roadchina.white_arrow_8" : "White Left U-turn Arrow",
 
+  "block.roadchina.thin_post_gray" : "Black Thin Post",
+  "block.roadchina.thin_post_silver" : "Gray Thin Post",
+
+  "block.roadchina.thin_post_gray_nc1" : "Black Thin Post(Connect to ground)",
+  "block.roadchina.thin_post_silver_nc1" : "Gray Thin Post(Connect to ground)",
+
+  "block.roadchina.thin_post_gray_base" : "Gray Thin Post Base",
+  "block.roadchina.thin_post_silver_base" : "Silver Thin Post Base",
+
   "block.roadchina.post_black" : "Black Post",
   "block.roadchina.post_gray" : "Gray Post",
   "block.roadchina.post_silver" : "Silver Post",
   "block.roadchina.post_blue" : "Blue Post",
   "block.roadchina.post_white" : "White Post",
 
-  "block.roadchina.post_black_nc" : "Black Post(Connect to ground)",
-  "block.roadchina.post_gray_nc" : "Gray Post(Connect to ground)",
-  "block.roadchina.post_silver_nc" : "Silver Post(Connect to ground)",
-  "block.roadchina.post_blue_nc" : "Blue Post(Connect to ground)",
-  "block.roadchina.post_white_nc" : "White Post(Connect to ground)",
+  "block.roadchina.post_black_nc1" : "Black Post(Connect to ground)",
+  "block.roadchina.post_gray_nc1" : "Gray Post(Connect to ground)",
+  "block.roadchina.post_silver_nc1" : "Silver Post(Connect to ground)",
+  "block.roadchina.post_blue_nc1" : "Blue Post(Connect to ground)",
+  "block.roadchina.post_white_nc1" : "White Post(Connect to ground)",
 
   "block.roadchina.post_gray_base" : "Gray Post Base",
   "block.roadchina.post_silver_base" : "Silver Post Base",
