@@ -19,7 +19,7 @@ import net.minecraft.world.IWorld;
 import java.util.Collections;
 import java.util.Map;
 
-public class Post extends SixWayBlock {
+public class ThinPost extends SixWayBlock {
     protected static final BooleanProperty UP = BlockStateProperties.UP;
     protected static final BooleanProperty DOWN = BlockStateProperties.DOWN;
     protected static final BooleanProperty NORTH = BlockStateProperties.NORTH;
@@ -40,8 +40,8 @@ public class Post extends SixWayBlock {
         PROPERTY_MAP = Collections.unmodifiableMap(map);
     }
 
-    public Post() {
-        super(0.125f,Block.Properties.of(Material.STONE).strength(1.5F));
+    public ThinPost() {
+        super(0.0625f, Properties.of(Material.STONE).strength(1.5F));
         this.defaultBlockState().setValue(UP, false).setValue(DOWN, false)
                 .setValue(NORTH, false).setValue(SOUTH, false)
                 .setValue(WEST, false).setValue(EAST, false);
@@ -78,4 +78,5 @@ public class Post extends SixWayBlock {
     public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, IWorld world, BlockPos pos, BlockPos facingPos) {
         return getStateForPlacement(world,pos);
     }
+
 }

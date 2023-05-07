@@ -275,17 +275,26 @@
   "block.roadchina.white_arrow_7" : "白直行掉头箭头",
   "block.roadchina.white_arrow_8" : "白左行掉头箭头",
 
+  "block.roadchina.thin_post_gray" : "灰色细柱",
+  "block.roadchina.thin_post_silver" : "银色细柱",
+
+  "block.roadchina.thin_post_gray_nc1" : "灰色细柱(连接地面)",
+  "block.roadchina.thin_post_silver_nc1" : "银色细柱(连接地面)",
+
+  "block.roadchina.thin_post_gray_base" : "灰色细柱底座",
+  "block.roadchina.thin_post_silver_base" : "银色细柱底座",
+
   "block.roadchina.post_black" : "黑色柱子",
   "block.roadchina.post_gray" : "灰色柱子",
   "block.roadchina.post_silver" : "银色柱子",
   "block.roadchina.post_blue" : "蓝色柱子",
   "block.roadchina.post_white" : "白色柱子",
 
-  "block.roadchina.post_black_nc" : "黑色柱子(连接地面)",
-  "block.roadchina.post_gray_nc" : "灰色柱子(连接地面)",
-  "block.roadchina.post_silver_nc" : "银色柱子(连接地面)",
-  "block.roadchina.post_blue_nc" : "蓝色柱子(连接地面)",
-  "block.roadchina.post_white_nc" : "白色柱子(连接地面)",
+  "block.roadchina.post_black_nc1" : "黑色柱子(连接地面)",
+  "block.roadchina.post_gray_nc1" : "灰色柱子(连接地面)",
+  "block.roadchina.post_silver_nc1" : "银色柱子(连接地面)",
+  "block.roadchina.post_blue_nc1" : "蓝色柱子(连接地面)",
+  "block.roadchina.post_white_nc1" : "白色柱子(连接地面)",
 
   "block.roadchina.post_gray_base" : "灰色柱子底座",
   "block.roadchina.post_silver_base" : "银色柱子底座",
@@ -298,6 +307,6 @@
   "itemGroup.arrow_group" : "道路中国 | 箭头",
   "itemGroup.road_sign_group" : "道路中国 | 交通标志",
 
-  "tooltip.wrench" : "§7该物品可转换§f白线、§e黄线§7道路方块面的朝向",
+  "tooltip.wrench" : "§7该物品可转换§f白线、§e黄线§7和§f白§e黄线§7道路方块面的朝向",
   "tooltip.view" : "§9按Shift键以查看"
 }

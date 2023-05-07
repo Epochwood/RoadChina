@@ -936,23 +936,31 @@ public class GetBlock
         return ActionResultType.FAIL;
     }
 
+    Block thinPostGray = BlockRegistry.thinPostGray.get();
+    Block thinPostGrayNC1 = BlockRegistry.thinPostGrayNC1.get();
+    Block thinPostGrayBase = BlockRegistry.thinPostGrayBase.get();
+    Block thinPostSilver = BlockRegistry.thinPostSilver.get();
+    Block thinPostSilverNC1 = BlockRegistry.thinPostSilverNC1.get();
+    Block thinPostSilverBase = BlockRegistry.thinPostSilverBase.get();
     Block PostBlack = BlockRegistry.postBlack.get();
-    Block PostBlackNC = BlockRegistry.postBlackNC.get();
+    Block PostBlackNC1 = BlockRegistry.postBlackNC1.get();
     Block PostGray = BlockRegistry.postGray.get();
-    Block PostGrayNC = BlockRegistry.postGrayNC.get();
+    Block PostGrayNC1 = BlockRegistry.postGrayNC1.get();
     Block PostGrayBase = BlockRegistry.postGrayBase.get();
     Block PostSilver = BlockRegistry.postSilver.get();
-    Block PostSilverNC = BlockRegistry.postSilverNC.get();
+    Block PostSilverNC1 = BlockRegistry.postSilverNC1.get();
     Block PostSilverBase = BlockRegistry.postSilverBase.get();
     Block PostBlue = BlockRegistry.postBlue.get();
-    Block PostBlueNC = BlockRegistry.postBlueNC.get();
+    Block PostBlueNC1 = BlockRegistry.postBlueNC1.get();
     Block PostWhite = BlockRegistry.postWhite.get();
-    Block PostWhiteNC = BlockRegistry.postWhiteNC.get();
+    Block PostWhiteNC1 = BlockRegistry.postWhiteNC1.get();
 
     public boolean getPost (Block block)
     {
-        return block == PostBlack
-                ||block == PostGray
+        return block == thinPostGray
+                || block == thinPostSilver
+                || block == PostBlack
+                || block == PostGray
                 || block == PostSilver
                 || block == PostBlue
                 || block == PostWhite;
@@ -960,31 +968,41 @@ public class GetBlock
 
     public boolean getPostForDown (Block block)
     {
-        return block == PostBlack
-                || block == PostBlackNC
+        return block == thinPostGray
+                || block == thinPostGrayNC1
+                || block == thinPostGrayBase
+                || block == thinPostSilver
+                || block == thinPostSilverNC1
+                || block == thinPostSilverBase
+                || block == PostBlack
+                || block == PostBlackNC1
                 || block == PostGray
-                || block == PostGrayNC
+                || block == PostGrayNC1
                 || block == PostGrayBase
                 || block == PostSilver
-                || block == PostSilverNC
+                || block == PostSilverNC1
                 || block == PostSilverBase
                 || block == PostBlue
-                || block == PostBlueNC
+                || block == PostBlueNC1
                 || block == PostWhite
-                || block == PostWhiteNC;
+                || block == PostWhiteNC1;
     }
 
     public boolean getPostForUp (Block block)
     {
-        return block == PostBlack
-                || block == PostBlackNC
+        return block == thinPostGray
+                || block == thinPostGrayNC1
+                || block == thinPostSilver
+                || block == thinPostSilverNC1
+                || block == PostBlack
+                || block == PostBlackNC1
                 || block == PostGray
-                || block == PostGrayNC
+                || block == PostGrayNC1
                 || block == PostSilver
-                || block == PostSilverNC
+                || block == PostSilverNC1
                 || block == PostBlue
-                || block == PostBlueNC
+                || block == PostBlueNC1
                 || block == PostWhite
-                || block == PostWhiteNC;
+                || block == PostWhiteNC1;
     }
 }

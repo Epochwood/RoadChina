@@ -12,6 +12,6 @@ public class RoadSignGroup extends ItemGroup
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ItemRegistry.postGrayNC.get());
+        return new ItemStack(ItemRegistry.postGrayNC1.get());
     }
 }

@@ -292,17 +292,26 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteArrow7 = ITEMS.register("white_arrow_7", () -> new BlockItem(BlockRegistry.whiteArrow7.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
     public static final RegistryObject<Item> whiteArrow8 = ITEMS.register("white_arrow_8", () -> new BlockItem(BlockRegistry.whiteArrow8.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
 
+    public static final RegistryObject<Item> thinPostGray = ITEMS.register("thin_post_gray", () -> new BlockItem(BlockRegistry.thinPostGray.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> thinPostSilver = ITEMS.register("thin_post_silver", () -> new BlockItem(BlockRegistry.thinPostSilver.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+
+    public static final RegistryObject<Item> thinPostGrayNC1 = ITEMS.register("thin_post_gray_nc1", () -> new BlockItem(BlockRegistry.thinPostGrayNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> thinPostSilverNC1 = ITEMS.register("thin_post_silver_nc1", () -> new BlockItem(BlockRegistry.thinPostSilverNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+
+    public static final RegistryObject<Item> thinPostGrayBase = ITEMS.register("thin_post_gray_base", () -> new BlockItem(BlockRegistry.thinPostGrayBase.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> thinPostSilverBase = ITEMS.register("thin_post_silver_base", () -> new BlockItem(BlockRegistry.thinPostSilverBase.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+
     public static final RegistryObject<Item> postBlack = ITEMS.register("post_black", () -> new BlockItem(BlockRegistry.postBlack.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
     public static final RegistryObject<Item> postGray = ITEMS.register("post_gray", () -> new BlockItem(BlockRegistry.postGray.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
     public static final RegistryObject<Item> postSilver = ITEMS.register("post_silver", () -> new BlockItem(BlockRegistry.postSilver.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
     public static final RegistryObject<Item> postBlue = ITEMS.register("post_blue", () -> new BlockItem(BlockRegistry.postBlue.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
     public static final RegistryObject<Item> postWhite = ITEMS.register("post_white", () -> new BlockItem(BlockRegistry.postWhite.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
 
-    public static final RegistryObject<Item> postBlackNC = ITEMS.register("post_black_nc", () -> new BlockItem(BlockRegistry.postBlackNC.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
-    public static final RegistryObject<Item> postGrayNC = ITEMS.register("post_gray_nc", () -> new BlockItem(BlockRegistry.postGrayNC.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
-    public static final RegistryObject<Item> postSilverNC = ITEMS.register("post_silver_nc", () -> new BlockItem(BlockRegistry.postSilverNC.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
-    public static final RegistryObject<Item> postBlueNC = ITEMS.register("post_blue_nc", () -> new BlockItem(BlockRegistry.postBlueNC.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
-    public static final RegistryObject<Item> postWhiteNC = ITEMS.register("post_white_nc", () -> new BlockItem(BlockRegistry.postWhiteNC.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> postBlackNC1 = ITEMS.register("post_black_nc1", () -> new BlockItem(BlockRegistry.postBlackNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> postGrayNC1 = ITEMS.register("post_gray_nc1", () -> new BlockItem(BlockRegistry.postGrayNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> postSilverNC1 = ITEMS.register("post_silver_nc1", () -> new BlockItem(BlockRegistry.postSilverNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> postBlueNC1 = ITEMS.register("post_blue_nc1", () -> new BlockItem(BlockRegistry.postBlueNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
+    public static final RegistryObject<Item> postWhiteNC1 = ITEMS.register("post_white_nc1", () -> new BlockItem(BlockRegistry.postWhiteNC1.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
 
     public static final RegistryObject<Item> postGrayBase = ITEMS.register("post_gray_base", () -> new BlockItem(BlockRegistry.postGrayBase.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
     public static final RegistryObject<Item> postSilverBase = ITEMS.register("post_silver_base", () -> new BlockItem(BlockRegistry.postSilverBase.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
