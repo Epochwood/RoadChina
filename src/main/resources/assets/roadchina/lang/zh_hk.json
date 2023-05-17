@@ -275,6 +275,14 @@
   "block.roadchina.white_arrow_7" : "白直行掉頭箭頭",
   "block.roadchina.white_arrow_8" : "白左行掉頭箭頭",
 
+  "block.roadchina.white_marking_1" : "白人行橫道預告線",
+  "block.roadchina.white_marking_2" : "白減速讓行線",
+  "block.roadchina.white_marking_3" : "白車距確認線",
+  "block.roadchina.white_marking_4" : "白箭頭(人行橫道)",
+  "block.roadchina.white_marking_5" : "白非機動車標線",
+  "block.roadchina.white_marking_6" : "白殘疾人專用停車位標線",
+  "block.roadchina.white_marking_ting" : "白停車讓行線",
+
   "block.roadchina.thin_post_gray" : "灰色細柱",
   "block.roadchina.thin_post_silver" : "銀色細柱",
 
@@ -304,7 +312,7 @@
   "itemGroup.white_line_group" : "道路中國 | 白線道路",
   "itemGroup.yellow_line_group" : "道路中國 | 黃線道路",
   "itemGroup.road_tool_group" : "道路中國 | 工具",
-  "itemGroup.arrow_group" : "道路中國 | 箭頭",
+  "itemGroup.marking_group" : "道路中國 | 其他標綫",
   "itemGroup.road_sign_group" : "道路中國 | 交通標誌",
 
   "tooltip.wrench" : "§7該物品可轉換§f白線、§e黃線§7和§f白§e黃線§7道路方塊面的朝向",

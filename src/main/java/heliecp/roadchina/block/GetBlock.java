@@ -860,6 +860,14 @@ public class GetBlock
     Item whiteArrow7Item = ItemRegistry.whiteArrow7.get();
     Item whiteArrow8Item = ItemRegistry.whiteArrow8.get();
 
+    Item whiteMarking1Item = ItemRegistry.whiteMarking1.get();
+    Item whiteMarking2Item = ItemRegistry.whiteMarking2.get();
+    Item whiteMarking3Item = ItemRegistry.whiteMarking3.get();
+    Item whiteMarking4Item = ItemRegistry.whiteMarking4.get();
+    Item whiteMarking5Item = ItemRegistry.whiteMarking5.get();
+    Item whiteMarking6Item = ItemRegistry.whiteMarking6.get();
+    Item whiteMarkingTingItem = ItemRegistry.whiteMarkingTing.get();
+
     BlockState whiteArrow1Block = BlockRegistry.whiteArrow1.get().defaultBlockState();
     BlockState whiteArrow2aBlock = BlockRegistry.whiteArrow2a.get().defaultBlockState();
     BlockState whiteArrow2bBlock = BlockRegistry.whiteArrow2b.get().defaultBlockState();
@@ -872,7 +880,15 @@ public class GetBlock
     BlockState whiteArrow7Block = BlockRegistry.whiteArrow7.get().defaultBlockState();
     BlockState whiteArrow8Block = BlockRegistry.whiteArrow8.get().defaultBlockState();
 
-    public Item getArrowItem(Player playerIn)
+    BlockState whiteMarking1Block = BlockRegistry.whiteMarking1.get().defaultBlockState();
+    BlockState whiteMarking2Block = BlockRegistry.whiteMarking2.get().defaultBlockState();
+    BlockState whiteMarking3Block = BlockRegistry.whiteMarking3.get().defaultBlockState();
+    BlockState whiteMarking4Block = BlockRegistry.whiteMarking4.get().defaultBlockState();
+    BlockState whiteMarking5Block = BlockRegistry.whiteMarking5.get().defaultBlockState();
+    BlockState whiteMarking6Block = BlockRegistry.whiteMarking6.get().defaultBlockState();
+    BlockState whiteMarkingTingBlock = BlockRegistry.whiteMarkingTing.get().defaultBlockState();
+
+    public Item getMarkingItem(Player playerIn)
     {
         if (playerIn.getMainHandItem().getItem() == whiteArrow1Item)
             return whiteArrow1Item;
@@ -896,10 +912,25 @@ public class GetBlock
             return whiteArrow7Item;
         if (playerIn.getMainHandItem().getItem() == whiteArrow8Item)
             return whiteArrow8Item;
+
+        if (playerIn.getMainHandItem().getItem() == whiteMarking1Item)
+            return whiteMarking1Item;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking2Item)
+            return whiteMarking2Item;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking3Item)
+            return whiteMarking3Item;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking4Item)
+            return whiteMarking4Item;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking5Item)
+            return whiteMarking5Item;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking6Item)
+            return whiteMarking6Item;
+        if (playerIn.getMainHandItem().getItem() == whiteMarkingTingItem)
+            return whiteMarkingTingItem;
         return null;
     }
 
-    public BlockState getArrowBlock(Player playerIn)
+    public BlockState getMarkingBlock(Player playerIn)
     {
         if (playerIn.getMainHandItem().getItem() == whiteArrow1Item)
             return whiteArrow1Block;
@@ -923,14 +954,29 @@ public class GetBlock
             return whiteArrow7Block;
         if (playerIn.getMainHandItem().getItem() == whiteArrow8Item)
             return whiteArrow8Block;
+
+        if (playerIn.getMainHandItem().getItem() == whiteMarking1Item)
+            return whiteMarking1Block;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking2Item)
+            return whiteMarking2Block;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking3Item)
+            return whiteMarking3Block;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking4Item)
+            return whiteMarking4Block;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking5Item)
+            return whiteMarking5Block;
+        if (playerIn.getMainHandItem().getItem() == whiteMarking6Item)
+            return whiteMarking6Block;
+        if (playerIn.getMainHandItem().getItem() == whiteMarkingTingItem)
+            return whiteMarkingTingBlock;
         return null;
     }
 
     public InteractionResult getItemToBlock(Level worldIn, BlockPos pos, Player playerIn)
     {
-        if (playerIn.getMainHandItem().getItem() == getArrowItem(playerIn) && worldIn.getBlockState(pos.above()) == Blocks.AIR.defaultBlockState()) {
+        if (playerIn.getMainHandItem().getItem() == getMarkingItem(playerIn) && worldIn.getBlockState(pos.above()) == Blocks.AIR.defaultBlockState()) {
             Direction direction = playerIn.getDirection();
-            worldIn.setBlockAndUpdate(pos.above(), getArrowBlock(playerIn).setValue(FACING, direction.getOpposite()).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK));
+            worldIn.setBlockAndUpdate(pos.above(), getMarkingBlock(playerIn).setValue(FACING, direction.getOpposite()).setValue(BLOCK_TYPE, BlockType.SLAB_BLOCK));
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.FAIL;

@@ -1,4 +1,4 @@
-package heliecp.roadchina.block.arrow;
+package heliecp.roadchina.block.marking;
 
 import heliecp.roadchina.item.Wrench;
 import heliecp.roadchina.properties.BlockProperties;
@@ -26,11 +26,11 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ArrowC extends Block
+public class MarkingB extends Block
 {
     public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
-    public ArrowC()
+    public MarkingB()
     {
         super(Properties.of(Material.STONE).strength(1.5F).noOcclusion());
         this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
@@ -49,20 +49,20 @@ public class ArrowC extends Block
                     case SOUTH:
                     case NORTH:
                     default:
-                        return Block.box(0.0D, 0.0D, -16.0D, 16.0D, 0.1D, 32.0D);
+                        return Block.box(2.0D, 0.0D, -16.0D, 14.0D, 0.1D, 32.0D);
                     case EAST:
                     case WEST:
-                        return Block.box(-16.0D, 0.0D, 0.0D, 32.0D, 0.1D, 16.0D);
+                        return Block.box(-16.0D, 0.0D, 2.0D, 32.0D, 0.1D, 14.0D);
                 }
             case SLAB_BLOCK:
                 switch (state.getValue(FACING)) {
                      case SOUTH:
                      case NORTH:
                      default:
-                         return Block.box(0.0D, -8.0D, -16.0D, 16.0D, -7.9D, 32.0D);
+                         return Block.box(2.0D, -8.0D, -16.0D, 14.0D, -7.9D, 32.0D);
                      case EAST:
                      case WEST:
-                         return Block.box(-16.0D, -8.0D, 0.0D, 32.0D, -7.9D, 16.0D);
+                         return Block.box(-16.0D, -8.0D, 2.0D, 32.0D, -7.9D, 14.0D);
                 }
             }
         return null;
