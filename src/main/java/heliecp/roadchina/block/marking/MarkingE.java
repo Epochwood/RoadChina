@@ -1,4 +1,4 @@
-package heliecp.roadchina.block.arrow;
+package heliecp.roadchina.block.marking;
 
 import heliecp.roadchina.item.Wrench;
 import heliecp.roadchina.properties.BlockProperties;
@@ -15,7 +15,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -27,13 +26,13 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ArrowA extends Block
+public class MarkingE extends Block
 {
     public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
-    public ArrowA()
+    public MarkingE()
     {
-        super(BlockBehaviour.Properties.of(Material.STONE).strength(1.5F).noOcclusion());
+        super(Properties.of(Material.STONE).strength(1.5F).noOcclusion());
         this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
     }
 
@@ -50,22 +49,22 @@ public class ArrowA extends Block
                     case SOUTH:
                     case NORTH:
                     default:
-                        return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.1D, 32.0D);
+                        return Block.box(-9.0D, 0.0D, -16.0D, 25.0D, 0.1D, 32.0D);
                     case EAST:
                     case WEST:
-                        return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.1D, 12.0D);
+                        return Block.box(-16.0D, 0.0D, -9.0D, 32.0D, 0.1D, 25.0D);
                 }
             case SLAB_BLOCK:
                 switch (state.getValue(FACING)) {
                     case SOUTH:
                     case NORTH:
                     default:
-                        return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -7.9D, 32.0D);
+                        return Block.box(-9.0D, -8.0D, -16.0D, 25.0D, -7.9D, 32.0D);
                     case EAST:
                     case WEST:
-                        return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -7.9D, 12.0D);
+                        return Block.box(-16.0D, -8.0D, -9.0D, 32.0D, -7.9D, 25.0D);
                 }
-            }
+        }
         return null;
     }
 

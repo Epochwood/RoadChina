@@ -275,6 +275,14 @@
   "block.roadchina.white_arrow_7" : "White Straight U-turn Arrow",
   "block.roadchina.white_arrow_8" : "White Left U-turn Arrow",
 
+  "block.roadchina.white_marking_1" : "White Crosswalk Warning Marking",
+  "block.roadchina.white_marking_2" : "White Give Way Marking",
+  "block.roadchina.white_marking_3" : "White Distance Confirmation Marking",
+  "block.roadchina.white_marking_4" : "White Arrow(Crosswalk)",
+  "block.roadchina.white_marking_5" : "White Non-vehicle Marking",
+  "block.roadchina.white_marking_6" : "White Deformity Parking Marking",
+  "block.roadchina.white_marking_ting" : "White Stop Marking(Ting)",
+
   "block.roadchina.thin_post_gray" : "Black Thin Post",
   "block.roadchina.thin_post_silver" : "Gray Thin Post",
 
@@ -304,7 +312,7 @@
   "itemGroup.white_line_group" : "Road China | White Line Road",
   "itemGroup.yellow_line_group" : "Road China | Yellow Line Road",
   "itemGroup.road_tool_group" : "Road China | Tool",
-  "itemGroup.arrow_group" : "Road China | Arrow",
+  "itemGroup.marking_group" : "Road China | Marking",
   "itemGroup.road_sign_group" : "Road China | Road Sign",
 
   "tooltip.wrench" : "§7This item can change the §fWhite Lines§7, §eYellow Lines §7and §fWhite§7-§eyellow Lines §7Road Block's Facing",
