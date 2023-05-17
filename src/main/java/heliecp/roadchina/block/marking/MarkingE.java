@@ -1,9 +1,10 @@
-package heliecp.roadchina.block.arrow;
+package heliecp.roadchina.block.marking;
 
 import heliecp.roadchina.item.Wrench;
 import heliecp.roadchina.properties.BlockProperties;
 import heliecp.roadchina.properties.BlockType;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItemUseContext;
@@ -21,14 +22,14 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
-public class ArrowA extends Block
+public class MarkingE extends Block
 {
     public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
-    public ArrowA()
+    public MarkingE()
     {
-        super(Block.Properties.of(Material.STONE).strength(1.5F).noOcclusion());
+        super(Properties.of(Material.STONE).strength(1.5F).noOcclusion());
         this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);
     }
 
@@ -41,27 +42,27 @@ public class ArrowA extends Block
 
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader source, BlockPos pos, ISelectionContext iSelectionContext) {
-        switch (state.getValue(BLOCK_TYPE)) {
-            case FULL_BLOCK:
-                switch (state.getValue(FACING)) {
-                    case SOUTH:
-                    case NORTH:
-                    default:
-                        return Block.box(4.0D, 0.0D, -16.0D, 12.0D, 0.0D, 32.0D);
-                    case EAST:
-                    case WEST:
-                        return Block.box(-16.0D, 0.0D, 4.0D, 32.0D, 0.0D, 12.0D);
-                }
-            case SLAB_BLOCK:
-                switch (state.getValue(FACING)) {
-                    case SOUTH:
-                    case NORTH:
-                    default:
-                        return Block.box(4.0D, -8.0D, -16.0D, 12.0D, -8.0D, 32.0D);
-                    case EAST:
-                    case WEST:
-                        return Block.box(-16.0D, -8.0D, 4.0D, 32.0D, -8.0D, 12.0D);
-                }
+            switch (state.getValue(BLOCK_TYPE)) {
+                case FULL_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(-9.0D, 0.0D, -16.0D, 25.0D, 0.0D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, 0.0D, -9.0D, 32.0D, 0.0D, 25.0D);
+                    }
+                case SLAB_BLOCK:
+                    switch (state.getValue(FACING)) {
+                        case SOUTH:
+                        case NORTH:
+                        default:
+                            return Block.box(-9.0D, -8.0D, -16.0D, 25.0D, -8.0D, 32.0D);
+                        case EAST:
+                        case WEST:
+                            return Block.box(-16.0D, -8.0D, -9.0D, 32.0D, -8.0D, 25.0D);
+                    }
             }
         return null;
     }

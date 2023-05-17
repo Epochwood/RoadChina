@@ -1,4 +1,4 @@
-package heliecp.roadchina.block.arrow;
+package heliecp.roadchina.block.marking;
 
 import heliecp.roadchina.item.Wrench;
 import heliecp.roadchina.properties.BlockProperties;
@@ -22,12 +22,12 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
-public class ArrowD extends Block
+public class MarkingD extends Block
 {
     public static final EnumProperty<BlockType> BLOCK_TYPE = BlockProperties.BLOCK_TYPE;
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
-    public ArrowD()
+    public MarkingD()
     {
         super(Properties.of(Material.STONE).strength(1.5F).noOcclusion());
         this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(BLOCK_TYPE, BlockType.FULL_BLOCK);

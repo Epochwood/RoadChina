@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "block_type=full_block,facing=west": { "model": "roadchina:block/white_marking_ting", "y": 270 },
+    "block_type=full_block,facing=south": { "model": "roadchina:block/white_marking_ting", "y": 180  },
+    "block_type=full_block,facing=east": { "model": "roadchina:block/white_marking_ting", "y": 90 },
+    "block_type=full_block,facing=north": { "model": "roadchina:block/white_marking_ting" },
+    "block_type=slab_block,facing=west": { "model": "roadchina:block/white_marking_ting_slab", "y": 270 },
+    "block_type=slab_block,facing=south": { "model": "roadchina:block/white_marking_ting_slab", "y": 180  },
+    "block_type=slab_block,facing=east": { "model": "roadchina:block/white_marking_ting_slab", "y": 90 },
+    "block_type=slab_block,facing=north": { "model": "roadchina:block/white_marking_ting_slab" }
+  }
+}

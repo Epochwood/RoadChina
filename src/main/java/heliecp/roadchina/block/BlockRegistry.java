@@ -1,10 +1,7 @@
 package heliecp.roadchina.block;
 
 import heliecp.roadchina.Utils;
-import heliecp.roadchina.block.arrow.ArrowA;
-import heliecp.roadchina.block.arrow.ArrowB;
-import heliecp.roadchina.block.arrow.ArrowC;
-import heliecp.roadchina.block.arrow.ArrowD;
+import heliecp.roadchina.block.marking.*;
 import heliecp.roadchina.block.post.*;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
@@ -280,17 +277,25 @@ public class BlockRegistry {
     public static final RegistryObject<Block> whiteYellowLine7cSlab = BLOCKS.register("white_yellow_line_7c_slab", () -> new LineSlab());
     public static final RegistryObject<Block> whiteYellowLine8Slab = BLOCKS.register("white_yellow_line_8_slab", () -> new LineSlab());
 
-    public static final RegistryObject<Block> whiteArrow1 = BLOCKS.register("white_arrow_1", ArrowA::new);
-    public static final RegistryObject<Block> whiteArrow2a = BLOCKS.register("white_arrow_2a", ArrowB::new);
-    public static final RegistryObject<Block> whiteArrow2b = BLOCKS.register("white_arrow_2b", ArrowB::new);
-    public static final RegistryObject<Block> whiteArrow3a = BLOCKS.register("white_arrow_3a", ArrowB::new);
-    public static final RegistryObject<Block> whiteArrow3b = BLOCKS.register("white_arrow_3b", ArrowB::new);
-    public static final RegistryObject<Block> whiteArrow4 = BLOCKS.register("white_arrow_4", ArrowC::new);
-    public static final RegistryObject<Block> whiteArrow5a = BLOCKS.register("white_arrow_5a", ArrowC::new);
-    public static final RegistryObject<Block> whiteArrow5b = BLOCKS.register("white_arrow_5b", ArrowC::new);
-    public static final RegistryObject<Block> whiteArrow6 = BLOCKS.register("white_arrow_6", ArrowD::new);
-    public static final RegistryObject<Block> whiteArrow7 = BLOCKS.register("white_arrow_7", ArrowC::new);
-    public static final RegistryObject<Block> whiteArrow8 = BLOCKS.register("white_arrow_8", ArrowC::new);
+    public static final RegistryObject<Block> whiteArrow1 = BLOCKS.register("white_arrow_1", MarkingA::new);
+    public static final RegistryObject<Block> whiteArrow2a = BLOCKS.register("white_arrow_2a", MarkingB::new);
+    public static final RegistryObject<Block> whiteArrow2b = BLOCKS.register("white_arrow_2b", MarkingB::new);
+    public static final RegistryObject<Block> whiteArrow3a = BLOCKS.register("white_arrow_3a", MarkingB::new);
+    public static final RegistryObject<Block> whiteArrow3b = BLOCKS.register("white_arrow_3b", MarkingB::new);
+    public static final RegistryObject<Block> whiteArrow4 = BLOCKS.register("white_arrow_4", MarkingC::new);
+    public static final RegistryObject<Block> whiteArrow5a = BLOCKS.register("white_arrow_5a", MarkingC::new);
+    public static final RegistryObject<Block> whiteArrow5b = BLOCKS.register("white_arrow_5b", MarkingC::new);
+    public static final RegistryObject<Block> whiteArrow6 = BLOCKS.register("white_arrow_6", MarkingD::new);
+    public static final RegistryObject<Block> whiteArrow7 = BLOCKS.register("white_arrow_7", MarkingC::new);
+    public static final RegistryObject<Block> whiteArrow8 = BLOCKS.register("white_arrow_8", MarkingC::new);
+
+    public static final RegistryObject<Block> whiteMarking1 = BLOCKS.register("white_marking_1", MarkingD::new);
+    public static final RegistryObject<Block> whiteMarking2 = BLOCKS.register("white_marking_2", MarkingD::new);
+    public static final RegistryObject<Block> whiteMarking3 = BLOCKS.register("white_marking_3", MarkingE::new);
+    public static final RegistryObject<Block> whiteMarking4 = BLOCKS.register("white_marking_4", MarkingF::new);
+    public static final RegistryObject<Block> whiteMarking5 = BLOCKS.register("white_marking_5", MarkingG::new);
+    public static final RegistryObject<Block> whiteMarking6 = BLOCKS.register("white_marking_6", MarkingG::new);
+    public static final RegistryObject<Block> whiteMarkingTing = BLOCKS.register("white_marking_ting", MarkingD::new);
 
     public static final RegistryObject<Block> thinPostGray = BLOCKS.register("thin_post_gray", ThinPost::new);
     public static final RegistryObject<Block> thinPostSilver = BLOCKS.register("thin_post_silver", ThinPost::new);

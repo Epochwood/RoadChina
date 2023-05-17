@@ -4,10 +4,10 @@ import heliecp.roadchina.item.ItemRegistry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
-public class ArrowGroup extends ItemGroup
+public class MarkingGroup extends ItemGroup
 {
-    public ArrowGroup() {
-        super("arrow_group");
+    public MarkingGroup() {
+        super("marking_group");
     }
 
     @Override

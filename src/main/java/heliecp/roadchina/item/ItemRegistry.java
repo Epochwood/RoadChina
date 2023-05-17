@@ -280,17 +280,25 @@ public class ItemRegistry {
     public static final RegistryObject<Item> whiteYellowLine7cSlab = ITEMS.register("white_yellow_line_7c_slab", () -> new BlockItem(BlockRegistry.whiteYellowLine7cSlab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
     public static final RegistryObject<Item> whiteYellowLine8Slab = ITEMS.register("white_yellow_line_8_slab", () -> new BlockItem(BlockRegistry.whiteYellowLine8Slab.get(), new Item.Properties().tab(ModGroup.YELLOW_LINE_GROUP)));
 
-    public static final RegistryObject<Item> whiteArrow1 = ITEMS.register("white_arrow_1", () -> new BlockItem(BlockRegistry.whiteArrow1.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow2a = ITEMS.register("white_arrow_2a", () -> new BlockItem(BlockRegistry.whiteArrow2a.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow2b = ITEMS.register("white_arrow_2b", () -> new BlockItem(BlockRegistry.whiteArrow2b.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow3a = ITEMS.register("white_arrow_3a", () -> new BlockItem(BlockRegistry.whiteArrow3a.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow3b = ITEMS.register("white_arrow_3b", () -> new BlockItem(BlockRegistry.whiteArrow3b.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow4 = ITEMS.register("white_arrow_4", () -> new BlockItem(BlockRegistry.whiteArrow4.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow5a = ITEMS.register("white_arrow_5a", () -> new BlockItem(BlockRegistry.whiteArrow5a.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow5b = ITEMS.register("white_arrow_5b", () -> new BlockItem(BlockRegistry.whiteArrow5b.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow6 = ITEMS.register("white_arrow_6", () -> new BlockItem(BlockRegistry.whiteArrow6.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow7 = ITEMS.register("white_arrow_7", () -> new BlockItem(BlockRegistry.whiteArrow7.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
-    public static final RegistryObject<Item> whiteArrow8 = ITEMS.register("white_arrow_8", () -> new BlockItem(BlockRegistry.whiteArrow8.get(), new Item.Properties().tab(ModGroup.ARROW_GROUP)));
+    public static final RegistryObject<Item> whiteArrow1 = ITEMS.register("white_arrow_1", () -> new BlockItem(BlockRegistry.whiteArrow1.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow2a = ITEMS.register("white_arrow_2a", () -> new BlockItem(BlockRegistry.whiteArrow2a.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow2b = ITEMS.register("white_arrow_2b", () -> new BlockItem(BlockRegistry.whiteArrow2b.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow3a = ITEMS.register("white_arrow_3a", () -> new BlockItem(BlockRegistry.whiteArrow3a.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow3b = ITEMS.register("white_arrow_3b", () -> new BlockItem(BlockRegistry.whiteArrow3b.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow4 = ITEMS.register("white_arrow_4", () -> new BlockItem(BlockRegistry.whiteArrow4.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow5a = ITEMS.register("white_arrow_5a", () -> new BlockItem(BlockRegistry.whiteArrow5a.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow5b = ITEMS.register("white_arrow_5b", () -> new BlockItem(BlockRegistry.whiteArrow5b.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow6 = ITEMS.register("white_arrow_6", () -> new BlockItem(BlockRegistry.whiteArrow6.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow7 = ITEMS.register("white_arrow_7", () -> new BlockItem(BlockRegistry.whiteArrow7.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteArrow8 = ITEMS.register("white_arrow_8", () -> new BlockItem(BlockRegistry.whiteArrow8.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+
+    public static final RegistryObject<Item> whiteMarking1 = ITEMS.register("white_marking_1", () -> new BlockItem(BlockRegistry.whiteMarking1.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteMarking2 = ITEMS.register("white_marking_2", () -> new BlockItem(BlockRegistry.whiteMarking2.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteMarking3 = ITEMS.register("white_marking_3", () -> new BlockItem(BlockRegistry.whiteMarking3.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteMarking4 = ITEMS.register("white_marking_4", () -> new BlockItem(BlockRegistry.whiteMarking4.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteMarking5 = ITEMS.register("white_marking_5", () -> new BlockItem(BlockRegistry.whiteMarking5.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteMarking6 = ITEMS.register("white_marking_6", () -> new BlockItem(BlockRegistry.whiteMarking6.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
+    public static final RegistryObject<Item> whiteMarkingTing = ITEMS.register("white_marking_ting", () -> new BlockItem(BlockRegistry.whiteMarkingTing.get(), new Item.Properties().tab(ModGroup.MARKING_GROUP)));
 
     public static final RegistryObject<Item> thinPostGray = ITEMS.register("thin_post_gray", () -> new BlockItem(BlockRegistry.thinPostGray.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));
     public static final RegistryObject<Item> thinPostSilver = ITEMS.register("thin_post_silver", () -> new BlockItem(BlockRegistry.thinPostSilver.get(), new Item.Properties().tab(ModGroup.ROAD_SIGN_GROUP)));

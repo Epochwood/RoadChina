@@ -26,6 +26,14 @@ public class RenderTypeRegistry
             RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow6.get(), cutout);
             RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow7.get(), cutout);
             RenderTypeLookup.setRenderLayer(BlockRegistry.whiteArrow8.get(), cutout);
+
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarking1.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarking2.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarking3.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarking4.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarking5.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarking6.get(), cutout);
+            RenderTypeLookup.setRenderLayer(BlockRegistry.whiteMarkingTing.get(), cutout);
         });
     }
 }
