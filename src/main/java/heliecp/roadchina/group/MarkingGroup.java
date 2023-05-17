@@ -4,9 +4,9 @@ import heliecp.roadchina.item.ItemRegistry;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
-public class ArrowGroup extends CreativeModeTab {
-    public ArrowGroup() {
-        super("arrow_group");
+public class MarkingGroup extends CreativeModeTab {
+    public MarkingGroup() {
+        super("marking_group");
     }
 
     @Override
