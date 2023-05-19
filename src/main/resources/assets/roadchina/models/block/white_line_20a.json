@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "roadchina:block/white_line_5",
+		"4": "roadchina:block/white_line_18c",
+		"6": "roadchina:block/white_line_3",
+		"7": "roadchina:block/white_line_20a",
+		"8": "roadchina:block/white_line_20b",
+		"particle": "roadchina:block/asphalt_road"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#6"},
+				"east": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#4"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#particle"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#7"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#8"}
+			}
+		}
+	]
+}
